@@ -23,7 +23,7 @@
 
 ### 安装方法
 
-本皮肤的官方发行版会使用 Rainmeter 自带皮肤打包器进行打包，安装包扩展名为 `.rmskin`。已经拥有Rainmeter软件的用户可直接 [**下载**](https://github.com/Lssg97/DetailedSystemMonitor/releases/tag/v3.0.b) 最新的版本安装包到您的计算机，双击文件并按照提示安装。
+本皮肤的官方发行版会使用 Rainmeter 自带皮肤打包器进行打包，安装包扩展名为 `.rmskin`。已经拥有 Rainmeter 软件的用户可直接 [**下载**](https://github.com/Lssg97/DetailedSystemMonitor/releases/tag/v3.0.b) 最新的版本安装包到您的计算机，双击文件并按照提示安装。
 
 使用此方法在默认情况下，新版本会自动覆盖旧版本的皮肤。若您想保留旧版本皮肤，请手动修改旧版本皮肤的文件名或皮肤文件所在目录名称，亦或者使用第三方压缩软件来解压新版本皮肤安装包，手动提取新版本皮肤文件（不推荐）。
 

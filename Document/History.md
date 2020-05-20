@@ -1,6 +1,19 @@
 # 更新笔记
 
 
+#### 2020年5月20日
+
+![新增](https://img.shields.io/badge/-%E6%96%B0%E5%A2%9E-blue?style=plastic)：  增加了“显示时间”设置变量，用户可自主选择是否在皮肤中显示时间。
+
+![优化](https://img.shields.io/badge/-%E4%BC%98%E5%8C%96-green?style=plastic)：  添加了信息标签。
+
+![优化](https://img.shields.io/badge/-%E4%BC%98%E5%8C%96-green?style=plastic)：  缩减“IP地址”最大显示长度。
+
+![优化](https://img.shields.io/badge/-%E4%BC%98%E5%8C%96-green?style=plastic)：  优化“广域网IP”的“归属地”信息刷新方式。
+
+![优化](https://img.shields.io/badge/-%E4%BC%98%E5%8C%96-green?style=plastic)：  重绘“显存”，“硬盘”，“线程”图标。
+
+
 #### 2020年5月8日 - Version 3.0.a
 > 基于Rainmeter 4.3 r3266
 

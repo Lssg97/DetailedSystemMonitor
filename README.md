@@ -23,9 +23,13 @@
 
 ### 安装方法
 
-本皮肤的官方发行版会使用 Rainmeter 自带皮肤打包器进行打包，安装包扩展名为 `.rmskin`。已经拥有Rainmeter软件的用户可直接 [**下载**](https://github.com/Lssg97/DetailedSystemMonitor/releases/tag/v3.0.b) 最新的版本安装包到您的计算机，双击文件并按照提示安装。
+本皮肤的官方发行版会使用 Rainmeter 自带皮肤打包器进行打包，安装包扩展名为 `.rmskin`。已经拥有 Rainmeter 软件的用户可在此仓库直接 [**下载**](https://github.com/Lssg97/DetailedSystemMonitor/releases/tag/v3.0.b) 最新的版本安装包到您的计算机，直接双击文件安装。国内用户在 GitHub 仓库下载速度缓慢，还可前往 [**Cloudreve**](https://file.ykdlb.cn/#/s/KMIK) 下载。
 
-使用此方法在默认情况下，新版本会自动覆盖旧版本的皮肤。若您想保留旧版本皮肤，请手动修改旧版本皮肤的文件名或皮肤文件所在目录名称，亦或者使用第三方压缩软件来解压新版本皮肤安装包，手动提取新版本皮肤文件（不推荐）。
+*  安装皮肤时，请注意选择适合您计算机显卡设备的插件：若您的计算机存在 **NVIDIA** 显卡，请在插件栏中只勾选 `NvidiaGPU.dll`（如下图所示）；**AMD** 显卡同理。若您的计算机只有 **Intel** 核心显卡，请取消勾选这两个插件，并考虑安装 [**CoreTemp**](https://www.alcpu.com/CoreTemp/) 应用。
+
+<p align="center"><img src="https://raw.githubusercontent.com/Lssg97/DetailedSystemMonitor/develop/Image/3.png"></p>
+
+*  使用上述方法在默认情况下，新版本将自动覆盖旧版本的皮肤。若您想保留旧版本皮肤，请手动修改旧版本皮肤的文件名或皮肤文件所在目录名称，亦或者使用第三方压缩软件来解压新版本皮肤安装包，手动提取新版本皮肤文件（不推荐）。
 
 
 ### 更新历史
@@ -58,7 +62,7 @@
 
 ### 其他声明
 
-目前该皮肤及后续更新的官方发布渠道仅为：[GitHub仓库](https://github.com/Lssg97/DetailedSystemMonitor)；相关信息的官方发布渠道有：[中国雨滴论坛](https://bbs.rainmeter.cn/thread-290033-1-1.html) 和 [rainmeter百度贴吧](https://tieba.baidu.com/p/6668858988)。
+目前该皮肤及后续更新的官方发布渠道为：[GitHub仓库](https://github.com/Lssg97/DetailedSystemMonitor) 和 [Cloudreve](https://file.ykdlb.cn/#/s/KMIK)；相关信息的官方发布渠道有：[中国雨滴论坛](https://bbs.rainmeter.cn/thread-290033-1-1.html) 和 [rainmeter百度贴吧](https://tieba.baidu.com/p/6690463464)。
 
 该皮肤的早期版本源自互联网，创作时间、创作者及相关协议均已无从考证。本人2010年获得了该皮肤早期版本副本，自2015年开始致力于维护该皮肤，并在 [中国雨滴论坛](https://bbs.rainmeter.cn/) 发布过七次独立的版本更新（<https://bbs.rainmeter.cn/thread-141896-1-1.html>）。维护至今，该皮肤在知识内容上已经和早期版本没有任何关联，属于原创作品。不过为了致敬早期版本创作者，在名称与版本上将继续延续早期版本。
 

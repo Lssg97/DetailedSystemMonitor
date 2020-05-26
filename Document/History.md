@@ -7,6 +7,8 @@
 
 ![优化](https://img.shields.io/badge/-%E4%BC%98%E5%8C%96-green?style=plastic)：  重绘“CPU”，“显存”图标。
 
+![修复](https://img.shields.io/badge/-%E4%BF%AE%E5%A4%8D-yello?style=plastic)：  修复了“网卡信息”自行消失的错误
+
 
 #### 2020年5月20日
 
@@ -33,7 +35,7 @@
 
 ![修复](https://img.shields.io/badge/-%E4%BF%AE%E5%A4%8D-yello?style=plastic)：  修复了“广域网IP归属地”监测突然失效的问题。
 
-![修复](https://img.shields.io/badge/-%E4%BF%AE%E5%A4%8D-yello?style=plastic)：  修复了单网卡计算机上，网卡信息与CPU信息间空隙较大的问题。
+![修复](https://img.shields.io/badge/-%E4%BF%AE%E5%A4%8D-yello?style=plastic)：  修复了单网卡计算机上，“网卡信息”与“CPU”相关信息间空隙较大的问题。
 
 ![修复](https://img.shields.io/badge/-%E4%BF%AE%E5%A4%8D-yello?style=plastic)：  取消了“最大占用进程”中的首字母大写，避免出现“Qq”这种看起来很蠢的情况……
 
@@ -49,7 +51,7 @@
 
 #### 2020年5月4日
 
-![新增](https://img.shields.io/badge/-%E6%96%B0%E5%A2%9E-blue?style=plastic)：  增加了“网卡”设备名监测。
+![新增](https://img.shields.io/badge/-%E6%96%B0%E5%A2%9E-blue?style=plastic)：  增加了“网卡信息”监测。
 
 ![新增](https://img.shields.io/badge/-%E6%96%B0%E5%A2%9E-blue?style=plastic)：  增加了“CPU句柄数”监测。
 

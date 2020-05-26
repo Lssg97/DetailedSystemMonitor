@@ -23,7 +23,7 @@
 
 ### 安装方法
 
-本皮肤的官方发行版会使用 Rainmeter 自带皮肤打包器进行打包，安装包扩展名为 `.rmskin`。已经拥有 Rainmeter 软件的用户可在此仓库直接 [**下载**](https://github.com/Lssg97/DetailedSystemMonitor/releases/tag/v3.0.b) 最新的版本安装包到您的计算机，直接双击文件安装。国内用户在 GitHub 仓库下载速度缓慢，还可前往 [**Cloudreve**](https://file.ykdlb.cn/#/s/KMIK) 下载。
+本皮肤的官方发行版会使用 Rainmeter 自带皮肤打包器进行打包，安装包扩展名为 `.rmskin`。已经拥有 Rainmeter 软件的用户可在此仓库直接 [**下载**](https://github.com/Lssg97/DetailedSystemMonitor/releases/tag/v3.0.b) 最新的版本安装包到您的计算机，直接双击文件安装。国内用户在 GitHub 仓库下载速度缓慢，还可前往 [**Cloudreve**](https://file.ykdlb.cn/#/s/eVSd) 下载。
 
 *  安装皮肤时，请注意选择适合您计算机显卡设备的插件：若您的计算机存在 **NVIDIA** 显卡，请在插件栏中只勾选 `NvidiaGPU.dll`（如下图所示）；**AMD** 显卡同理。若您的计算机只有 **Intel** 核心显卡，请取消勾选这两个插件，并考虑安装 [**CoreTemp**](https://www.alcpu.com/CoreTemp/) 应用。
 

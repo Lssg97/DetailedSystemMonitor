@@ -1,6 +1,13 @@
 # 更新笔记
 
 
+#### 2020年5月26日
+
+![优化](https://img.shields.io/badge/-%E4%BC%98%E5%8C%96-green?style=plastic)：  移动了“I/O速度”的位置，微调UI界面。
+
+![优化](https://img.shields.io/badge/-%E4%BC%98%E5%8C%96-green?style=plastic)：  重绘“CPU”，“显存”图标。
+
+
 #### 2020年5月20日
 
 ![新增](https://img.shields.io/badge/-%E6%96%B0%E5%A2%9E-blue?style=plastic)：  增加了“显示时间”设置变量，用户可自主选择是否在皮肤中显示时间。
@@ -11,7 +18,7 @@
 
 ![优化](https://img.shields.io/badge/-%E4%BC%98%E5%8C%96-green?style=plastic)：  优化“广域网IP”的“归属地”信息刷新方式。
 
-![优化](https://img.shields.io/badge/-%E4%BC%98%E5%8C%96-green?style=plastic)：  重绘“显存”，“硬盘”，“线程”图标。
+![优化](https://img.shields.io/badge/-%E4%BC%98%E5%8C%96-green?style=plastic)：  重绘“硬盘”，“线程”图标。
 
 
 #### 2020年5月8日 - Version 3.0.a
@@ -256,7 +263,7 @@
 
 ![修复](https://img.shields.io/badge/-%E4%BF%AE%E5%A4%8D-yello?style=plastic)：  修复带有无线网卡的双网卡机型单独使用无线局域网络时，“本地IP”显示本地回环“127.0.0.1”的问题。
 
-#### 2017年5月6日 - Version 1.1
+#### 2017年5月6日 - Version 1.1 ???
 > 基于Rainmeter 3.3.3 r2744
 
 完全不记得改动了什么……

@@ -1,13 +1,23 @@
 # 更新笔记
 
 
+#### 2020年6月9日 - Version 3.1
+> 基于Rainmeter 4.3 r3266
+
+![优化](https://img.shields.io/badge/-%E4%BC%98%E5%8C%96-green?style=plastic)：  无法获取DNS地址时显示为“N/A”。
+
+![优化](https://img.shields.io/badge/-%E4%BC%98%E5%8C%96-green?style=plastic)：  尝试性使用“Group”管理皮肤节点，压缩皮肤文件大小。
+
+![修复](https://img.shields.io/badge/-%E4%BF%AE%E5%A4%8D-yello?style=plastic)：  修复了存在小数缩放倍数时，“硬盘”监控模块整体上移的错误。
+
+
 #### 2020年5月26日
 
 ![优化](https://img.shields.io/badge/-%E4%BC%98%E5%8C%96-green?style=plastic)：  移动了“I/O速度”的位置，微调UI界面。
 
 ![优化](https://img.shields.io/badge/-%E4%BC%98%E5%8C%96-green?style=plastic)：  重绘“CPU”，“显存”图标。
 
-![修复](https://img.shields.io/badge/-%E4%BF%AE%E5%A4%8D-yello?style=plastic)：  修复了“网卡信息”自行消失的错误
+![修复](https://img.shields.io/badge/-%E4%BF%AE%E5%A4%8D-yello?style=plastic)：  修复了“网卡信息”在某些情况下突然消失的错误。
 
 
 #### 2020年5月20日

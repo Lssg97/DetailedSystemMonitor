@@ -5,7 +5,7 @@
 
 * 皮肤默认尺寸为200x755像素，而不同计算机显示器的像素密度不同，在小尺寸但高分辨率屏幕上显示，看起来会很小。解决方法是调整皮肤的缩放比例参数（如图）：建议固定选择**1.20**，**1.50**或**2.00**。特别注意**刷新皮肤前请检查小数点位置！！**
 
-![](https://github.com/Lssg97/DetailedSystemMonitor/blob/master/Image/1.png)
+![](https://raw.githubusercontent.com/Lssg97/DetailedSystemMonitor/master/Image/1.png)
 
 
 #### 2. 为什么我的皮肤和图片展示的不一样，感觉缺东西？
@@ -22,7 +22,7 @@
 
 * 这是因为你的计算机开启了Windows的显示缩放功能，Rainmeter识别分辨率错误造成的，请参考下图来进行设置：打开Rainmeter安装目录，鼠标右键点击`Rainmeter.exe`,属性，兼容性，更改高DIP设置，勾选“替代高DIP缩放行为”，确定。完成操作后重启Rainmeter软件。
 
-![](https://github.com/Lssg97/DetailedSystemMonitor/blob/master/Image/2.png)
+![](https://raw.githubusercontent.com/Lssg97/DetailedSystemMonitor/master/Image/2.png)
 
 
 #### 5. 为什么“显卡温度”显示为“Nun”或者“N/A”？

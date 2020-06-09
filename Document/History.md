@@ -1,6 +1,38 @@
 # 更新笔记
 
 
+#### 2020年6月9日 - Version 3.1
+> 基于Rainmeter 4.3 r3266
+
+![优化](https://img.shields.io/badge/-%E4%BC%98%E5%8C%96-green?style=plastic)：  无法获取DNS地址时显示为“N/A”。
+
+![优化](https://img.shields.io/badge/-%E4%BC%98%E5%8C%96-green?style=plastic)：  尝试性使用“Group”管理皮肤节点，压缩皮肤文件大小。
+
+![修复](https://img.shields.io/badge/-%E4%BF%AE%E5%A4%8D-yello?style=plastic)：  修复了存在小数缩放倍数时，“硬盘”监控模块整体上移的错误。
+
+
+#### 2020年5月26日
+
+![优化](https://img.shields.io/badge/-%E4%BC%98%E5%8C%96-green?style=plastic)：  移动了“I/O速度”的位置，微调UI界面。
+
+![优化](https://img.shields.io/badge/-%E4%BC%98%E5%8C%96-green?style=plastic)：  重绘“CPU”，“显存”图标。
+
+![修复](https://img.shields.io/badge/-%E4%BF%AE%E5%A4%8D-yello?style=plastic)：  修复了“网卡信息”在某些情况下突然消失的错误。
+
+
+#### 2020年5月20日
+
+![新增](https://img.shields.io/badge/-%E6%96%B0%E5%A2%9E-blue?style=plastic)：  增加了“显示时间”设置变量，用户可自主选择是否在皮肤中显示时间。
+
+![优化](https://img.shields.io/badge/-%E4%BC%98%E5%8C%96-green?style=plastic)：  添加了信息标签。
+
+![优化](https://img.shields.io/badge/-%E4%BC%98%E5%8C%96-green?style=plastic)：  缩减“IP地址”最大显示长度。
+
+![优化](https://img.shields.io/badge/-%E4%BC%98%E5%8C%96-green?style=plastic)：  优化“广域网IP”的“归属地”信息刷新方式。
+
+![优化](https://img.shields.io/badge/-%E4%BC%98%E5%8C%96-green?style=plastic)：  重绘“硬盘”，“线程”图标。
+
+
 #### 2020年5月8日 - Version 3.0.a
 > 基于Rainmeter 4.3 r3266
 
@@ -13,7 +45,7 @@
 
 ![修复](https://img.shields.io/badge/-%E4%BF%AE%E5%A4%8D-yello?style=plastic)：  修复了“广域网IP归属地”监测突然失效的问题。
 
-![修复](https://img.shields.io/badge/-%E4%BF%AE%E5%A4%8D-yello?style=plastic)：  修复了单网卡计算机上，网卡信息与CPU信息间空隙较大的问题。
+![修复](https://img.shields.io/badge/-%E4%BF%AE%E5%A4%8D-yello?style=plastic)：  修复了单网卡计算机上，“网卡信息”与“CPU”相关信息间空隙较大的问题。
 
 ![修复](https://img.shields.io/badge/-%E4%BF%AE%E5%A4%8D-yello?style=plastic)：  取消了“最大占用进程”中的首字母大写，避免出现“Qq”这种看起来很蠢的情况……
 
@@ -29,7 +61,7 @@
 
 #### 2020年5月4日
 
-![新增](https://img.shields.io/badge/-%E6%96%B0%E5%A2%9E-blue?style=plastic)：  增加了“网卡”设备名监测。
+![新增](https://img.shields.io/badge/-%E6%96%B0%E5%A2%9E-blue?style=plastic)：  增加了“网卡信息”监测。
 
 ![新增](https://img.shields.io/badge/-%E6%96%B0%E5%A2%9E-blue?style=plastic)：  增加了“CPU句柄数”监测。
 
@@ -243,7 +275,7 @@
 
 ![修复](https://img.shields.io/badge/-%E4%BF%AE%E5%A4%8D-yello?style=plastic)：  修复带有无线网卡的双网卡机型单独使用无线局域网络时，“本地IP”显示本地回环“127.0.0.1”的问题。
 
-#### 2017年5月6日 - Version 1.1
+#### 2017年5月6日 - Version 1.1 ???
 > 基于Rainmeter 3.3.3 r2744
 
 完全不记得改动了什么……

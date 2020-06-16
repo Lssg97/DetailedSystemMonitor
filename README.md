@@ -1,4 +1,4 @@
-详细系统监控 v 3.0
+详细系统监控 v 3.1
 ========
 
 [![LICENSE](https://img.shields.io/badge/license-CC%20BY--NC--SA%203.0-orange.svg?logo=creative-commons&logoColor=white)](LICENSE.md)
@@ -7,7 +7,7 @@
 
 ![详细系统监控 v3.0](https://raw.githubusercontent.com/Lssg97/DetailedSystemMonitor/master/Image/0.png)
 
-该皮肤最新的 **3.0** 版本相比于先前版本系列，风格上有很大变动。重做了皮肤 UI，并加入了部分新功能。详细内容请查看 [**更新笔记**](https://github.com/Lssg97/DetailedSystemMonitor/blob/master/Document/History.md)。
+该皮肤最新的 **3.1** 版本没有功能更新，着重优化和修复Bug，并对各个图标填加了信息标签。详细内容请查看 [**更新笔记**](https://github.com/Lssg97/DetailedSystemMonitor/blob/master/Document/History.md)。
 
 
 ### 运行要求

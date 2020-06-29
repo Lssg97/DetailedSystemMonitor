@@ -1,6 +1,11 @@
 # 更新笔记
 
 
+#### 2020年6月27日
+
+![新增](https://img.shields.io/badge/-%E6%96%B0%E5%A2%9E-blue?style=plastic)：  增加了NVIDIA GPU “CUDA”引擎的监测。
+
+
 #### 2020年6月9日 - Version 3.1
 > 基于Rainmeter 4.3 r3266
 

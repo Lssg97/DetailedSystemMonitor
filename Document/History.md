@@ -1,9 +1,23 @@
 # 更新笔记
 
 
+#### 2020年7月11日
+
+![优化](https://img.shields.io/badge/-%E4%BC%98%E5%8C%96-green?style=plastic)：  优化了非“Windows 10”系统“N卡”计算机中“GPU监控”的UI间距。
+
+![优化](https://img.shields.io/badge/-%E4%BC%98%E5%8C%96-green?style=plastic)：  当笔记本电脑外接电源且电池满电状态下，“电池监控”中显示“已充满”。
+
+
+#### 2020年7月9日
+
+![优化](https://img.shields.io/badge/-%E4%BC%98%E5%8C%96-green?style=plastic)：  将“GPU引擎”使用情况展示在“GPU Bar”上，感谢QQ用户“月凝忧殇”提供的配色方案。
+
+![优化](https://img.shields.io/badge/-%E4%BC%98%E5%8C%96-green?style=plastic)：  皮肤配置文件编码方式改为“GB2312”，压缩配置文件大小。
+
+
 #### 2020年7月2日
 
-![优化](https://img.shields.io/badge/-%E4%BC%98%E5%8C%96-green?style=plastic)：  尝试性使用“继承节点”管理皮肤信息元素和Bar元素，压缩皮肤文件大小。
+![优化](https://img.shields.io/badge/-%E4%BC%98%E5%8C%96-green?style=plastic)：  尝试性使用“继承节点”管理皮肤信息元素和Bar元素，压缩配置文件大小。
 
 
 #### 2020年6月27日
@@ -16,7 +30,7 @@
 
 ![优化](https://img.shields.io/badge/-%E4%BC%98%E5%8C%96-green?style=plastic)：  无法获取DNS地址时显示为“N/A”。
 
-![优化](https://img.shields.io/badge/-%E4%BC%98%E5%8C%96-green?style=plastic)：  尝试性使用“Group”管理非“Windows 10”专属皮肤节点，压缩皮肤文件大小。
+![优化](https://img.shields.io/badge/-%E4%BC%98%E5%8C%96-green?style=plastic)：  尝试性使用“Group”管理非“Windows 10”专属皮肤节点，压缩配置文件大小。
 
 ![修复](https://img.shields.io/badge/-%E4%BF%AE%E5%A4%8D-yello?style=plastic)：  修复了存在小数缩放倍数时，“硬盘”监控模块整体上移的错误。
 

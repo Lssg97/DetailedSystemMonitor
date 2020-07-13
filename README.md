@@ -64,9 +64,9 @@
 
 目前该皮肤及后续更新的官方发布渠道为：[GitHub仓库](https://github.com/Lssg97/DetailedSystemMonitor)；相关信息的官方发布渠道有：[中国雨滴论坛](https://bbs.rainmeter.cn/thread-290033-1-1.html) 和 [rainmeter百度贴吧](https://tieba.baidu.com/p/6690463464)。
 
-该皮肤的早期版本源自互联网，创作时间、创作者及相关协议均已无从考证。本人2010年获得了该皮肤早期版本副本，自2015年开始致力于维护该皮肤，并在 [中国雨滴论坛](https://bbs.rainmeter.cn/) 发布过七次独立的版本更新（<https://bbs.rainmeter.cn/thread-141896-1-1.html>）。维护至今，该皮肤在知识内容上已经和早期版本没有任何关联，属于原创作品。不过为了致敬早期版本创作者，在名称与版本上将继续延续早期版本。
+该皮肤的早期版本源自互联网，创作时间、创作者及相关协议均已无从考证。本人2010年获得了该皮肤早期版本副本，自2015年开始致力于维护该皮肤，并在 [中国雨滴论坛](https://bbs.rainmeter.cn/) 发布过七次独立的版本更新（<https://bbs.rainmeter.cn/thread-141896-1-1.html>）。维护至今，该皮肤在构思上已经和早期版本没有任何关联，属于原创作品。不过为了致敬早期版本创作者，在名称与版本上将继续延续早期版本。
 
-该皮肤使用了两个其他创作者制作的第三方 Rainmeter 插件：AMDTemperature.dll（[z100s](https://tieba.baidu.com/p/2221203992)）和 NvidiaGPU.dll（[IZZZZZI](https://tieba.baidu.com/p/3242119308)）。感谢两位插件作者。
+该皮肤使用了两个其他创作者制作的第三方 Rainmeter 插件：AMDTemperature.dll（[z100s](https://tieba.baidu.com/p/2221203992)）和 NvidiaGPU.dll（[IZZZZZI](https://tieba.baidu.com/p/3242119308)）；GPU Bar 的配色方案来自 QQ 用户 [月凝忧殇](https://tieba.baidu.com/home/main/?un=mzflh)。感谢支持和帮助。
 
 
 ### 联系作者

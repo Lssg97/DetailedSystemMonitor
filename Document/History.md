@@ -1,6 +1,11 @@
 # 更新笔记
 
 
+#### 2020年7月15日
+
+![新增](https://img.shields.io/badge/-%E6%96%B0%E5%A2%9E-blue?style=plastic)：  增加了皮肤更新监测。
+
+
 #### 2020年7月11日
 
 ![优化](https://img.shields.io/badge/-%E4%BC%98%E5%8C%96-green?style=plastic)：  优化了非“Windows 10”系统“N卡”计算机中“GPU监控”的UI间距。
@@ -57,7 +62,7 @@
 ![优化](https://img.shields.io/badge/-%E4%BC%98%E5%8C%96-green?style=plastic)：  重绘“硬盘”，“线程”图标。
 
 
-#### 2020年5月8日 - Version 3.0.a
+#### 2020年5月8日 - Version 3.0.b
 > 基于Rainmeter 4.3 r3266
 
 ![优化](https://img.shields.io/badge/-%E4%BC%98%E5%8C%96-green?style=plastic)：  调整了“整体缩放”设置变量顺序。

@@ -1,6 +1,14 @@
 # 更新笔记
 
 
+#### 2020年7月31日
+
+![优化](https://img.shields.io/badge/-%E4%BC%98%E5%8C%96-green?style=plastic)：  重绘所有图标。
+![优化](https://img.shields.io/badge/-%E4%BC%98%E5%8C%96-green?style=plastic)：  改进部分图标标签名称。
+
+![修复](https://img.shields.io/badge/-%E4%BF%AE%E5%A4%8D-yello?style=plastic)：  修复了变更编码方式后部分字符无法显示的错误。
+
+
 #### 2020年7月15日
 
 ![新增](https://img.shields.io/badge/-%E6%96%B0%E5%A2%9E-blue?style=plastic)：  增加了皮肤更新监测。
@@ -28,6 +36,8 @@
 #### 2020年6月27日
 
 ![新增](https://img.shields.io/badge/-%E6%96%B0%E5%A2%9E-blue?style=plastic)：  增加了NVIDIA GPU “CUDA”引擎的监测。
+
+![优化](https://img.shields.io/badge/-%E4%BC%98%E5%8C%96-green?style=plastic)：  修改了部分GPU引擎的名称。
 
 
 #### 2020年6月9日 - Version 3.1

@@ -12,7 +12,7 @@
 
 * 如果您感觉缺了很多东西且使用的是Windows 7 SP1系统，则是系统无法识别皮肤中包含的“Noto Sans CJK.ttc”字体造成的。遇到这种情况，请下载字体修复补丁 [DetailedSystemMonitor_FixFont.rmskin](https://github.com/Lssg97/DetailedSystemMonitor/raw/master/Font/DetailedSystemMonitor_FixFont.rmskin)，直接安装即可解决问题（百度网盘内已提供修复补丁供国内用户下载）。
 
-* 除了上述情况外，差别主要体现在GPU监控显示的内容上。皮肤会根据系统环境和硬件环境自动适应，隐藏当前环境下无法显示的内容。如：受到系统环境影响，Windows 10 1709以前的系统无法显示非NVIDIA核心显卡的使用率，没有独立显卡的计算机无法显示显存使用情况，等等。如果您实在觉得皮肤在您的计算机上缺少某些内容属于功能性问题，可以参考 [首页](https://github.com/Lssg97/DetailedSystemMonitor) 建议。
+* 除了上述情况外，差别主要体现在GPU监控显示的内容上。皮肤会根据系统环境和硬件环境自动适应，隐藏当前环境下无法显示的内容。如：受到系统环境影响，Windows 10 1709以前的系统无法显示非NVIDIA显卡的使用率，没有独立显卡的计算机无法显示显存使用情况，等等。如果您实在觉得皮肤在您的计算机上缺少某些内容属于功能性问题，可以参考 [首页](https://github.com/Lssg97/DetailedSystemMonitor) 建议。
 
 
 #### 3. 为什么使用本皮肤后，我的电脑上其它Rainmeter皮肤的动画每秒钟都会卡顿一次？

@@ -1,6 +1,12 @@
 # 更新笔记
 
 
+#### 2020年8月2日 - Version 3.2
+> 基于Rainmeter 4.3 r3266
+
+![修复](https://img.shields.io/badge/-%E4%BF%AE%E5%A4%8D-yello?style=plastic)：  修复了“WiFi图标”无法切换信号强度的错误。
+
+
 #### 2020年7月31日
 
 ![优化](https://img.shields.io/badge/-%E4%BC%98%E5%8C%96-green?style=plastic)：  重绘所有图标。
@@ -23,7 +29,7 @@
 
 #### 2020年7月9日
 
-![优化](https://img.shields.io/badge/-%E4%BC%98%E5%8C%96-green?style=plastic)：  将“GPU引擎”使用情况展示在“GPU Bar”上，感谢QQ用户“月凝忧殇”提供的配色方案。
+![优化](https://img.shields.io/badge/-%E4%BC%98%E5%8C%96-green?style=plastic)：  将“GPU引擎”使用情况展示在“GPU Bar”上，感谢贴吧用户“mzflh”提供的配色方案。
 
 ![优化](https://img.shields.io/badge/-%E4%BC%98%E5%8C%96-green?style=plastic)：  皮肤配置文件编码方式改为“GB2312”，压缩配置文件大小。
 

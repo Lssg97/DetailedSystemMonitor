@@ -1,14 +1,14 @@
 #pragma once
 
-//#define TEST
 
 #include <windows.h>
 #include <winioctl.h>
 #include <tchar.h>
 #include "running_environment.h"
 
-#ifdef TEST
+#ifdef _DEBUG
 #include <stdio.h>
+#include <time.h>
 #endif
 
 #define OLS_TYPE				 40000
@@ -19,7 +19,7 @@
 class driver
 {
 public:
-	driver();
+	driver(LPCTSTR gDriverId, LPCTSTR gDriverPath);
 	BOOL WINAPI Rdmsr(DWORD index, PDWORD eax, PDWORD edx);
 	BOOL WINAPI RdmsrTx(DWORD index, PDWORD eax, PDWORD edx, DWORD_PTR threadAffinityMask);
 	~driver();
@@ -37,6 +37,13 @@ private:
 	BOOL StartDriver(SC_HANDLE hSCManager, LPCTSTR DriverId);
 	BOOL StopDriver(SC_HANDLE hSCManager, LPCTSTR DriverId);
 	BOOL RemoveDriver(SC_HANDLE hSCManager, LPCTSTR DriverId);
+	BOOL SystemInstallDriver(SC_HANDLE hSCManager, LPCTSTR DriverId, LPCTSTR DriverPath);
+	BOOL IsSystemInstallDriver(SC_HANDLE hSCManager, LPCTSTR DriverId, LPCTSTR DriverPath);
 
+	BOOL EnableSeLoadDriverPrivilege();
+#ifdef _DEBUG
+	FILE* fp = fopen("log.txt", "a");
+	char tmp[64];
+#endif
 };
 

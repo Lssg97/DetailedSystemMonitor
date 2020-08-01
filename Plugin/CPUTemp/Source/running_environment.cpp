@@ -68,6 +68,7 @@ BOOL IsWow64()
 	if (fnIsWow64Process != NULL)
 	{
 		if (!fnIsWow64Process(GetCurrentProcess(), &isWow64)) isWow64 = FALSE;
+		else isWow64 = TRUE;
 	}
 	return isWow64;
 }
@@ -89,37 +90,55 @@ BOOL IsX64()
 	return isX64;
 }
 
-BOOL RuningEn(TCHAR gDriverFileName[])
+BOOL RuningEn(TCHAR gDriverPath[])
 {
+	TCHAR gDriverFileName[MAX_PATH];
+	TCHAR dir[MAX_PATH];
+	TCHAR* ptr;
 	OSVERSIONINFO osvi;
+
 	osvi.dwOSVersionInfoSize = sizeof(OSVERSIONINFO);
 	GetVersionEx(&osvi);
 
 	switch (osvi.dwPlatformId)
 	{
 	case VER_PLATFORM_WIN32s:
-		return 0;
 		break;
 	case VER_PLATFORM_WIN32_WINDOWS:
+		if (_access("WinRing0.vxd", 0) == -1)
+		{
+			HexToChar(WinRing0_vxd, "WinRing0.vxd");
+		}	
 		_tcscpy_s(gDriverFileName, MAX_PATH, OLS_DRIVER_FILE_NAME_WIN_9X);
-		return 0;
 		break;
 	case VER_PLATFORM_WIN32_NT:
 		if (IsWow64())
 		{
 			if (IsX64())
 			{
+				if (_access("WinRing0x64.sys", 0) == -1)
+				{
+					HexToChar(WinRing0X64_sys, "WinRing0x64.sys");
+				}
 				_tcscpy_s(gDriverFileName, MAX_PATH, OLS_DRIVER_FILE_NAME_WIN_NT_X64);
 			}
 		}
 		else
 		{
+			if (_access("WinRing0.sys", 0) == -1)
+			{
+				HexToChar(WinRing0_sys, "WinRing0.sys");
+			}
 			_tcscpy_s(gDriverFileName, MAX_PATH, OLS_DRIVER_FILE_NAME_WIN_NT);
 		}
-		return 0;
 		break;
 	default:
-		return 0;
 		break;
 	}
+
+	GetModuleFileName(NULL, dir, MAX_PATH);//获取当前进程已加载模块的文件的完整路径，该模块必须由当前进程加载。
+	if ((ptr = _tcsrchr(dir, '\\')) != NULL) *ptr = '\0';
+	wsprintf(gDriverPath, _T("%s\\%s"), dir, gDriverFileName);
+
+	return TRUE;
 }

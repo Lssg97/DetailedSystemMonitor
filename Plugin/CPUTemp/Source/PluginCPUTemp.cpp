@@ -7,7 +7,7 @@
 
 #include <windows.h>
 #include <wchar.h>
-#include "CoreTempProxy.h"
+#include "CPUTempProxy.h"
 #include "../../Library/Export.h"	// Rainmeter's exported functions
 
 enum eMeasureType
@@ -40,11 +40,13 @@ struct MeasureData
 		rm(nullptr) {}
 };
 
-CoreTempProxy proxy;
+
 
 eMeasureType convertStringToMeasureType(LPCWSTR i_String, void* rm);
 bool areStringsEqual(LPCWSTR i_String1, LPCWSTR i_Strting2);
 int getHighestTemp(void* rm);
+
+CoreTempProxy proxy;
 
 PLUGIN_EXPORT void Initialize(void** data, void* rm)
 {
@@ -116,7 +118,7 @@ PLUGIN_EXPORT double Update(void* data)
 			break;
 
 		case MeasureCoreSpeed:
-			result = proxy.GetMultiplier(measure->index) * proxy.GetFSBSpeed();
+			result = (double)proxy.GetMultiplier(measure->index) * proxy.GetFSBSpeed();
 			break;
 
 		case MeasureCoreBusMultiplier:
@@ -233,6 +235,8 @@ eMeasureType convertStringToMeasureType(LPCWSTR i_String, void* rm)
 
 	return result;
 }
+
+
 
 int getHighestTemp(void* rm)
 {

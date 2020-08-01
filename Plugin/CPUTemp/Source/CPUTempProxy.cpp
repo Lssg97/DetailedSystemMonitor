@@ -1,10 +1,14 @@
 #include <windows.h>
-#include "CoreTempProxy.h"
+#include "CPUTempProxy.h"
 
 CoreTempProxy::CoreTempProxy(void)
 {
 	memset(&this->m_pCoreTempData, 0, sizeof(CoreTempSharedDataEx));
+
+	RuningEn(gDriverPath);
 	
+	pdriver = new driver(OLS_DRIVER_ID, gDriverPath);
+
 	_GetCoreCount();
 
 	_GetTjMax();
@@ -12,6 +16,7 @@ CoreTempProxy::CoreTempProxy(void)
 
 CoreTempProxy::~CoreTempProxy(void)
 {
+	delete pdriver;
 }
 
 UINT CoreTempProxy::GetCoreLoad(int _index) const
@@ -123,17 +128,15 @@ void CoreTempProxy::_GetCoreCount()
 
 void CoreTempProxy::_GetTjMax()
 {
-	static driver driver;
 	DWORD eax = 0, edx = 0;
-	driver.Rdmsr(0x1A2, &eax, &edx);
+	pdriver->Rdmsr(0x1A2, &eax, &edx);
 	m_pCoreTempData.uiTjMax = (eax & 0xff0000) >> 16;
 }
 
 void CoreTempProxy::_GetTemp(int _index)
 {
-	static driver driver;
 	DWORD eax = 0, edx = 0;
-	driver.RdmsrTx(0x19C, &eax, &edx, _index);
+	pdriver->RdmsrTx(0x19C, &eax, &edx, _index);
 	m_pCoreTempData.uiTemp[_index] = m_pCoreTempData.uiTjMax - ((eax & 0x7f0000) >> 16);
 }
 

@@ -1,6 +1,8 @@
 #pragma once
 #include "SharedMem.h"
 #include "driver.h"
+#include "../../Library/Export.h"
+
 #define UNKNOWN_EXCEPTION 0x20000000
 
 class CoreTempProxy
@@ -42,4 +44,6 @@ private:
 	CoreTempSharedDataEx m_pCoreTempData;
 	WCHAR m_ErrorMessage[100];
 
+	TCHAR gDriverPath[MAX_PATH];
+	driver* pdriver;
 };

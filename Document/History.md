@@ -10,6 +10,7 @@
 #### 2020年7月31日
 
 ![优化](https://img.shields.io/badge/-%E4%BC%98%E5%8C%96-green?style=plastic)：  重绘所有图标。
+
 ![优化](https://img.shields.io/badge/-%E4%BC%98%E5%8C%96-green?style=plastic)：  改进部分图标标签名称。
 
 ![修复](https://img.shields.io/badge/-%E4%BF%AE%E5%A4%8D-yello?style=plastic)：  修复了变更编码方式后部分字符无法显示的错误。

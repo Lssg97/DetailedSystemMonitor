@@ -1,0 +1,1 @@
+来自：https://github.com/jmdyz/CPUTemp.git

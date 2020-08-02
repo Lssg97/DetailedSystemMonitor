@@ -1,4 +1,4 @@
-详细系统监控 v 3.1
+详细系统监控 v 3.2
 ========
 
 [![LICENSE](https://img.shields.io/badge/license-CC%20BY--NC--SA%203.0-orange.svg?logo=creative-commons&logoColor=white)](LICENSE.md)
@@ -7,7 +7,7 @@
 
 ![详细系统监控 v3.0](https://raw.githubusercontent.com/Lssg97/DetailedSystemMonitor/master/Image/0.png)
 
-该皮肤最新的 **3.1** 版本没有功能更新，着重优化和修复Bug，并对各个图标填加了信息标签。详细内容请查看 [**更新笔记**](https://github.com/Lssg97/DetailedSystemMonitor/blob/master/Document/History.md)。
+该皮肤目前最新版本为 **3.2**。该版本将 GPU 各引擎使用情况直接展示在了图示中；增加了对 CUDA 引擎的监测；舍弃了 FontAwesome 图标字体，使用 Shape 重绘所有图标；且本版本开始可以检测皮肤更新。详细内容请查看 [**更新笔记**](https://github.com/Lssg97/DetailedSystemMonitor/blob/master/Document/History.md)。
 
 
 ### 运行要求
@@ -23,7 +23,7 @@
 
 ### 安装方法
 
-本皮肤的官方发行版会使用 Rainmeter 自带皮肤打包器进行打包，安装包扩展名为 `.rmskin`。已经拥有 Rainmeter 软件的用户可在此仓库直接 [**下载**](https://github.com/Lssg97/DetailedSystemMonitor/releases/download/v3.1/DetailedSystemMonitor_v_3.1.rmskin) 最新的版本安装包到您的计算机，直接双击文件安装。
+本皮肤的官方发行版会使用 Rainmeter 自带皮肤打包器进行打包，安装包扩展名为 `.rmskin`。已经拥有 Rainmeter 软件的用户可在此仓库直接 [**下载**](https://github.com/Lssg97/DetailedSystemMonitor/releases/download/v3.2/DetailedSystemMonitor_v_3.2.rmskin) 最新的版本安装包到您的计算机，直接双击文件安装。
 
 *  安装皮肤时，请注意选择适合您计算机显卡设备的插件：若您的计算机存在 **NVIDIA** 显卡，请在插件栏中只勾选 `NvidiaGPU.dll`（如下图所示）；**AMD** 显卡同理。若您的计算机只有 **Intel** 核心显卡，请取消勾选这两个插件，并考虑安装 [**CoreTemp**](https://www.alcpu.com/CoreTemp/) 应用。
 
@@ -39,14 +39,14 @@
 
 ### 遇到问题
 
-如果您在使用该皮肤中遇到任何功能性问题，请优先参考 [**问题解答**](https://github.com/Lssg97/DetailedSystemMonitor/blob/master/Document/Q&A.md) 文档。这里回答了一些可能最常见的问题。如果您的问题不在此列，可以在该皮肤所在的 [**中国雨滴论坛**](https://bbs.rainmeter.cn/thread-290033-1-1.html) 回帖或直接在本仓库发出 [**Issue**](https://github.com/Lssg97/DetailedSystemMonitor/issues/new) 进行提问。
+如果您在使用该皮肤中遇到任何功能性问题，请优先参考 [**问题解答**](https://github.com/Lssg97/DetailedSystemMonitor/blob/master/Document/Q&A.md) 文档。这里回答了一些可能最常见的问题。如果您的问题不在此列，可以在该皮肤所在的 [**中国雨滴美化社区**](https://bbs.rainmeter.cn/thread-290033-1-1.html) 回帖或直接在本仓库发出 [**Issue**](https://github.com/Lssg97/DetailedSystemMonitor/issues/new) 进行提问。
 
 
 ### 参与维护
 
 如果您对本皮肤项目感兴趣，有关于本皮肤的更好意见或想法且愿意将你的想法分享给其他人，那么欢迎您加入本皮肤的维护过程。您可以根据自身情况在以下方式中选择一种参与维护：
 
-* 如果您只是一名很普通的 Rainmeter 用户，不太了解 Rainmeter 皮肤的工作方式和文件构成，只是单纯的在使用上有更好的建议或者需求，那么可以在该皮肤所在的 [**中国雨滴论坛**](https://bbs.rainmeter.cn/thread-290033-1-1.html) 回帖或直接在本仓库发出 [**Issue**](https://github.com/Lssg97/DetailedSystemMonitor/issues/new) 提出。本人会视情况将您的建议或需求添加到下一次的版本更新中。
+* 如果您只是一名很普通的 Rainmeter 用户，不太了解 Rainmeter 皮肤的工作方式和文件构成，只是单纯的在使用上有更好的建议或者需求，那么可以在该皮肤所在的 [**中国雨滴美化社区**](https://bbs.rainmeter.cn/thread-290033-1-1.html) 回帖或直接在本仓库发出 [**Issue**](https://github.com/Lssg97/DetailedSystemMonitor/issues/new) 提出。本人会视情况将您的建议或需求添加到下一次的版本更新中。
 
 * 如果您已经了解该皮肤的工作方式和文件构成，已经修改了该皮肤的副本，但是不太了解 GitHub 的团队工作方式，可以通过下面的 [**联系作者**](https://github.com/Lssg97/DetailedSystemMonitor#%E8%81%94%E7%B3%BB%E4%BD%9C%E8%80%85) 将你的皮肤修改版本发给我并附加修改内容说明。
 
@@ -62,16 +62,16 @@
 
 ### 其他声明
 
-目前该皮肤及后续更新的官方发布渠道为：[GitHub仓库](https://github.com/Lssg97/DetailedSystemMonitor)；相关信息的官方发布渠道有：[中国雨滴论坛](https://bbs.rainmeter.cn/thread-290033-1-1.html) 和 [rainmeter百度贴吧](https://tieba.baidu.com/p/6690463464)。
+目前该皮肤及后续更新的官方发布渠道仅为本 [GitHub仓库](https://github.com/Lssg97/DetailedSystemMonitor)；相关消息的官方发布渠道包括：[中国雨滴美化社区](https://bbs.rainmeter.cn/thread-290033-1-1.html) 和 [rainmeter百度贴吧](https://tieba.baidu.com/p/6690463464)。
 
-该皮肤的早期版本源自互联网，创作时间、创作者及相关协议均已无从考证。本人2010年获得了该皮肤早期版本副本，自2015年开始致力于维护该皮肤，并在 [中国雨滴论坛](https://bbs.rainmeter.cn/) 发布过七次独立的版本更新（<https://bbs.rainmeter.cn/thread-141896-1-1.html>）。维护至今，该皮肤在知识内容上已经和早期版本没有任何关联，属于原创作品。不过为了致敬早期版本创作者，在名称与版本上将继续延续早期版本。
+该皮肤的初始版本源自互联网，作者、创作时间等信息均已无从考证。本人于2010年获得了该皮肤初始版本的副本，自2015年开始致力于维护该皮肤，并在 [中国雨滴美化社区](https://bbs.rainmeter.cn/) 发布过七次独立的版本更新（<https://bbs.rainmeter.cn/thread-141896-1-1.html>）。维护至今，该皮肤在构思上已经和早期版本没有任何关联，属于原创作品。不过为了致敬早期版本创作者，在名称与版本上将继续延续早期版本。
 
-该皮肤使用了两个其他创作者制作的第三方 Rainmeter 插件：AMDTemperature.dll（[z100s](https://tieba.baidu.com/p/2221203992)）和 NvidiaGPU.dll（[IZZZZZI](https://tieba.baidu.com/p/3242119308)）。感谢两位插件作者。
+该皮肤使用了两个其他作者制作的第三方 Rainmeter 插件：AMDTemperature.dll（[z100s](https://tieba.baidu.com/p/2221203992)）和 NvidiaGPU.dll（[IZZZZZI](https://tieba.baidu.com/p/3242119308)）；GPU Bar 的配色方案来自 [mzflh](https://tieba.baidu.com/home/main/?un=mzflh)。感谢支持和帮助。
 
 
 ### 联系作者
 
-QQ：[760265690](https://wpa.qq.com/msgrd?v=3&uin=760265690&site=%E9%9B%A8%E6%BB%B4%E7%A4%BE%E5%8C%BA&menu=yes&from=discuz)
+QQ：[760265690](https://wpa.qq.com/msgrd?v=3&uin=760265690)
 
 邮箱：lssg97@163.com
 

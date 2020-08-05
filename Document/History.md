@@ -1,6 +1,13 @@
 # 更新笔记
 
 
+#### 2020年8月5日
+
+![优化](https://img.shields.io/badge/-%E4%BC%98%E5%8C%96-green?style=plastic)：  使用系统环境变量捕获CPU逻辑核心数。
+
+![优化](https://img.shields.io/badge/-%E4%BC%98%E5%8C%96-green?style=plastic)：  监测磁盘驱动器类型，不再展示非本地磁盘（如网络磁盘）。
+
+
 #### 2020年8月2日 - Version 3.2
 > 基于Rainmeter 4.3 r3266
 

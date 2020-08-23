@@ -13,6 +13,7 @@
 
 BOOL IsNT();
 BOOL IsMsr();
+BOOL IsAMD();
 BOOL IsCpuid();
 BOOL IsWow64();
 BOOL IsX64();

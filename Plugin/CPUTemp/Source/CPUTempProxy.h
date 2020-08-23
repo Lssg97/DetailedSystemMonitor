@@ -1,6 +1,6 @@
 #pragma once
-#include "SharedMem.h"
 #include "driver.h"
+#include "running_environment.h"
 #include "../../Library/Export.h"
 
 #define UNKNOWN_EXCEPTION 0x20000000
@@ -30,9 +30,7 @@ public:
 	float GetPower(int Index) const;
 	float GetMultiplier(int Index) const;
 
-	const CoreTempSharedDataEx &GetDataStruct() const;
 
-	bool GetData();
 	DWORD GetDllError() const { return GetLastError(); }
 	LPCWSTR GetErrorMessage();
 
@@ -40,10 +38,32 @@ public:
 	void _GetTjMax();
 	void _GetTemp(int _index);
 private:
-	CSharedMemClient m_SharedMem;
-	CoreTempSharedDataEx m_pCoreTempData;
-	WCHAR m_ErrorMessage[100];
+	struct core_temp_data
+	{
+		// Original structure (CoreTempSharedData)
+		unsigned int	uiLoad[256];
+		unsigned int	uiTjMax;
+		unsigned int	uiCoreCnt;
+		unsigned int	uiCPUCnt;
+		unsigned int	uiTemp[256];
+		float			fVID;
+		float			fCPUSpeed;
+		float			fFSBSpeed;
+		float			fMultiplier;
+		char			sCPUName[100];
+		unsigned char	ucFahrenheit;
+		unsigned char	ucDeltaToTjMax;
+		// uiStructVersion = 2
+		unsigned char	ucTdpSupported;
+		unsigned char	ucPowerSupported;
+		unsigned int	uiStructVersion;
+		unsigned int	uiTdp[128];
+		float			fPower[128];
+		float			fMultipliers[256];
+	} m_pCoreTempData;
 
+	WCHAR m_ErrorMessage[100];
+	INT gIsAMD = FALSE;
 	TCHAR gDriverPath[MAX_PATH];
 	driver* pdriver;
 };

@@ -77,62 +77,58 @@ PLUGIN_EXPORT double Update(void* data)
 
 	//RmLogF(measure->rm, LOG_DEBUG, L"Update");
 
-	//if (proxy.GetData())
+
+	switch (measure->type)
 	{
-		//RmLogF(measure->rm, LOG_DEBUG, L"GetData");
+	case MeasureTemperature:
+		proxy._GetTemp(measure->index);
+		result = proxy.GetTemp(measure->index);
+		break;
 
-		switch (measure->type)
-		{
-		case MeasureTemperature:
-			proxy._GetTemp(measure->index);
-			result = proxy.GetTemp(measure->index);
-			break;
+	case MeasureMaxTemperature:
+		result = getHighestTemp(measure->rm);
+		//RmLogF(measure->rm, LOG_DEBUG, L"MeasureMaxTemperature:%i", result);
+		break;
 
-		case MeasureMaxTemperature:
-			result = getHighestTemp(measure->rm);
-			//RmLogF(measure->rm, LOG_DEBUG, L"MeasureMaxTemperature:%i", result);
-			break;
+	case MeasureTjMax:
+		result = proxy.GetTjMax();
+		break;
 
-		case MeasureTjMax:
-			result = proxy.GetTjMax();
-			break;
+	case MeasureLoad:
+		result = proxy.GetCoreLoad(measure->index);
+		break;
 
-		case MeasureLoad:
-			result = proxy.GetCoreLoad(measure->index);
-			break;
+	case MeasureVid:
+		result = proxy.GetVID();
+		break;
 
-		case MeasureVid:
-			result = proxy.GetVID();
-			break;
+	case MeasureCpuSpeed:
+		result = proxy.GetCPUSpeed();
+		break;
 
-		case MeasureCpuSpeed:
-			result = proxy.GetCPUSpeed();
-			break;
+	case MeasureBusSpeed:
+		result = proxy.GetFSBSpeed();
+		break;
 
-		case MeasureBusSpeed:
-			result = proxy.GetFSBSpeed();
-			break;
+	case MeasureBusMultiplier:
+		result = proxy.GetMultiplier();
+		break;
 
-		case MeasureBusMultiplier:
-			result = proxy.GetMultiplier();
-			break;
+	case MeasureCoreSpeed:
+		result = (double)proxy.GetMultiplier(measure->index) * proxy.GetFSBSpeed();
+		break;
 
-		case MeasureCoreSpeed:
-			result = (double)proxy.GetMultiplier(measure->index) * proxy.GetFSBSpeed();
-			break;
+	case MeasureCoreBusMultiplier:
+		result = proxy.GetMultiplier(measure->index);
+		break;
 
-		case MeasureCoreBusMultiplier:
-			result = proxy.GetMultiplier(measure->index);
-			break;
+	case MeasureTdp:
+		result = proxy.GetTdp(measure->index);
+		break;
 
-		case MeasureTdp:
-			result = proxy.GetTdp(measure->index);
-			break;
-
-		case MeasurePower:
-			result = proxy.GetPower(measure->index);
-			break;
-		}
+	case MeasurePower:
+		result = proxy.GetPower(measure->index);
+		break;
 	}
 
 	return result;

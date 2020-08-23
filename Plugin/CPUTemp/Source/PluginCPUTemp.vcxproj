@@ -21,7 +21,6 @@
     <ClInclude Include="CPUTempProxy.h" />
     <ClInclude Include="driver.h" />
     <ClInclude Include="running_environment.h" />
-    <ClInclude Include="SharedMem.h" />
     <ClInclude Include="sys.h" />
     <ClInclude Include="sys_func.h" />
   </ItemGroup>
@@ -30,7 +29,6 @@
     <ClCompile Include="driver.cpp" />
     <ClCompile Include="PluginCPUTemp.cpp" />
     <ClCompile Include="running_environment.cpp" />
-    <ClCompile Include="SharedMem.cpp" />
     <ClCompile Include="sys.cpp" />
     <ClCompile Include="sys_func.cpp" />
   </ItemGroup>

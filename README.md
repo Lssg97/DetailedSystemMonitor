@@ -62,7 +62,7 @@
 
 ### 其他声明
 
-目前该皮肤及后续更新的官方发布渠道仅为本 [GitHub仓库](https://github.com/Lssg97/DetailedSystemMonitor)；相关消息的官方发布渠道包括：[中国雨滴美化社区](https://bbs.rainmeter.cn/thread-290033-1-1.html) 和 [rainmeter百度贴吧](https://tieba.baidu.com/p/6690463464)。
+目前该皮肤及后续更新的官方发布渠道仅为本 [GitHub仓库](https://github.com/Lssg97/DetailedSystemMonitor)；相关消息的官方发布渠道包括：[中国雨滴美化社区](https://bbs.rainmeter.cn/thread-290033-1-1.html) 和 [rainmeter百度贴吧](https://tieba.baidu.com/p/6868066630)。
 
 该皮肤的初始版本源自互联网，作者、创作时间等信息均已无从考证。本人于2010年获得了该皮肤初始版本的副本，自2015年开始致力于维护该皮肤，并在 [中国雨滴美化社区](https://bbs.rainmeter.cn/) 发布过七次独立的版本更新（<https://bbs.rainmeter.cn/thread-141896-1-1.html>）。维护至今，该皮肤在构思上已经和早期版本没有任何关联，属于原创作品。不过为了致敬早期版本创作者，在名称与版本上将继续延续早期版本。
 

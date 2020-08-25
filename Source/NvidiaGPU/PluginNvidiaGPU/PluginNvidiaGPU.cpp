@@ -1,5 +1,5 @@
 #include <Windows.h>
-#include "../../API/RainmeterAPI.h"
+#include "../API/RainmeterAPI.h"
 #include "../nvapi-337/nvapi.h"
 #ifdef _WIN64
 #pragma comment(lib,"../nvapi-337/amd64/nvapi64.lib")

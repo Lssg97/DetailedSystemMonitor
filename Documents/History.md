@@ -1,6 +1,17 @@
 # 更新笔记
 
 
+#### 2020年9月4日
+
+![新增](https://img.shields.io/badge/-%E6%96%B0%E5%A2%9E-blue?style=plastic)：  增加了对“CPU温度”的监测（测试，仅适用于Intel平台）。
+
+![优化](https://img.shields.io/badge/-%E4%BC%98%E5%8C%96-green?style=plastic)：  “CPU图标”、“GPU图标”可以展示出相关平台类型。
+
+![优化](https://img.shields.io/badge/-%E4%BC%98%E5%8C%96-green?style=plastic)：  限制了“用户名”的长度。
+
+![优化](https://img.shields.io/badge/-%E4%BC%98%E5%8C%96-green?style=plastic)：  变更了“广域网IP”监测网站。
+
+
 #### 2020年8月5日
 
 ![优化](https://img.shields.io/badge/-%E4%BC%98%E5%8C%96-green?style=plastic)：  使用系统环境变量捕获CPU逻辑核心数。

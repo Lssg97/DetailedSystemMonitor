@@ -1,9 +1,23 @@
 # 更新笔记
 
 
+#### 2020年9月23日
+
+![修复](https://img.shields.io/badge/-%E4%BF%AE%E5%A4%8D-yello?style=plastic)：  修复了“网卡设备信息”重复显示的错误。
+
+![删除](https://img.shields.io/badge/-%E5%88%A0%E9%99%A4-red?style=plastic)：  删除变量“TempType”。
+
+
+#### 2020年9月22日
+
+![优化](https://img.shields.io/badge/-%E4%BC%98%E5%8C%96-green?style=plastic)：  针对Intel平台计算机，舍弃使用“CoreTemp”插件，转而使用“CPUTemp”插件。
+
+![删除](https://img.shields.io/badge/-%E5%88%A0%E9%99%A4-red?style=plastic)：  针对Intel平台计算机，删除对“句柄数”的监测。
+
+
 #### 2020年9月4日
 
-![新增](https://img.shields.io/badge/-%E6%96%B0%E5%A2%9E-blue?style=plastic)：  增加了对“CPU温度”的监测（测试，仅适用于Intel平台）。
+![新增](https://img.shields.io/badge/-%E6%96%B0%E5%A2%9E-blue?style=plastic)：  增加了对“CPU温度”的监测（测试，仅适用于Intel平台计算机）。插件来自<https://tieba.baidu.com/p/6855002141>。感谢插件的作者DeadUniverse。
 
 ![优化](https://img.shields.io/badge/-%E4%BC%98%E5%8C%96-green?style=plastic)：  “CPU图标”、“GPU图标”可以展示出相关平台类型。
 
@@ -335,7 +349,7 @@
 
 ![优化](https://img.shields.io/badge/-%E4%BC%98%E5%8C%96-green?style=plastic)：  补充皮肤配置文件注释。
 
-![修复](https://img.shields.io/badge/-%E4%BF%AE%E5%A4%8D-yello?style=plastic)：  修复不能显示GPU温度的问题。对N卡和A卡重选显卡温度监控插件，A卡插件来自<http://tieba.baidu.com/p/2221203992>，N卡插件来自<http://tieba.baidu.com/p/3242119308>。感谢两个插件的作者。
+![修复](https://img.shields.io/badge/-%E4%BF%AE%E5%A4%8D-yello?style=plastic)：  修复不能显示GPU温度的问题。对N卡和A卡重选显卡温度监控插件，A卡插件来自<https://tieba.baidu.com/p/2221203992>，N卡插件来自<https://tieba.baidu.com/p/3242119308>。感谢两个插件的作者z100s和IZZZZZI。
 
 ![修复](https://img.shields.io/badge/-%E4%BF%AE%E5%A4%8D-yello?style=plastic)：  修复带有无线网卡的双网卡机型单独使用无线局域网络时，“本地IP”显示本地回环“127.0.0.1”的问题。
 

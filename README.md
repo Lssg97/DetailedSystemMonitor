@@ -1,4 +1,4 @@
-详细系统监控 v 3.2
+详细系统监控 v 3.3
 ========
 
 [![LICENSE](https://img.shields.io/badge/license-CC%20BY--NC--SA%203.0-orange.svg?logo=creative-commons&logoColor=white)](LICENSE.md)
@@ -7,7 +7,7 @@
 
 ![详细系统监控 v3.0](https://raw.githubusercontent.com/Lssg97/DetailedSystemMonitor/master/Images/0.png)
 
-该皮肤目前最新版本为 **3.2**。该版本将 GPU 各引擎使用情况直接展示在了图示中；增加了对 CUDA 引擎的监测；舍弃了 FontAwesome 图标字体，使用 Shape 重绘所有图标；且本版本开始可以检测皮肤更新。详细内容请查看 [**更新笔记**](https://github.com/Lssg97/DetailedSystemMonitor/blob/master/Documents/History.md)。
+该皮肤目前最新版本为 **3.3**。该版本新增了对 Intel CPU 温度的监测，优化了部分内容监测方式和UI界面，网速监测的默认方式由“带宽”变更为“速度”。详细内容请查看 [**更新笔记**](https://github.com/Lssg97/DetailedSystemMonitor/blob/master/Documents/History.md)。
 
 
 ### 运行要求
@@ -18,14 +18,14 @@
 
 *  **软件要求：** [**Rainmeter 4.3 r3266**](https://www.rainmeter.net/) 或更高版本；
 
-*  **其它要求：** 若有在皮肤中获取 **CPU温度** 的需求，还需要后台运行 [**CoreTemp**](https://www.alcpu.com/CoreTemp/) 应用。
+*  **其它要求：** **Intel平台计算机** 用户若想在皮肤中正确获取 **CPU温度**，Rainmeter 必须 **以管理员身份运行**。仅有AMD核心显卡的计算机若无法正常显示 GPU 温度，还需要后台运行 [**CoreTemp**](https://www.alcpu.com/CoreTemp/) 应用。
 
 
 ### 安装方法
 
 本皮肤的官方发行版会使用 Rainmeter 自带皮肤打包器进行打包，安装包扩展名为 `.rmskin`。已经拥有 Rainmeter 软件的用户可在此仓库直接 [**下载**](https://github.com/Lssg97/DetailedSystemMonitor/releases/download/v3.2/DetailedSystemMonitor_v_3.2.rmskin) 最新的版本安装包到您的计算机，直接双击文件安装。
 
-*  安装皮肤时，请注意选择适合您计算机显卡设备的插件：若您的计算机存在 **NVIDIA** 显卡，请在插件栏中只勾选 `NvidiaGPU.dll`（如下图所示）；**AMD** 显卡同理。若您的计算机只有 **Intel** 核心显卡，请取消勾选这两个插件，并考虑安装 [**CoreTemp**](https://www.alcpu.com/CoreTemp/) 应用。
+*  安装皮肤时，请注意选择适合您计算机显卡设备的插件：若您的计算机存在 **NVIDIA** 显卡，请在插件栏中只勾选 `NvidiaGPU.dll`（如下图所示）；**AMD** 显卡同理。若您的计算机并非 **Intel** 平台，请取消勾选 `CPUTemp.dll`。
 
 <p align="center"><img src="https://raw.githubusercontent.com/Lssg97/DetailedSystemMonitor/master/Images/3.png"></p>
 
@@ -66,7 +66,7 @@
 
 该皮肤的初始版本源自互联网，作者、创作时间等信息均已无从考证。本人于2010年获得了该皮肤初始版本的副本，自2015年开始致力于维护该皮肤，并在 [中国雨滴美化社区](https://bbs.rainmeter.cn/) 发布过七次独立的版本更新（<https://bbs.rainmeter.cn/thread-141896-1-1.html>）。维护至今，该皮肤在构思上已经和早期版本没有任何关联，属于原创作品。不过为了致敬早期版本创作者，在名称与版本上将继续延续早期版本。
 
-该皮肤使用了两个其他作者制作的第三方 Rainmeter 插件：AMDTemperature.dll（[z100s](https://tieba.baidu.com/p/2221203992)）和 NvidiaGPU.dll（[IZZZZZI](https://tieba.baidu.com/p/3242119308)）；GPU Bar 的配色方案来自 [mzflh](https://tieba.baidu.com/home/main/?un=mzflh)。感谢支持和帮助。
+该皮肤使用了三个个其他作者制作的第三方 Rainmeter 插件：AMDTemperature.dll（[z100s](https://tieba.baidu.com/p/2221203992)）、NvidiaGPU.dll（[IZZZZZI](https://tieba.baidu.com/p/3242119308)）和 CPUTemp.dll（[DeadUniverse](https://tieba.baidu.com/p/6855002141)）；GPU Bar 的配色方案来自 [mzflh](https://tieba.baidu.com/home/main/?un=mzflh)。感谢支持和帮助。
 
 
 ### 联系作者

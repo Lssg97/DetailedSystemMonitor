@@ -1,4 +1,5 @@
 #pragma once
+
 #include <windows.h>
 #include <intrin.h>
 #include <tchar.h>

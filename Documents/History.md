@@ -1,6 +1,11 @@
 # 更新笔记
 
 
+#### 2020年10月5日
+
+![修复](https://img.shields.io/badge/-%E4%BF%AE%E5%A4%8D-yello?style=plastic)：  修复了“显卡详细使用情况”中已关闭进程的残留问题。
+
+
 #### 2020年9月23日
 
 ![修复](https://img.shields.io/badge/-%E4%BF%AE%E5%A4%8D-yello?style=plastic)：  修复了“网卡设备信息”重复显示的错误。

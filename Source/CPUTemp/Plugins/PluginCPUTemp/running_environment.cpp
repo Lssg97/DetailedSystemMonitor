@@ -1,4 +1,6 @@
+#pragma warning(disable:4996)
 #include "running_environment.h"
+
 
 BOOL IsNT()
 {

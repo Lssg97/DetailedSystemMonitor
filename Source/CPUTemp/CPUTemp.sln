@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.29201.188
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PluginCPUTemp", "Plugins\PluginCPUTemp\PluginCPUTemp.vcxproj", "{F32FA418-8DF4-4E94-B92B-EBD502F5DC07}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Driver", "Driver\driver.vcxproj", "{FB64DFCD-5B93-4679-9BF9-340BC48164DA}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "driver", "driver\driver.vcxproj", "{FB64DFCD-5B93-4679-9BF9-340BC48164DA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

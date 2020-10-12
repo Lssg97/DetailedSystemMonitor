@@ -7,7 +7,7 @@
 
 ![详细系统监控 v3.0](https://raw.githubusercontent.com/Lssg97/DetailedSystemMonitor/master/Images/0.png)
 
-该皮肤目前最新版本为 **3.3**。该版本新增了对 Intel CPU 温度的监测，优化了部分内容监测方式和UI界面，网速监测的默认方式由“带宽”变更为“速度”。详细内容请查看 [**更新笔记**](https://github.com/Lssg97/DetailedSystemMonitor/blob/master/Documents/History.md)。
+该皮肤目前最新版本为 **3.3**。该版本新增了对 Intel CPU 温度的监测；优化了部分内容监测方式和UI界面，网速监测的默认方式由“带宽”变更为“速度”；修复一些已知问题。详细内容请查看 [**更新笔记**](https://github.com/Lssg97/DetailedSystemMonitor/blob/master/Documents/History.md)。
 
 
 ### 运行要求
@@ -18,7 +18,7 @@
 
 *  **软件要求：** [**Rainmeter 4.3 r3266**](https://www.rainmeter.net/) 或更高版本；
 
-*  **其它要求：** **Intel平台计算机** 用户若想在皮肤中正确获取 **CPU温度**，Rainmeter 必须 **以管理员身份运行**。仅有AMD核心显卡的计算机若无法正常显示 GPU 温度，还需要后台运行 [**CoreTemp**](https://www.alcpu.com/CoreTemp/) 应用。
+*  **其它要求：** 对于 **Intel平台计算机** 用户若想在皮肤中正确获取 **CPU温度**，Rainmeter 必须 **以管理员身份运行**。仅有AMD核心显卡的计算机若无法正常显示 GPU 温度，还需要后台运行 [**CoreTemp**](https://www.alcpu.com/CoreTemp/) 应用。
 
 
 ### 安装方法
@@ -39,7 +39,7 @@
 
 ### 遇到问题
 
-如果您在使用该皮肤中遇到任何功能性问题，请优先参考 [**问题解答**](https://github.com/Lssg97/DetailedSystemMonitor/blob/master/Documents/Q&A.md) 文档。这里回答了一些可能最常见的问题。如果您的问题不在此列，可以在该皮肤所在的 [**中国雨滴美化社区**](https://bbs.rainmeter.cn/thread-290033-1-1.html) 回帖或直接在本仓库发出 [**Issue**](https://github.com/Lssg97/DetailedSystemMonitor/issues/new) 进行提问。
+如果您在使用该皮肤中遇到任何功能性问题，请优先参考 [**问题解答**](https://github.com/Lssg97/DetailedSystemMonitor/blob/master/Documents/Q&A.md) 文档。这里回答了一些可能最常见的问题。如果您的问题不在此列，可以在该皮肤所在的 [**中国雨滴美化社区**](https://bbs.rainmeter.cn/thread-290033-1-1.html) 或 [rainmeter百度贴吧](https://tieba.baidu.com/p/6868066630)回帖反馈，亦或直接在本仓库发出 [**Issue**](https://github.com/Lssg97/DetailedSystemMonitor/issues/new) 进行提问。
 
 
 ### 参与维护
@@ -48,10 +48,11 @@
 
 * 如果您只是一名很普通的 Rainmeter 用户，不太了解 Rainmeter 皮肤的工作方式和文件构成，只是单纯的在使用上有更好的建议或者需求，那么可以在该皮肤所在的 [**中国雨滴美化社区**](https://bbs.rainmeter.cn/thread-290033-1-1.html) 回帖或直接在本仓库发出 [**Issue**](https://github.com/Lssg97/DetailedSystemMonitor/issues/new) 提出。本人会视情况将您的建议或需求添加到下一次的版本更新中。
 
-* 如果您已经了解该皮肤的工作方式和文件构成，已经修改了该皮肤的副本，但是不太了解 GitHub 的团队工作方式，可以通过下面的 [**联系作者**](https://github.com/Lssg97/DetailedSystemMonitor#%E8%81%94%E7%B3%BB%E4%BD%9C%E8%80%85) 将你的皮肤修改版本发给我并附加修改内容说明。
+* 如果您已经了解该皮肤的工作方式和文件构成，已经修改了该皮肤的副本，但是不太了解 GitHub 的团队工作方式，可以通过下面的 [**联系作者**](https://github.com/Lssg97/DetailedSystemMonitor#%E8%81%94%E7%B3%BB%E4%BD%9C%E8%80%85) 发送你的皮肤修改版本并附加修改内容说明。
 
 * 如果您已经了解该皮肤的工作方式和文件构成，同时还熟悉 Git 和 GitHub 的团队工作方式，可以选择直接 **Fork** 本项目仓库，建立您自己的项目仓库并进行修改。通过 [**Pull requests**](https://github.com/Lssg97/DetailedSystemMonitor/compare) 来参与到该皮肤的维护当中。
 
+* 如果您并无问题需要反馈或者有功能上的建议，但愿意支持我们，也可以考虑点击仓库页面左上角的 **❤Sponsor** 适当捐助，十分感谢您的慷慨。
 
 ### 相关协议
 

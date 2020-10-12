@@ -7,7 +7,7 @@
 
 #include <windows.h>
 #include <wchar.h>
-#include "CPUTempProxy.h"
+#include "CPUTempFunc.h"
 #include "../../Library/Export.h"	// Rainmeter's exported functions
 
 enum eMeasureType
@@ -40,13 +40,8 @@ struct MeasureData
 		rm(nullptr) {}
 };
 
-
-
 eMeasureType convertStringToMeasureType(LPCWSTR i_String, void* rm);
 bool areStringsEqual(LPCWSTR i_String1, LPCWSTR i_Strting2);
-int getHighestTemp(void* rm);
-
-CoreTempProxy proxy;
 
 PLUGIN_EXPORT void Initialize(void** data, void* rm)
 {
@@ -61,12 +56,9 @@ PLUGIN_EXPORT void Reload(void* data, void* rm, double* maxValue)
 	UNREFERENCED_PARAMETER(maxValue);
 	MeasureData* measure = (MeasureData*)data;
 
-	LPCWSTR value = RmReadString(rm, L"CoreTempType", L"Temperature");
+	LPCWSTR value = RmReadString(rm, L"CPUTempType", L"Temperature");
 	measure->type = convertStringToMeasureType(value, rm);
-
-	measure->index = RmReadInt(rm, L"CoreTempIndex", 1);
-
-	//RmLogF(rm, LOG_DEBUG, L"Reload:%i", measure->type);
+	measure->index = RmReadInt(rm, L"CPUTempIndex", 1);
 }
 
 PLUGIN_EXPORT double Update(void* data)
@@ -75,59 +67,45 @@ PLUGIN_EXPORT double Update(void* data)
 	MeasureData* measure = (MeasureData*)data;
 	double result = 0;
 
-	//RmLogF(measure->rm, LOG_DEBUG, L"Update");
-
-
 	switch (measure->type)
 	{
 	case MeasureTemperature:
-		proxy._GetTemp(measure->index);
-		result = proxy.GetTemp(measure->index);
+		result = GetTemp(measure->index);
 		break;
 
 	case MeasureMaxTemperature:
-		result = getHighestTemp(measure->rm);
-		//RmLogF(measure->rm, LOG_DEBUG, L"MeasureMaxTemperature:%i", result);
+		result = GetHighestTemp();
 		break;
 
 	case MeasureTjMax:
-		result = proxy.GetTjMax();
+		result = GetTjMax();
 		break;
 
 	case MeasureLoad:
-		result = proxy.GetCoreLoad(measure->index);
 		break;
 
 	case MeasureVid:
-		result = proxy.GetVID();
 		break;
 
 	case MeasureCpuSpeed:
-		result = proxy.GetCPUSpeed();
 		break;
 
 	case MeasureBusSpeed:
-		result = proxy.GetFSBSpeed();
 		break;
 
 	case MeasureBusMultiplier:
-		result = proxy.GetMultiplier();
 		break;
 
 	case MeasureCoreSpeed:
-		result = (double)proxy.GetMultiplier(measure->index) * proxy.GetFSBSpeed();
 		break;
 
 	case MeasureCoreBusMultiplier:
-		result = proxy.GetMultiplier(measure->index);
 		break;
 
 	case MeasureTdp:
-		result = proxy.GetTdp(measure->index);
 		break;
 
 	case MeasurePower:
-		result = proxy.GetPower(measure->index);
 		break;
 	}
 
@@ -142,11 +120,11 @@ PLUGIN_EXPORT LPCWSTR GetString(void* data)
 	switch (measure->type)
 	{
 	case MeasureVid:
-		_snwprintf_s(buffer, _TRUNCATE, L"%.4f", proxy.GetVID());
+		_snwprintf_s(buffer, _TRUNCATE, L"%.4f", 0.0);
 		break;
 
 	case MeasureCpuName:
-		_snwprintf_s(buffer, _TRUNCATE, L"%S", proxy.GetCPUName());
+		_snwprintf_s(buffer, _TRUNCATE, L"%S", "0");
 		break;
 
 	default:
@@ -226,33 +204,8 @@ eMeasureType convertStringToMeasureType(LPCWSTR i_String, void* rm)
 	else
 	{
 		result = MeasureTemperature;
-		RmLogF(rm, LOG_WARNING, L"Invalid CoreTempType: %s", i_String);
+		RmLogF(rm, LOG_WARNING, L"无效的CPUTempType: %s", i_String);
 	}
 
 	return result;
-}
-
-
-
-int getHighestTemp(void* rm)
-{
-	//RmLogF(rm, LOG_DEBUG, L"getHighestTemp");
-
-	int temp = -255;
-	UINT coreCount = proxy.GetCoreCount();
-
-	//RmLogF(rm, LOG_DEBUG, L"核心数：%i", coreCount);
-
-	for (UINT i = 1; i <= coreCount; ++i)
-	{
-		//RmLogF(rm, LOG_DEBUG, L"核心#%i", i);
-		proxy._GetTemp(i);
-		const int getTemp = proxy.GetTemp(i);
-		if (temp < getTemp)
-		{
-			temp = getTemp;
-		}
-	}
-
-	return temp;
 }

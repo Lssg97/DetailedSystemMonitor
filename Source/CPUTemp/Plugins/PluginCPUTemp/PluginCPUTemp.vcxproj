@@ -18,15 +18,19 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <ItemGroup>
-    <ClInclude Include="CPUTempProxy.h" />
-    <ClInclude Include="driver.h" />
+    <ClInclude Include="CPUTempFunc.h" />
+    <ClInclude Include="Driver.h" />
+    <ClInclude Include="DriverFunc.h" />
+    <ClInclude Include="GetTemp.h" />
     <ClInclude Include="running_environment.h" />
     <ClInclude Include="sys.h" />
     <ClInclude Include="sys_func.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="CPUTempProxy.cpp" />
-    <ClCompile Include="driver.cpp" />
+    <ClCompile Include="CPUTempFunc.cpp" />
+    <ClCompile Include="Driver.cpp" />
+    <ClCompile Include="DriverFunc.cpp" />
+    <ClCompile Include="GetTemp.cpp" />
     <ClCompile Include="PluginCPUTemp.cpp" />
     <ClCompile Include="running_environment.cpp" />
     <ClCompile Include="sys.cpp" />

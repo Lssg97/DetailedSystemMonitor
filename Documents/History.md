@@ -1,6 +1,13 @@
 # 更新笔记
 
 
+#### 2020年11月28日
+
+![优化](https://img.shields.io/badge/-%E4%BC%98%E5%8C%96-green?style=plastic)：  使用“DeviceInfo”插件获取显卡相关信息，放弃使用遍历注册表的方案，显卡识别成功率会有大幅提高。插件目前未公开。感谢插件的作者a1091817957。
+
+![优化](https://img.shields.io/badge/-%E4%BC%98%E5%8C%96-green?style=plastic)：  皮肤更新检测地址从Github迁移到Gitee，提高国内用户检测成功率。
+
+
 #### 2020年10月5日
 
 ![修复](https://img.shields.io/badge/-%E4%BF%AE%E5%A4%8D-yello?style=plastic)：  修复了“显卡详细使用情况”中已关闭进程的残留问题。
@@ -362,4 +369,3 @@
 > 基于Rainmeter 3.3.3 r2744
 
 完全不记得改动了什么……
-

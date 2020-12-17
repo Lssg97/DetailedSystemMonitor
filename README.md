@@ -5,9 +5,9 @@
 
 **详细系统监控**（DetailedSystemMonitor，以下均简称为“该皮肤”）是一款全面、直观、高信息密度的，用于监视所在计算机的网络、CPU、GPU、内存、硬盘等相关信息的 [Rainmeter](https://www.rainmeter.net/) 皮肤，旨在将这些系统信息清晰明了地展示在你的桌面上。能兼容市面上绝大多数使用Windows系统的计算机或工作站，并自动适配系统版本及硬件以只展示可以获取的信息。
 
-![详细系统监控 v3.0](https://gitee.com/Lssg97/DetailedSystemMonitor/raw/master/Images/0.png)
+![详细系统监控 v3.0](https://gitee.com/Lssg97/DetailedSystemMonitor/raw/main/Images/0.png)
 
-该皮肤目前最新版本为 **3.3**。该版本新增了对 Intel CPU 温度的监测；使用“DeviceInfo”插件提高显卡识别成功率；优化了部分内容监测方式和UI界面，网速监测的默认方式由“带宽”变更为“速度”；优化修复一些已知问题。详细内容请查看 [**更新笔记**](https://github.com/Lssg97/DetailedSystemMonitor/blob/master/Documents/History.md)。
+该皮肤目前最新版本为 **3.3**。该版本新增了对 Intel CPU 温度的监测；使用“DeviceInfo”插件提高显卡识别成功率；优化了部分内容监测方式和UI界面，网速监测的默认方式由“带宽”变更为“速度”；优化修复一些已知问题。详细内容请查看 [**更新笔记**](https://github.com/Lssg97/DetailedSystemMonitor/blob/main/Documents/History.md)。
 
 
 ### 运行要求
@@ -27,19 +27,19 @@
 
 *  安装皮肤时，请注意选择适合您计算机显卡设备的插件：若您的计算机存在 **NVIDIA** 显卡，请在插件栏中只勾选 `NvidiaGPU.dll`（如下图所示）；**AMD** 显卡同理。若您的计算机并非 **Intel** 平台，请取消勾选 `CPUTemp.dll`。
 
-<p align="center"><img src="https://gitee.com/Lssg97/DetailedSystemMonitor/raw/master/Images/3.png"></p>
+<p align="center"><img src="https://gitee.com/Lssg97/DetailedSystemMonitor/raw/main/Images/3.png"></p>
 
 *  使用上述方法在默认情况下，新版本将自动覆盖旧版本的皮肤。若您想保留旧版本皮肤，请手动修改旧版本皮肤的文件名或皮肤文件所在目录名称，亦或者使用第三方压缩软件来解压新版本皮肤安装包，手动提取新版本皮肤文件（不推荐）。
 
 
 ### 更新历史
 
-您可以在 [**更新笔记**](https://github.com/Lssg97/DetailedSystemMonitor/blob/master/Documents/History.md) 中查看历史更新记录。如果您想实时了解我最近的更新内容，可以查看本仓库的 [**develop**](https://github.com/Lssg97/DetailedSystemMonitor/tree/develop) 分支。
+您可以在 [**更新笔记**](https://github.com/Lssg97/DetailedSystemMonitor/blob/main/Documents/History.md) 中查看历史更新记录。如果您想实时了解我最近的更新内容，可以查看本仓库的 [**develop**](https://github.com/Lssg97/DetailedSystemMonitor/tree/develop) 分支。
 
 
 ### 遇到问题
 
-如果您在使用该皮肤中遇到任何功能性问题，请优先参考 [**问题解答**](https://github.com/Lssg97/DetailedSystemMonitor/blob/master/Documents/Q&A.md) 文档。这里回答了一些可能最常见的问题。如果您的问题不在此列，可以在该皮肤所在的 [**中国雨滴美化社区**](https://bbs.rainmeter.cn/thread-290033-1-1.html) 或 [rainmeter百度贴吧](https://tieba.baidu.com/p/6868066630)回帖反馈，亦或直接在本仓库发出 [**Issue**](https://github.com/Lssg97/DetailedSystemMonitor/issues/new) 进行提问。
+如果您在使用该皮肤中遇到任何功能性问题，请优先参考 [**问题解答**](https://github.com/Lssg97/DetailedSystemMonitor/blob/main/Documents/Q&A.md) 文档。这里回答了一些可能最常见的问题。如果您的问题不在此列，可以在该皮肤所在的 [**中国雨滴美化社区**](https://bbs.rainmeter.cn/thread-290033-1-1.html) 或 [rainmeter百度贴吧](https://tieba.baidu.com/p/6868066630)回帖反馈，亦或直接在本仓库发出 [**Issue**](https://github.com/Lssg97/DetailedSystemMonitor/issues/new) 进行提问。
 
 
 ### 参与维护
@@ -56,7 +56,7 @@
 
 ### 相关协议
 
-该皮肤的 **本体文件**（.ini）、**安装包**（.rmskin）以及该皮肤项目所在本 [**GitHub仓库**](https://github.com/Lssg97/DetailedSystemMonitor) 的所有文本内容除另有声明外，均在 [**知识共享 (Creative Commons) 署名-非商业性使用-相同方式共享 3.0**](https://github.com/Lssg97/DetailedSystemMonitor/blob/master/LICENSE.md) 协议下提供，附加条款亦可能应用。
+该皮肤的 **本体文件**（.ini）、**安装包**（.rmskin）以及该皮肤项目所在本 [**GitHub仓库**](https://github.com/Lssg97/DetailedSystemMonitor) 的所有文本内容除另有声明外，均在 [**知识共享 (Creative Commons) 署名-非商业性使用-相同方式共享 3.0**](https://github.com/Lssg97/DetailedSystemMonitor/blob/main/LICENSE.md) 协议下提供，附加条款亦可能应用。
 
 本仓库内容归 **全体编辑者** 共同所有，在本仓库里发布内容即表示您允许将您编辑的内容 **无偿且自由** 地分享给其他编辑者。
 

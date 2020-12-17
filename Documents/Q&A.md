@@ -5,12 +5,12 @@
 
 * 皮肤默认尺寸为200x755像素，而不同计算机显示器的像素密度不同，在小尺寸但高分辨率屏幕上显示，看起来会很小。解决方法是调整皮肤的缩放比例参数（如图）：建议固定选择**1.2**，**1.5**或**2.0**。特别注意**刷新皮肤前请检查小数点位置！！**
 
-![](https://gitee.com/Lssg97/DetailedSystemMonitor/raw/master/Images/1.png)
+![](https://gitee.com/Lssg97/DetailedSystemMonitor/raw/main/Images/1.png)
 
 
 #### 2. 为什么我的皮肤和图片展示的不一样，感觉缺东西？
 
-* 如果您感觉缺了很多东西且使用的是Windows 7 SP1系统，则是系统无法识别皮肤中包含的“Noto Sans CJK.ttc”字体造成的。遇到这种情况，请下载字体修复补丁 [DetailedSystemMonitor_FixFont.rmskin](https://github.com/Lssg97/DetailedSystemMonitor/raw/master/Fonts/DetailedSystemMonitor_FixFont.rmskin)，直接安装即可解决问题（百度网盘内已提供修复补丁供国内用户下载）。
+* 如果您感觉缺了很多东西且使用的是Windows 7 SP1系统，则是系统无法识别皮肤中包含的“Noto Sans CJK.ttc”字体造成的。遇到这种情况，请下载字体修复补丁 [DetailedSystemMonitor_FixFont.rmskin](https://github.com/Lssg97/DetailedSystemMonitor/raw/main/Fonts/DetailedSystemMonitor_FixFont.rmskin)，直接安装即可解决问题（百度网盘内已提供修复补丁供国内用户下载）。
 
 * 除了上述情况外，差别主要体现在GPU监控显示的内容上。皮肤会根据系统环境和硬件环境自动适应，隐藏当前环境下无法显示的内容。如：受到系统环境影响，Windows 10 1709以前的系统无法显示非NVIDIA显卡的使用率，没有独立显卡的计算机无法显示显存使用情况，等等。如果您实在觉得皮肤在您的计算机上缺少某些内容属于功能性问题，可以参考 [首页](https://github.com/Lssg97/DetailedSystemMonitor) 建议。
 
@@ -24,7 +24,7 @@
 
 * 这是因为你的计算机开启了Windows的显示缩放功能，Rainmeter识别分辨率错误造成的，请参考下图来进行设置：打开Rainmeter安装目录，鼠标右键点击`Rainmeter.exe`,属性，兼容性，更改高DIP设置，勾选“替代高DIP缩放行为”，确定。完成操作后重启Rainmeter软件。
 
-![](https://gitee.com/Lssg97/DetailedSystemMonitor/raw/master/Images/2.png)
+![](https://gitee.com/Lssg97/DetailedSystemMonitor/raw/main/Images/2.png)
 
 
 #### 5. 为什么“显卡温度”显示为“Nun”或者“N/A”？

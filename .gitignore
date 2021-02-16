@@ -1,0 +1,18 @@
+# 忽略所有 .rmskin 文件
+*.rmskin
+
+# 忽略所有字体文件
+*.ttf
+*.otf
+*.ttc
+
+# 忽略 @Resources 文件夹
+@Resources/
+
+# 忽略所有 VS 构建文件夹
+.vs/
+*[Dd]ebug*/
+*[Rr]elease*/
+[Bb]in/
+[Oo]bj/
+[Ll]og/

@@ -8,7 +8,7 @@
   <br />
   <a href="../../issues"><img src="https://img.shields.io/github/issues/Lssg97/DetailedSystemMonitor?label=Issues&logo=data:image/svg+xml;base64,PHN2ZyByb2xlPSJpbWciIHZpZXdCb3g9IjAgMCAxNiAxNiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48dGl0bGU+R2l0SHViIElzc3VlcyBpY29uPC90aXRsZT48cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik04IDEuNWE2LjUgNi41IDAgMTAwIDEzIDYuNSA2LjUgMCAwMDAtMTN6TTAgOGE4IDggMCAxMTE2IDBBOCA4IDAgMDEwIDh6bTkgM2ExIDEgMCAxMS0yIDAgMSAxIDAgMDEyIDB6bS0uMjUtNi4yNWEuNzUuNzUgMCAwMC0xLjUgMHYzLjVhLjc1Ljc1IDAgMDAxLjUgMHYtMy41eiIgZmlsbD0iI2ZmZmZmZiIgLz48L3N2Zz4=" alt="Issues" /></a>
   <a href="https://github.com/Lssg97/DetailedSystemMonitor/compare/develop...develop"><img src="https://img.shields.io/github/issues-pr/Lssg97/DetailedSystemMonitor?label=Pull%20requests&logo=data:image/svg+xml;base64,PHN2ZyByb2xlPSJpbWciIHZpZXdCb3g9IjAgMCAxNiAxNiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48dGl0bGU+R2l0SHViIFB1bGwgaWNvbjwvdGl0bGU+PHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNNy4xNzcgMy4wNzNMOS41NzMuNjc3QS4yNS4yNSAwIDAxMTAgLjg1NHY0Ljc5MmEuMjUuMjUgMCAwMS0uNDI3LjE3N0w3LjE3NyAzLjQyN2EuMjUuMjUgMCAwMTAtLjM1NHpNMy43NSAyLjVhLjc1Ljc1IDAgMTAwIDEuNS43NS43NSAwIDAwMC0xLjV6bS0yLjI1Ljc1YTIuMjUgMi4yNSAwIDExMyAyLjEyMnY1LjI1NmEyLjI1MSAyLjI1MSAwIDExLTEuNSAwVjUuMzcyQTIuMjUgMi4yNSAwIDAxMS41IDMuMjV6TTExIDIuNWgtMVY0aDFhMSAxIDAgMDExIDF2NS42MjhhMi4yNTEgMi4yNTEgMCAxMDEuNSAwVjVBMi41IDIuNSAwIDAwMTEgMi41em0xIDEwLjI1YS43NS43NSAwIDExMS41IDAgLjc1Ljc1IDAgMDEtMS41IDB6TTMuNzUgMTJhLjc1Ljc1IDAgMTAwIDEuNS43NS43NSAwIDAwMC0xLjV6IiBmaWxsPSIjZmZmZmZmIiAvPjwvc3ZnPg==" alt="Pull requests" /></a>
-  <a href="../../releases/tag/v3.3"><img src="https://img.shields.io/github/downloads/Lssg97/DetailedSystemMonitor/total?label=Downloads&logo=data:image/svg+xml;base64,PHN2ZyByb2xlPSJpbWciIHZpZXdCb3g9IjAgMCAxNiAxNiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48dGl0bGU+R2l0SHViIERvd25sb2FkIGljb248L3RpdGxlPjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTcuNDcgMTAuNzhhLjc1Ljc1IDAgMDAxLjA2IDBsMy43NS0zLjc1YS43NS43NSAwIDAwLTEuMDYtMS4wNkw4Ljc1IDguNDRWMS43NWEuNzUuNzUgMCAwMC0xLjUgMHY2LjY5TDQuNzggNS45N2EuNzUuNzUgMCAwMC0xLjA2IDEuMDZsMy43NSAzLjc1ek0zLjc1IDEzYS43NS43NSAwIDAwMCAxLjVoOC41YS43NS43NSAwIDAwMC0xLjVoLTguNXoiIGZpbGw9IiNmZmZmZmYiIC8+PC9zdmc+" alt="Downloads" /></a>
+  <a href="../../releases/tag/v3.4"><img src="https://img.shields.io/github/downloads/Lssg97/DetailedSystemMonitor/total?label=Downloads&logo=data:image/svg+xml;base64,PHN2ZyByb2xlPSJpbWciIHZpZXdCb3g9IjAgMCAxNiAxNiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48dGl0bGU+R2l0SHViIERvd25sb2FkIGljb248L3RpdGxlPjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTcuNDcgMTAuNzhhLjc1Ljc1IDAgMDAxLjA2IDBsMy43NS0zLjc1YS43NS43NSAwIDAwLTEuMDYtMS4wNkw4Ljc1IDguNDRWMS43NWEuNzUuNzUgMCAwMC0xLjUgMHY2LjY5TDQuNzggNS45N2EuNzUuNzUgMCAwMC0xLjA2IDEuMDZsMy43NSAzLjc1ek0zLjc1IDEzYS43NS43NSAwIDAwMCAxLjVoOC41YS43NS43NSAwIDAwMC0xLjVoLTguNXoiIGZpbGw9IiNmZmZmZmYiIC8+PC9zdmc+" alt="Downloads" /></a>
 </p>
 <br />
 
@@ -27,7 +27,7 @@
   <img src="Images/0.png" alt="详细系统监控 v3.0" title="详细系统监控 v3.0" width="900"/>
 </p>
 
-该皮肤目前最新版本为 **3.3**。该版本新增了对 Intel CPU 温度的监测；新增了隐藏广域网IP地址的功能；使用了一个新插件来进一步提高对显卡相关信息检测的准确度；优化修复一些已知问题。详细内容请查看 [**更新笔记**](Documents/History.md)。
+该皮肤目前最新版本为 **3.4**。该版本优化修复一些已知问题。详细内容请查看 [**更新笔记**](Documents/History.md)。
 
 
 ### 运行要求
@@ -43,9 +43,9 @@
 
 ### 安装方法
 
-　　本皮肤的官方发行版会使用 Rainmeter 自带皮肤打包器进行打包，安装包扩展名为 `.rmskin`。已经拥有 Rainmeter 软件的用户可在此仓库直接 [**下载**](../../releases/download/v3.3/DetailedSystemMonitor_v_3.3.rmskin) 最新的版本安装包到您的计算机，直接双击文件安装。
+　　本皮肤的官方发行版会使用 Rainmeter 自带皮肤打包器进行打包，安装包扩展名为 `.rmskin`。已经拥有 Rainmeter 软件的用户可在此仓库直接 [**下载**](../../releases/download/v3.4/DetailedSystemMonitor_v_3.4.rmskin) 最新的版本安装包到您的计算机，直接双击文件安装。
 
-*  **Windows 7** 操作系统用户安装皮肤后，还需要安装 [**字体修复补丁**](../../releases/download/v3.3/DetailedSystemMonitor_v_FixFont.rmskin)，下载完成直接安装即可。**Windows 10** 操作系统用户无需安装该补丁。
+*  **Windows 7** 操作系统用户安装皮肤后，还需要安装 [**字体修复补丁**](../../releases/download/v3.4/DetailedSystemMonitor_v_FixFont.rmskin)，下载完成直接安装即可。**Windows 10** 操作系统用户无需安装该补丁。
 
 *  安装皮肤时，请注意选择适合您计算机显卡设备的插件：若您的计算机存在 **NVIDIA** 显卡，请在插件栏中只勾选 `NvidiaGPU.dll`（如下图所示）；**AMD** 显卡同理。若您的计算机并非 **Intel** 平台，请取消勾选 `CPUTemp.dll`。
 

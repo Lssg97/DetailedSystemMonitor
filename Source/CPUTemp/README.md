@@ -1,1 +1,1 @@
-来自：https://github.com/jmdyz/CPUTemp.git
+* *来自 <a href="https://github.com/jmdyz/CPUTemp"><img src="https://img.shields.io/badge/-CPUTemp-rgba(240%2C246%2C252%2C40%25)?logo=github&logoColor=333333" alt="CPUTemp" align="top" height="24" /></a> .*

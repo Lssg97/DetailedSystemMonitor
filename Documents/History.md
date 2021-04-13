@@ -2,6 +2,11 @@
 
 
 
+#### 2021年4月13日
+
+<img src="https://img.shields.io/badge/-%E4%BF%AE%E5%A4%8D-yello?style=plastic" alt="修复" align="top" height="24" />　　修复了“Intel核显温度”始终为红色的问题。
+
+
 #### 2021年2月16日 - Version 3.3
 > 基于Rainmeter 4.3 r3266
 

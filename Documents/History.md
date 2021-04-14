@@ -2,6 +2,11 @@
 
 
 
+#### 2021年4月14日
+
+<img src="https://img.shields.io/badge/-%E4%BC%98%E5%8C%96-green?style=plastic" alt="优化" align="top" height="24" />　　弃用“AMDTemperature”插件，转而使用“AMDPlugin”插件。
+
+
 #### 2021年4月13日
 
 <img src="https://img.shields.io/badge/-%E4%BF%AE%E5%A4%8D-yello?style=plastic" alt="修复" align="top" height="24" />　　修复了“Intel核显温度”始终为红色的问题。

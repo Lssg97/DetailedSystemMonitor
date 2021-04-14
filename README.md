@@ -27,7 +27,7 @@
   <img src="Images/0.png" alt="详细系统监控 v3.0" title="详细系统监控 v3.0" width="900"/>
 </p>
 
-该皮肤目前最新版本为 **3.4**。该版本优化修复一些已知问题。详细内容请查看 [**更新笔记**](Documents/History.md)。
+该皮肤目前最新版本为 **3.4**。该版本使用了新的 `AMDPlugin` 插件来替代原先的 `AMDTemperature` 插件；优化修复一些已知问题。详细内容请查看 [**更新笔记**](Documents/History.md)。
 
 
 ### 运行要求

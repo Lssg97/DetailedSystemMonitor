@@ -1,0 +1,1 @@
+* *来自 <a href="https://github.com/nalilord/AMDPlugin"><img src="https://img.shields.io/badge/-nalilord%2FAMDPlugin-rgba(240%2C246%2C252%2C40%25)?logo=github&logoColor=333333" alt="AMDPlugin" align="top" height="24" /></a> .*

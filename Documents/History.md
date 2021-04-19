@@ -2,6 +2,11 @@
 
 
 
+#### 2021年4月16日
+
+<img src="https://img.shields.io/badge/-%E6%96%B0%E5%A2%9E-blue?style=plastic" alt="新增" align="top" height="24" />　　针对使用“Win7系统和AMD独立显卡”的计算机增加了“GPU使用率”及“显存”信息的监测。
+
+
 #### 2021年4月14日
 
 <img src="https://img.shields.io/badge/-%E4%BC%98%E5%8C%96-green?style=plastic" alt="优化" align="top" height="24" />　　弃用“AMDTemperature”插件，转而使用“AMDPlugin”插件。

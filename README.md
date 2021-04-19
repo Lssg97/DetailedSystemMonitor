@@ -24,10 +24,10 @@
 　　**详细系统监控**（DetailedSystemMonitor，以下均简称为“该皮肤”）是一款全面、直观、高信息密度的，用于监视所在计算机的网络、CPU、GPU、内存、硬盘等相关信息的 [Rainmeter](https://www.rainmeter.net/) 皮肤，旨在将这些系统信息清晰明了地展示在你的桌面上。能兼容市面上绝大多数使用Windows系统的计算机或工作站，并自动适配系统版本及硬件以只展示可以获取的信息。
   
 <p align="center">
-  <img src="Images/0.png" alt="详细系统监控 v3.0" title="详细系统监控 v3.0" width="900"/>
+  <img src="Images/0.png" alt="详细系统监控 v3.0 系列" title="详细系统监控 v3.0 系列" width="900"/>
 </p>
 
-该皮肤目前最新版本为 **3.4**。该版本使用了新的 `AMDPlugin` 插件来替代原先的 `AMDTemperature` 插件；优化修复一些已知问题。详细内容请查看 [**更新笔记**](Documents/History.md)。
+该皮肤目前最新版本为 **3.4**。该版本使用新的 `AMDPlugin` 插件来替代原先的 `AMDTemperature` 插件，使用 **Windows 7** 操作系统和 **AMD 独立显卡**的计算机可以展示 **GPU 使用率**和**显存信息**；优化修复一些已知问题。详细内容请查看 [**更新笔记**](Documents/History.md)。
 
 
 ### 运行要求
@@ -106,7 +106,7 @@
 
 　　该皮肤的最初始版本来自互联网，原作者、制作时间等信息均已无从考证。我于2010年获得了该皮肤的初始版本副本，自2015年开始致力于维护该皮肤，并在 [中国雨滴美化社区](https://bbs.rainmeter.cn/) 发布过七次独立的版本更新（<https://bbs.rainmeter.cn/thread-141896-1-1.html>）。维护至今，该皮肤无论是在结构上还是在内容上都已经和初始版本大相径庭，属于高度演绎作品。为了感谢初始版本作者，该皮肤将继续作为初始版本的延续而发展。
 
-　　该皮肤使用了四个第三方开发者制作的 Rainmeter 插件：[AMDTemperature.dll](https://tieba.baidu.com/p/2221203992)（z100s）、[NvidiaGPU.dll](https://tieba.baidu.com/p/3242119308)（IZZZZZI）、[CPUTemp.dll](https://tieba.baidu.com/p/6855002141)（DeadUniverse）和 DeviceInfo.dll（[a1091817957](https://tieba.baidu.com/home/main/?un=a1091817957)）；GPU Bar 配色方案来自 [mzflh](https://tieba.baidu.com/home/main/?un=mzflh)。感谢各位提供的技术支持和帮助。
+　　该皮肤使用了四个第三方开发者制作的 Rainmeter 插件：[AMDPlugin.dll](https://forum.rainmeter.net/viewtopic.php?f=128&t=36120)（NaliLord）、[NvidiaGPU.dll](https://tieba.baidu.com/p/3242119308)（IZZZZZI）、[CPUTemp.dll](https://tieba.baidu.com/p/6855002141)（DeadUniverse）和 DeviceInfo.dll（[a1091817957](https://tieba.baidu.com/home/main/?un=a1091817957)）；旧版本皮肤还曾使用过 [AMDTemperature.dll](https://tieba.baidu.com/p/2221203992)（z100s）插件；GPU Bar 配色方案来自 [mzflh](https://tieba.baidu.com/home/main/?un=mzflh)。感谢各位提供的技术支持和帮助。
 
 
 ### 联系作者

@@ -2,11 +2,14 @@
 
 
 
+#### 2021年6月2日
+
+<img src="https://img.shields.io/badge/-%E4%BC%98%E5%8C%96-green?style=plastic" alt="优化" align="top" height="24" />　　优化“IP地址”显示。
+
+
 #### 2021年6月1日
 
 <img src="https://img.shields.io/badge/-%E4%BC%98%E5%8C%96-green?style=plastic" alt="优化" align="top" height="24" />　　优化“系统图标”显示。
-
-<img src="https://img.shields.io/badge/-%E4%BC%98%E5%8C%96-green?style=plastic" alt="优化" align="top" height="24" />　　优化“IP地址”显示。
 
 
 #### 2021年5月12日

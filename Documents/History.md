@@ -2,6 +2,11 @@
 
 
 
+#### 2021年6月9日
+
+<img src="https://img.shields.io/badge/-%E4%BC%98%E5%8C%96-green?style=plastic" alt="优化" align="top" height="24" />　　优化硬件使用率的警告颜色。
+
+
 #### 2021年6月2日
 
 <img src="https://img.shields.io/badge/-%E4%BC%98%E5%8C%96-green?style=plastic" alt="优化" align="top" height="24" />　　优化“IP地址”显示。

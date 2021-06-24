@@ -2,6 +2,11 @@
 
 
 
+#### 2021年6月24日
+
+<img src="https://img.shields.io/badge/-%E4%BC%98%E5%8C%96-green?style=plastic" alt="优化" align="top" height="24" />　　增加对非“C:\”盘符系统盘的识别，及优化仅有系统盘分区计算机的显示内容。
+
+
 #### 2021年6月9日
 
 <img src="https://img.shields.io/badge/-%E4%BC%98%E5%8C%96-green?style=plastic" alt="优化" align="top" height="24" />　　优化硬件使用率的警告颜色。

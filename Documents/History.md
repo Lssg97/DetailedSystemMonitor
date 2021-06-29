@@ -2,6 +2,11 @@
 
 
 
+#### 2021年6月29日
+
+<img src="https://img.shields.io/badge/-%E4%BC%98%E5%8C%96-green?style=plastic" alt="优化" align="top" height="24" />　　优化直连公网计算机的“局域网IP”显示效果。
+
+
 #### 2021年6月25日
 
 <img src="https://img.shields.io/badge/-%E4%BC%98%E5%8C%96-green?style=plastic" alt="优化" align="top" height="24" />　　优化无分页文件计算机，及仅有系统盘分区计算机的显示效果。

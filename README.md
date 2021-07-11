@@ -22,7 +22,7 @@
 <br />
 
 　　**详细系统监控**（DetailedSystemMonitor，以下均简称为“该皮肤”）是一款全面、直观、高信息密度的，用于监视所在计算机的网络、CPU、GPU、内存、硬盘等相关信息的 [Rainmeter](https://www.rainmeter.net/) 皮肤，旨在将这些系统信息清晰明了地展示在你的桌面上。能兼容市面上绝大多数使用Windows系统的计算机或工作站，并自动适配系统版本及硬件以只展示可以获取的信息。
-  
+
 <p align="center">
   <img src="Images/0.png" alt="详细系统监控 v3.0 系列" title="详细系统监控 v3.0 系列" width="900"/>
 </p>
@@ -78,14 +78,14 @@
 | 9 | [为什么电脑刚开机，但是“开机时长”已经好几天了？](Documents/Q%26A.md#9-%E4%B8%BA%E4%BB%80%E4%B9%88%E7%94%B5%E8%84%91%E5%88%9A%E5%BC%80%E6%9C%BA%E4%BD%86%E6%98%AF%E5%BC%80%E6%9C%BA%E6%97%B6%E9%95%BF%E5%B7%B2%E7%BB%8F%E5%A5%BD%E5%87%A0%E5%A4%A9%E4%BA%86) |
 | 10 | [为什么网络正常但无法显示“广域网IP”或者“归属地”？](Documents/Q%26A.md#10-%E4%B8%BA%E4%BB%80%E4%B9%88%E7%BD%91%E7%BB%9C%E6%AD%A3%E5%B8%B8%E4%BD%86%E6%97%A0%E6%B3%95%E6%98%BE%E7%A4%BA%E5%B9%BF%E5%9F%9F%E7%BD%91ip%E6%88%96%E8%80%85%E5%BD%92%E5%B1%9E%E5%9C%B0) |
 
-如果您的问题不在上述列表，可以在 [**中国雨滴美化社区**](https://bbs.rainmeter.cn/thread-290033-1-1.html) 或 [**rainmeter百度贴吧**](https://tieba.baidu.com/p/6868066630) 下该皮肤所在的帖子进行回复或直接在本仓库发出 <a href="../../issues/new"><img src="https://img.shields.io/badge/-Issue-rgba(240%2C246%2C252%2C50%25)?logo=data:image/svg+xml;base64,PHN2ZyByb2xlPSJpbWciIHZpZXdCb3g9IjAgMCAxNiAxNiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48dGl0bGU+R2l0SHViIElzc3VlcyBpY29uPC90aXRsZT48cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik04IDEuNWE2LjUgNi41IDAgMTAwIDEzIDYuNSA2LjUgMCAwMDAtMTN6TTAgOGE4IDggMCAxMTE2IDBBOCA4IDAgMDEwIDh6bTkgM2ExIDEgMCAxMS0yIDAgMSAxIDAgMDEyIDB6bS0uMjUtNi4yNWEuNzUuNzUgMCAwMC0xLjUgMHYzLjVhLjc1Ljc1IDAgMDAxLjUgMHYtMy41eiIgZmlsbD0iIzMzMzMzMyIgLz48L3N2Zz4=" alt="Issue" align="top" height="24" /></a> 进行提问。
+如果您的问题不在上述列表，可以在 [**中国雨滴美化社区**](https://bbs.rainmeter.cn/thread-290033-1-1.html) 或 [**rainmeter百度贴吧**](https://tieba.baidu.com/p/6868066630) 下该皮肤所在的帖子进行回复或直接在本仓库发出 <a href="../../issues/new"><img src="https://img.shields.io/badge/-Issue-rgba(240%2C246%2C252%2C50%25)?logo=data:image/svg+xml;base64,PHN2ZyByb2xlPSJpbWciIHZpZXdCb3g9IjAgMCAxNiAxNiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48dGl0bGU+R2l0SHViIElzc3VlcyBpY29uPC90aXRsZT48cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik04IDkuNWExLjUgMS41IDAgMTAwLTMgMS41IDEuNSAwIDAwMCAzek04IDBhOCA4IDAgMTAwIDE2QTggOCAwIDAwOCAwek0xLjUgOGE2LjUgNi41IDAgMTExMyAwIDYuNSA2LjUgMCAwMS0xMyAweiIgZmlsbD0iIzMzMzMzMyIgLz48L3N2Zz4=" alt="Issue" align="top" height="24" /></a> 进行提问。
 
 
 ### 参与维护
 
 　　如果您对本皮肤项目感兴趣，有关于本皮肤的更好意见或想法且愿意将你的想法分享给其他人，那么欢迎您加入本皮肤的维护过程。您可以根据自身情况在以下方式中选择一种参与维护：
 
-* 如果您只是一名很普通的 Rainmeter 用户，不太了解 Rainmeter 皮肤的工作方式和文件构成，只是单纯的在使用上有更好的建议或者需求，那么可以在 [**中国雨滴美化社区**](https://bbs.rainmeter.cn/thread-290033-1-1.html) 或 [**rainmeter百度贴吧**](https://tieba.baidu.com/p/6868066630) 下该皮肤所在的帖子进行回复，或直接在本仓库发出 <a href="../../issues/new"><img src="https://img.shields.io/badge/-Issue-rgba(240%2C246%2C252%2C50%25)?logo=data:image/svg+xml;base64,PHN2ZyByb2xlPSJpbWciIHZpZXdCb3g9IjAgMCAxNiAxNiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48dGl0bGU+R2l0SHViIElzc3VlcyBpY29uPC90aXRsZT48cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik04IDEuNWE2LjUgNi41IDAgMTAwIDEzIDYuNSA2LjUgMCAwMDAtMTN6TTAgOGE4IDggMCAxMTE2IDBBOCA4IDAgMDEwIDh6bTkgM2ExIDEgMCAxMS0yIDAgMSAxIDAgMDEyIDB6bS0uMjUtNi4yNWEuNzUuNzUgMCAwMC0xLjUgMHYzLjVhLjc1Ljc1IDAgMDAxLjUgMHYtMy41eiIgZmlsbD0iIzMzMzMzMyIgLz48L3N2Zz4=" alt="Issue" align="top" height="24" /></a> 提出。我将会视情况将您的建议或需求添加到下一次的版本更新中。
+* 如果您只是一名很普通的 Rainmeter 用户，不太了解 Rainmeter 皮肤的工作方式和文件构成，只是单纯的在使用上有更好的建议或者需求，那么可以在 [**中国雨滴美化社区**](https://bbs.rainmeter.cn/thread-290033-1-1.html) 或 [**rainmeter百度贴吧**](https://tieba.baidu.com/p/6868066630) 下该皮肤所在的帖子进行回复，或直接在本仓库发出 <a href="../../issues/new"><img src="https://img.shields.io/badge/-Issue-rgba(240%2C246%2C252%2C50%25)?logo=data:image/svg+xml;base64,PHN2ZyByb2xlPSJpbWciIHZpZXdCb3g9IjAgMCAxNiAxNiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48dGl0bGU+R2l0SHViIElzc3VlcyBpY29uPC90aXRsZT48cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik04IDkuNWExLjUgMS41IDAgMTAwLTMgMS41IDEuNSAwIDAwMCAzek04IDBhOCA4IDAgMTAwIDE2QTggOCAwIDAwOCAwek0xLjUgOGE2LjUgNi41IDAgMTExMyAwIDYuNSA2LjUgMCAwMS0xMyAweiIgZmlsbD0iIzMzMzMzMyIgLz48L3N2Zz4=" alt="Issue" align="top" height="24" /></a> 提出。我将会视情况将您的建议或需求添加到下一次的版本更新中。
 
 * 如果您已经了解该皮肤的工作方式和文件构成，已经修改了该皮肤的副本，但是不太了解 GitHub 的团队工作方式，可以通过下面的 [**联系作者**](../../#%E8%81%94%E7%B3%BB%E4%BD%9C%E8%80%85) 发送你的皮肤修改版本并附加修改内容说明。
 

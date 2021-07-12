@@ -2,6 +2,17 @@
 
 
 
+#### 2021年7月12日
+
+<img src="https://img.shields.io/badge/-%E4%BC%98%E5%8C%96-green?style=plastic" alt="优化" align="top" height="24" />　　拆分翻译文本和配置参数。
+
+
+#### 2021年7月11日 - Version 3.4.a
+> 基于Rainmeter 4.3 r3266
+
+<img src="https://img.shields.io/badge/-Added-blue?style=plastic" alt="Added" align="top" height="24" />　Localization for English (temporary).
+
+
 #### 2021年6月29日
 
 <img src="https://img.shields.io/badge/-%E4%BC%98%E5%8C%96-green?style=plastic" alt="优化" align="top" height="24" />　　优化直连公网计算机的“局域网IP”显示效果。

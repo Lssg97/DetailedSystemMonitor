@@ -7,7 +7,8 @@
 *.ttc
 
 # 忽略 @Resources 文件夹
-@Resources/
+/Skin/@Resources/*
+!/Skin/@Resources/Localization
 
 # 忽略所有 VS 构建文件夹
 .vs/
@@ -16,3 +17,7 @@
 [Bb]in/
 [Oo]bj/
 [Ll]og/
+
+# 保留所有 .ini 和 .inc 文件
+!*.ini
+!*.inc

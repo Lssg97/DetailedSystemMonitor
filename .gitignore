@@ -6,9 +6,9 @@
 *.otf
 *.ttc
 
-# 忽略 @Resources 文件夹
-/Skin/@Resources/*
-!/Skin/@Resources/Localization
+# 忽略部分 @Resources 文件夹
+/Skin/@Resources/Fonts
+/Skin/@Resources/Images
 
 # 忽略所有 VS 构建文件夹
 .vs/

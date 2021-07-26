@@ -2,6 +2,13 @@
 
 
 
+#### 2021年7月26日
+
+<img src="https://img.shields.io/badge/-%E4%BC%98%E5%8C%96-green?style=plastic" alt="优化" align="top" height="24" />　　为无法从“NvidiaGPU”插件获取温度的计算机补充一个捕获温度的方案。
+
+<img src="https://img.shields.io/badge/-%E4%BC%98%E5%8C%96-green?style=plastic" alt="优化" align="top" height="24" />　　优化“系统图标”显示。
+
+
 #### 2021年7月21日
 
 <img src="https://img.shields.io/badge/-%E4%BC%98%E5%8C%96-green?style=plastic" alt="优化" align="top" height="24" />　　“进程最大占用”图标化。

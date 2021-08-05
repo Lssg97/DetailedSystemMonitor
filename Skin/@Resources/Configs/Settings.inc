@@ -22,6 +22,9 @@ netSpeedType=Speed
 
 showWANIP=True
 
+; --------Temperature scale (Celsius/Fahrenheit.)--------
+
+tempScale=Celsius
 
 
 ; ==================[Color configuration parameters] (Please do not add transparency value. Please go to "Manage Rainmeter" to adjust skin transparency)==================

@@ -2,6 +2,13 @@
 
 
 
+#### 2021年8月5日
+
+<img src="https://img.shields.io/badge/-%E6%96%B0%E5%A2%9E-blue?style=plastic" alt="新增" align="top" height="24" />　　新增华氏温度显示方式。
+
+<img src="https://img.shields.io/badge/-%E4%BC%98%E5%8C%96-green?style=plastic" alt="优化" align="top" height="24" />　　增加对“教育版”操作系统的识别。
+
+
 #### 2021年7月26日
 
 <img src="https://img.shields.io/badge/-%E4%BC%98%E5%8C%96-green?style=plastic" alt="优化" align="top" height="24" />　　为无法从“NvidiaGPU”插件获取温度的计算机补充一个捕获温度的方案。

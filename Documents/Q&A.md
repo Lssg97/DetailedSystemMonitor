@@ -60,7 +60,8 @@
 　　显示 CPU 温度需要 Rainmeter 以管理员身份运行。如果您的计算机用户不是 Administrator，Rainmeter 是无法以管理员身份开机自启动的。设置方法：
  * 首先在计算机资源管理器地址栏输入 `shell:startup`，删除启动文件夹中的 Rainmeter 快捷方式来取消原有启动方式；
  * 使用 **Win + R** 调用“运行”，输入 `taskschd.msc` 来调出“**任务计划程序**”；
- * 下载计划任务文件 [Rainmeter.xml](../../../releases/download/v3.3/Rainmeter.xml)，按照下图顺序导入任务，选择文件，确定任务，运行。最后重启电脑试验。
+ * 下载计划任务文件 [Rainmeter.xml](../../../releases/download/v3.3/Rainmeter.xml)，按照下图顺序导入任务，选择文件，确定任务，运行。最后重启电脑试验；
+ * 若您在安装 Rainmeter 时修改过默认安装目录，请在 “**操作**” 选项卡页面下修改 Rainmeter.exe 的目录位置。
 
 <p align="center">
   <img src="../Images/4.png" alt="开机自启" width="900"/>

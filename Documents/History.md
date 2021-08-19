@@ -2,6 +2,11 @@
 
 
 
+#### 2021年8月19日
+
+<img src="https://img.shields.io/badge/-%E4%BC%98%E5%8C%96-green?style=plastic" alt="优化" align="top" height="24" />　　无法准确获取显卡信息时会隐藏全部“GPU监测“部分。
+
+
 #### 2021年8月5日
 
 <img src="https://img.shields.io/badge/-%E6%96%B0%E5%A2%9E-blue?style=plastic" alt="新增" align="top" height="24" />　　新增华氏温度显示方式。

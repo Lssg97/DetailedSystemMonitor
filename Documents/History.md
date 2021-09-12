@@ -2,6 +2,13 @@
 
 
 
+#### 2021年9月12日
+
+<img src="https://img.shields.io/badge/-%E4%BC%98%E5%8C%96-green?style=plastic" alt="优化" align="top" height="24" />　　针对“Rainmeter 4.5.1”做适配性更新。
+
+<img src="https://img.shields.io/badge/-%E4%BF%AE%E5%A4%8D-yello?style=plastic" alt="修复" align="top" height="24" />　　修复了集成显卡“GPU详细信息”错误的问题。
+
+
 #### 2021年8月19日
 
 <img src="https://img.shields.io/badge/-%E4%BC%98%E5%8C%96-green?style=plastic" alt="优化" align="top" height="24" />　　无法准确获取显卡信息时会隐藏全部“GPU监测“部分。

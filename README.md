@@ -36,7 +36,7 @@
 
 *  **环境要求：** [**.NET Framework 4.5**](https://www.microsoft.com/zh-cn/download/details.aspx?id=30653) 或更高版本。
 
-*  **软件要求：** [**Rainmeter 4.3 r3266**](https://www.rainmeter.net/) 或更高版本。
+*  **软件要求：** [**Rainmeter 4.5.1 r3540**](https://www.rainmeter.net/) 或更高版本。
 
 *  **其它要求：** 用户须**以管理员身份运行** Rainmeter 来成功获取 CPU 温度。对于仅有 AMD 核心显卡的计算机，若无法正常显示出 GPU 温度，还需要后台运行 [**CoreTemp**](https://www.alcpu.com/CoreTemp/) 软件。关于如何设置**以管理员身份自启动 Rainmeter**，请查看 [**问题解答#6**](Documents/Q%26A.md#6-%E4%B8%BA%E4%BB%80%E4%B9%88cpu%E6%B8%A9%E5%BA%A6%E6%98%BE%E7%A4%BA%E4%B8%BAna)。
 

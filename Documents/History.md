@@ -2,6 +2,11 @@
 
 
 
+#### 2022年1月2日
+
+<img src="https://img.shields.io/badge/-%E4%BF%AE%E5%A4%8D-yello?style=plastic" alt="修复" align="top" height="24" />　　修复了一个翻译错误。
+
+
 #### 2021年9月12日
 
 <img src="https://img.shields.io/badge/-%E4%BC%98%E5%8C%96-green?style=plastic" alt="优化" align="top" height="24" />　　针对“Rainmeter 4.5.1”做适配性更新。
@@ -32,7 +37,7 @@
 
 <img src="https://img.shields.io/badge/-%E4%BC%98%E5%8C%96-green?style=plastic" alt="优化" align="top" height="24" />　　“进程最大占用”图标化。
 
-<img src="https://img.shields.io/badge/-%E4%BC%98%E5%8C%96-green?style=plastic" alt="优化" align="top" height="24" />　　Optimize English translation.
+<img src="https://img.shields.io/badge/-Changed-green?style=plastic" alt="Changed" align="top" height="24" />　　Optimize English translation.
 
 
 #### 2021年7月12日

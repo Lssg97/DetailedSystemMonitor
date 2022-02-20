@@ -2,6 +2,11 @@
 
 
 
+#### 2022年2月20日
+
+<img src="https://img.shields.io/badge/-%E4%BC%98%E5%8C%96-green?style=plastic" alt="优化" align="top" height="24" />　　增加对 Microsoft Windows 11 的识别。
+
+
 #### 2022年1月2日
 
 <img src="https://img.shields.io/badge/-%E4%BF%AE%E5%A4%8D-yello?style=plastic" alt="修复" align="top" height="24" />　　修复了一个翻译错误。
@@ -9,14 +14,14 @@
 
 #### 2021年9月12日
 
-<img src="https://img.shields.io/badge/-%E4%BC%98%E5%8C%96-green?style=plastic" alt="优化" align="top" height="24" />　　针对“Rainmeter 4.5.1”做适配性更新。
+<img src="https://img.shields.io/badge/-%E4%BC%98%E5%8C%96-green?style=plastic" alt="优化" align="top" height="24" />　　针对 Rainmeter 4.5.1 做适配性更新。
 
-<img src="https://img.shields.io/badge/-%E4%BF%AE%E5%A4%8D-yello?style=plastic" alt="修复" align="top" height="24" />　　修复了集成显卡“GPU详细信息”错误的问题。
+<img src="https://img.shields.io/badge/-%E4%BF%AE%E5%A4%8D-yello?style=plastic" alt="修复" align="top" height="24" />　　修复了集成显卡“GPU 详细信息”错误的问题。
 
 
 #### 2021年8月19日
 
-<img src="https://img.shields.io/badge/-%E4%BC%98%E5%8C%96-green?style=plastic" alt="优化" align="top" height="24" />　　无法准确获取显卡信息时会隐藏全部“GPU监测“部分。
+<img src="https://img.shields.io/badge/-%E4%BC%98%E5%8C%96-green?style=plastic" alt="优化" align="top" height="24" />　　无法准确获取显卡信息时会隐藏全部“GPU 监测“部分。
 
 
 #### 2021年8月5日
@@ -53,7 +58,7 @@
 
 #### 2021年6月29日
 
-<img src="https://img.shields.io/badge/-%E4%BC%98%E5%8C%96-green?style=plastic" alt="优化" align="top" height="24" />　　优化直连公网计算机的“局域网IP”显示效果。
+<img src="https://img.shields.io/badge/-%E4%BC%98%E5%8C%96-green?style=plastic" alt="优化" align="top" height="24" />　　优化直连公网计算机的“局域网 IP”显示效果。
 
 
 #### 2021年6月25日
@@ -63,7 +68,7 @@
 
 #### 2021年6月24日
 
-<img src="https://img.shields.io/badge/-%E4%BC%98%E5%8C%96-green?style=plastic" alt="优化" align="top" height="24" />　　增加对非“C”盘符系统盘的识别。
+<img src="https://img.shields.io/badge/-%E4%BC%98%E5%8C%96-green?style=plastic" alt="优化" align="top" height="24" />　　增加对非“C:\”系统盘的识别。
 
 
 #### 2021年6月9日
@@ -73,7 +78,7 @@
 
 #### 2021年6月2日
 
-<img src="https://img.shields.io/badge/-%E4%BC%98%E5%8C%96-green?style=plastic" alt="优化" align="top" height="24" />　　优化“IP地址”显示。
+<img src="https://img.shields.io/badge/-%E4%BC%98%E5%8C%96-green?style=plastic" alt="优化" align="top" height="24" />　　优化“IP 地址”显示。
 
 
 #### 2021年6月1日
@@ -90,7 +95,7 @@
 
 #### 2021年4月16日
 
-<img src="https://img.shields.io/badge/-%E6%96%B0%E5%A2%9E-blue?style=plastic" alt="新增" align="top" height="24" />　　针对使用“Win7系统和AMD独立显卡”的计算机增加了“GPU使用率”及“显存”信息的监测。
+<img src="https://img.shields.io/badge/-%E6%96%B0%E5%A2%9E-blue?style=plastic" alt="新增" align="top" height="24" />　　针对使用 Windows 7 系统和 AMD 独立显卡的计算机增加了“GPU 使用率”及“显存”信息的监测。
 
 
 #### 2021年4月14日
@@ -100,20 +105,20 @@
 
 #### 2021年4月13日
 
-<img src="https://img.shields.io/badge/-%E4%BF%AE%E5%A4%8D-yello?style=plastic" alt="修复" align="top" height="24" />　　修复了“Intel核显温度”始终为红色的问题。
+<img src="https://img.shields.io/badge/-%E4%BF%AE%E5%A4%8D-yello?style=plastic" alt="修复" align="top" height="24" />　　修复了“Intel 核显温度”始终为红色的问题。
 
 
 #### 2021年2月16日 - Version 3.3
 > 基于Rainmeter 4.3 r3266
 
-<img src="https://img.shields.io/badge/-%E6%96%B0%E5%A2%9E-blue?style=plastic" alt="新增" align="top" height="24" />　　新增“隐藏广域网IP”功能，点击“广域网IP地址”即可在显示和隐藏状态间切换；增加了“默认显示IP”设置变量，以确定皮肤刷新后的初始显示效果。
+<img src="https://img.shields.io/badge/-%E6%96%B0%E5%A2%9E-blue?style=plastic" alt="新增" align="top" height="24" />　　新增“隐藏广域网 IP”功能，点击“广域网 IP地址”即可在显示和隐藏状态间切换；增加了“默认显示 IP”设置变量，以确定皮肤刷新后的初始显示效果。
 
 
 #### 2020年11月28日
 
-<img src="https://img.shields.io/badge/-%E4%BC%98%E5%8C%96-green?style=plastic" alt="优化" align="top" height="24" />　　使用“DeviceInfo”插件获取显卡相关信息，放弃使用遍历注册表的方案，显卡识别成功率会有大幅提高。插件目前未公开。感谢插件的作者a1091817957。
+<img src="https://img.shields.io/badge/-%E4%BC%98%E5%8C%96-green?style=plastic" alt="优化" align="top" height="24" />　　使用“DeviceInfo”插件获取显卡相关信息，放弃使用遍历注册表的方案，显卡识别成功率会有大幅提高。插件目前未公开。感谢插件的作者 a1091817957。
 
-<img src="https://img.shields.io/badge/-%E4%BC%98%E5%8C%96-green?style=plastic" alt="优化" align="top" height="24" />　　皮肤更新检测地址从Github迁移到Gitee，提高国内用户检测成功率。
+<img src="https://img.shields.io/badge/-%E4%BC%98%E5%8C%96-green?style=plastic" alt="优化" align="top" height="24" />　　皮肤更新检测地址从 Github 迁移到 Gitee，提高国内用户检测成功率。
 
 
 #### 2020年10月5日
@@ -130,25 +135,25 @@
 
 #### 2020年9月22日
 
-<img src="https://img.shields.io/badge/-%E4%BC%98%E5%8C%96-green?style=plastic" alt="优化" align="top" height="24" />　　针对Intel平台计算机，舍弃使用“CoreTemp”插件，转而使用“CPUTemp”插件。
+<img src="https://img.shields.io/badge/-%E4%BC%98%E5%8C%96-green?style=plastic" alt="优化" align="top" height="24" />　　针对 Intel 平台计算机，舍弃使用“CoreTemp”插件，转而使用“CPUTemp”插件。
 
-<img src="https://img.shields.io/badge/-%E5%88%A0%E9%99%A4-red?style=plastic" alt="删除" align="top" height="24" />　　针对Intel平台计算机，删除对“句柄数”的监测。
+<img src="https://img.shields.io/badge/-%E5%88%A0%E9%99%A4-red?style=plastic" alt="删除" align="top" height="24" />　　针对 Intel 平台计算机，删除对“句柄数”的监测。
 
 
 #### 2020年9月4日
 
-<img src="https://img.shields.io/badge/-%E6%96%B0%E5%A2%9E-blue?style=plastic" alt="新增" align="top" height="24" />　　增加了对“CPU温度”的监测（测试，仅适用于Intel平台计算机）。插件来自<https://tieba.baidu.com/p/6855002141>。感谢插件的作者DeadUniverse。
+<img src="https://img.shields.io/badge/-%E6%96%B0%E5%A2%9E-blue?style=plastic" alt="新增" align="top" height="24" />　　增加了对“CPU 温度”的监测（测试，仅适用于 Intel 平台计算机）。插件来自 <https://tieba.baidu.com/p/6855002141>。感谢插件的作者 DeadUniverse。
 
-<img src="https://img.shields.io/badge/-%E4%BC%98%E5%8C%96-green?style=plastic" alt="优化" align="top" height="24" />　　“CPU图标”、“GPU图标”可以展示出相关平台类型。
+<img src="https://img.shields.io/badge/-%E4%BC%98%E5%8C%96-green?style=plastic" alt="优化" align="top" height="24" />　　“CPU 图标”、“GPU 图标”可以展示出相关平台类型。
 
 <img src="https://img.shields.io/badge/-%E4%BC%98%E5%8C%96-green?style=plastic" alt="优化" align="top" height="24" />　　限制了“用户名”的长度。
 
-<img src="https://img.shields.io/badge/-%E4%BC%98%E5%8C%96-green?style=plastic" alt="优化" align="top" height="24" />　　变更了“广域网IP”监测网站。
+<img src="https://img.shields.io/badge/-%E4%BC%98%E5%8C%96-green?style=plastic" alt="优化" align="top" height="24" />　　变更了“广域网 IP”监测网站。
 
 
 #### 2020年8月5日
 
-<img src="https://img.shields.io/badge/-%E4%BC%98%E5%8C%96-green?style=plastic" alt="优化" align="top" height="24" />　　使用系统环境变量捕获CPU逻辑核心数。
+<img src="https://img.shields.io/badge/-%E4%BC%98%E5%8C%96-green?style=plastic" alt="优化" align="top" height="24" />　　使用系统环境变量捕获 CPU 逻辑核心数。
 
 <img src="https://img.shields.io/badge/-%E4%BC%98%E5%8C%96-green?style=plastic" alt="优化" align="top" height="24" />　　监测磁盘驱动器类型，不再展示非本地磁盘（如网络磁盘）。
 
@@ -156,7 +161,7 @@
 #### 2020年8月2日 - Version 3.2
 > 基于Rainmeter 4.3 r3266
 
-<img src="https://img.shields.io/badge/-%E4%BF%AE%E5%A4%8D-yello?style=plastic" alt="修复" align="top" height="24" />　　修复了“WiFi图标”无法切换信号强度的错误。
+<img src="https://img.shields.io/badge/-%E4%BF%AE%E5%A4%8D-yello?style=plastic" alt="修复" align="top" height="24" />　　修复了“WiFi 图标”无法切换信号强度的错误。
 
 
 #### 2020年7月31日
@@ -175,43 +180,43 @@
 
 #### 2020年7月11日
 
-<img src="https://img.shields.io/badge/-%E4%BC%98%E5%8C%96-green?style=plastic" alt="优化" align="top" height="24" />　　优化了非“Windows 10”系统“N卡”计算机中“GPU监控”的UI间距。
+<img src="https://img.shields.io/badge/-%E4%BC%98%E5%8C%96-green?style=plastic" alt="优化" align="top" height="24" />　　优化了非 Windows 10 系统 NVIDIA 显卡计算机中“GPU 监控”的 UI 间距。
 
 <img src="https://img.shields.io/badge/-%E4%BC%98%E5%8C%96-green?style=plastic" alt="优化" align="top" height="24" />　　当笔记本电脑外接电源且电池满电状态下，“电池监控”中显示“已充满”。
 
 
 #### 2020年7月9日
 
-<img src="https://img.shields.io/badge/-%E4%BC%98%E5%8C%96-green?style=plastic" alt="优化" align="top" height="24" />　　将“GPU引擎”使用情况展示在“GPU Bar”上，感谢贴吧用户“mzflh”提供的配色方案。
+<img src="https://img.shields.io/badge/-%E4%BC%98%E5%8C%96-green?style=plastic" alt="优化" align="top" height="24" />　　将“GPU 引擎”使用情况展示在“GPU Bar”上，感谢贴吧用户“mzflh”提供的配色方案。
 
 <img src="https://img.shields.io/badge/-%E4%BC%98%E5%8C%96-green?style=plastic" alt="优化" align="top" height="24" />　　皮肤配置文件编码方式改为“GB2312”，压缩配置文件大小。
 
 
 #### 2020年7月2日
 
-<img src="https://img.shields.io/badge/-%E4%BC%98%E5%8C%96-green?style=plastic" alt="优化" align="top" height="24" />　　尝试性使用“继承节点”管理皮肤信息元素和Bar元素，压缩配置文件大小。
+<img src="https://img.shields.io/badge/-%E4%BC%98%E5%8C%96-green?style=plastic" alt="优化" align="top" height="24" />　　尝试性使用“继承节点”管理皮肤信息元素和 Bar 元素，压缩配置文件大小。
 
 
 #### 2020年6月27日
 
-<img src="https://img.shields.io/badge/-%E6%96%B0%E5%A2%9E-blue?style=plastic" alt="新增" align="top" height="24" />　　增加了NVIDIA GPU “CUDA”引擎的监测。
+<img src="https://img.shields.io/badge/-%E6%96%B0%E5%A2%9E-blue?style=plastic" alt="新增" align="top" height="24" />　　增加了 NVIDIA GPU “CUDA”引擎的监测。
 
-<img src="https://img.shields.io/badge/-%E4%BC%98%E5%8C%96-green?style=plastic" alt="优化" align="top" height="24" />　　修改了部分GPU引擎的名称。
+<img src="https://img.shields.io/badge/-%E4%BC%98%E5%8C%96-green?style=plastic" alt="优化" align="top" height="24" />　　修改了部分 GPU 引擎的名称。
 
 
 #### 2020年6月9日 - Version 3.1
 > 基于Rainmeter 4.3 r3266
 
-<img src="https://img.shields.io/badge/-%E4%BC%98%E5%8C%96-green?style=plastic" alt="优化" align="top" height="24" />　　无法获取DNS地址时显示为“N/A”。
+<img src="https://img.shields.io/badge/-%E4%BC%98%E5%8C%96-green?style=plastic" alt="优化" align="top" height="24" />　　无法获取 DNS 地址时显示为“N/A”。
 
-<img src="https://img.shields.io/badge/-%E4%BC%98%E5%8C%96-green?style=plastic" alt="优化" align="top" height="24" />　　尝试性使用“Group”管理非“Windows 10”专属皮肤节点，压缩配置文件大小。
+<img src="https://img.shields.io/badge/-%E4%BC%98%E5%8C%96-green?style=plastic" alt="优化" align="top" height="24" />　　尝试性使用“Group”管理非 Windows 10 专属皮肤节点，压缩配置文件大小。
 
 <img src="https://img.shields.io/badge/-%E4%BF%AE%E5%A4%8D-yello?style=plastic" alt="修复" align="top" height="24" />　　修复了存在小数缩放倍数时，“硬盘”监控模块整体上移的错误。
 
 
 #### 2020年5月26日
 
-<img src="https://img.shields.io/badge/-%E4%BC%98%E5%8C%96-green?style=plastic" alt="优化" align="top" height="24" />　　移动了“I/O速度”的位置，微调UI界面。
+<img src="https://img.shields.io/badge/-%E4%BC%98%E5%8C%96-green?style=plastic" alt="优化" align="top" height="24" />　　移动了“I/O 速度”的位置，微调 UI 界面。
 
 <img src="https://img.shields.io/badge/-%E4%BC%98%E5%8C%96-green?style=plastic" alt="优化" align="top" height="24" />　　重绘“CPU”，“显存”图标。
 
@@ -224,9 +229,9 @@
 
 <img src="https://img.shields.io/badge/-%E4%BC%98%E5%8C%96-green?style=plastic" alt="优化" align="top" height="24" />　　添加了信息标签。
 
-<img src="https://img.shields.io/badge/-%E4%BC%98%E5%8C%96-green?style=plastic" alt="优化" align="top" height="24" />　　缩减“IP地址”最大显示长度。
+<img src="https://img.shields.io/badge/-%E4%BC%98%E5%8C%96-green?style=plastic" alt="优化" align="top" height="24" />　　缩减“IP 地址”最大显示长度。
 
-<img src="https://img.shields.io/badge/-%E4%BC%98%E5%8C%96-green?style=plastic" alt="优化" align="top" height="24" />　　优化“广域网IP”的“归属地”信息刷新方式。
+<img src="https://img.shields.io/badge/-%E4%BC%98%E5%8C%96-green?style=plastic" alt="优化" align="top" height="24" />　　优化“广域网 IP”的“归属地”信息刷新方式。
 
 <img src="https://img.shields.io/badge/-%E4%BC%98%E5%8C%96-green?style=plastic" alt="优化" align="top" height="24" />　　重绘“硬盘”，“线程”图标。
 
@@ -241,7 +246,7 @@
 
 <img src="https://img.shields.io/badge/-%E6%96%B0%E5%A2%9E-blue?style=plastic" alt="新增" align="top" height="24" />　　增加了“电池”监测。
 
-<img src="https://img.shields.io/badge/-%E4%BF%AE%E5%A4%8D-yello?style=plastic" alt="修复" align="top" height="24" />　　修复了“广域网IP归属地”监测突然失效的问题。
+<img src="https://img.shields.io/badge/-%E4%BF%AE%E5%A4%8D-yello?style=plastic" alt="修复" align="top" height="24" />　　修复了“广域网 IP归属地”监测突然失效的问题。
 
 <img src="https://img.shields.io/badge/-%E4%BF%AE%E5%A4%8D-yello?style=plastic" alt="修复" align="top" height="24" />　　修复了单网卡计算机上，“网卡信息”与“CPU”相关信息间空隙较大的问题。
 
@@ -250,9 +255,9 @@
 
 #### 2020年5月6日
 
-<img src="https://img.shields.io/badge/-%E4%BC%98%E5%8C%96-green?style=plastic" alt="优化" align="top" height="24" />　　重做“GPU”UI。
+<img src="https://img.shields.io/badge/-%E4%BC%98%E5%8C%96-green?style=plastic" alt="优化" align="top" height="24" />　　重做“GPU” UI 部分。
 
-<img src="https://img.shields.io/badge/-%E4%BC%98%E5%8C%96-green?style=plastic" alt="优化" align="top" height="24" />　　只有Intel核显的计算机会默认显示CPU温度。
+<img src="https://img.shields.io/badge/-%E4%BC%98%E5%8C%96-green?style=plastic" alt="优化" align="top" height="24" />　　只有 Intel 核显的计算机会默认显示 CPU 温度。
 
 <img src="https://img.shields.io/badge/-%E5%88%A0%E9%99%A4-red?style=plastic" alt="删除" align="top" height="24" />　　删除了“虚拟内存显示方式”和“硬盘类型”设置变量。
 
@@ -261,18 +266,18 @@
 
 <img src="https://img.shields.io/badge/-%E6%96%B0%E5%A2%9E-blue?style=plastic" alt="新增" align="top" height="24" />　　增加了“网卡信息”监测。
 
-<img src="https://img.shields.io/badge/-%E6%96%B0%E5%A2%9E-blue?style=plastic" alt="新增" align="top" height="24" />　　增加了“CPU句柄数”监测。
+<img src="https://img.shields.io/badge/-%E6%96%B0%E5%A2%9E-blue?style=plastic" alt="新增" align="top" height="24" />　　增加了“CPU 句柄数”监测。
 
-<img src="https://img.shields.io/badge/-%E4%BC%98%E5%8C%96-green?style=plastic" alt="优化" align="top" height="24" />　　重做“CPU”UI。
+<img src="https://img.shields.io/badge/-%E4%BC%98%E5%8C%96-green?style=plastic" alt="优化" align="top" height="24" />　　重做“CPU” UI 部分。
 
-<img src="https://img.shields.io/badge/-%E4%BF%AE%E5%A4%8D-yello?style=plastic" alt="修复" align="top" height="24" />　　改进CPU逻辑核心数量的自动监测方式，修复了CPU逻辑核心数量自动监测报警的问题
+<img src="https://img.shields.io/badge/-%E4%BF%AE%E5%A4%8D-yello?style=plastic" alt="修复" align="top" height="24" />　　改进 CPU 逻辑核心数量的自动监测方式，修复了 CPU 逻辑核心数量自动监测报警的问题
 
 
 #### 2020年4月30日
 
-<img src="https://img.shields.io/badge/-%E6%96%B0%E5%A2%9E-blue?style=plastic" alt="新增" align="top" height="24" />　　增加了“DNS服务器”的监测。
+<img src="https://img.shields.io/badge/-%E6%96%B0%E5%A2%9E-blue?style=plastic" alt="新增" align="top" height="24" />　　增加了“DNS 服务器”的监测。
 
-<img src="https://img.shields.io/badge/-%E4%BC%98%E5%8C%96-green?style=plastic" alt="优化" align="top" height="24" />　　重做“网络”UI。
+<img src="https://img.shields.io/badge/-%E4%BC%98%E5%8C%96-green?style=plastic" alt="优化" align="top" height="24" />　　重做“网络” UI 部分。
 
 
 #### 2020年4月28日
@@ -281,16 +286,16 @@
 
 <img src="https://img.shields.io/badge/-%E6%96%B0%E5%A2%9E-blue?style=plastic" alt="新增" align="top" height="24" />　　重新增加了“登陆时长”中的天数。
 
-<img src="https://img.shields.io/badge/-%E4%BC%98%E5%8C%96-green?style=plastic" alt="优化" align="top" height="24" />　　重做“系统”UI。
+<img src="https://img.shields.io/badge/-%E4%BC%98%E5%8C%96-green?style=plastic" alt="优化" align="top" height="24" />　　重做“系统” UI 部分。
 
 
 #### 2020年4月22日
 
-<img src="https://img.shields.io/badge/-%E4%BC%98%E5%8C%96-green?style=plastic" alt="优化" align="top" height="24" />　　重做“存储”UI。
+<img src="https://img.shields.io/badge/-%E4%BC%98%E5%8C%96-green?style=plastic" alt="优化" align="top" height="24" />　　重做“存储” UI 部分。
 
 #### 2020年4月19日
 
-<img src="https://img.shields.io/badge/-%E4%BC%98%E5%8C%96-green?style=plastic" alt="优化" align="top" height="24" />　　重做“内存”UI。
+<img src="https://img.shields.io/badge/-%E4%BC%98%E5%8C%96-green?style=plastic" alt="优化" align="top" height="24" />　　重做“内存” UI 部分。
 
 #### 2020年4月16日
 
@@ -300,20 +305,20 @@
 #### 2020年4月10日 - Version 3.0.a
 > 基于Rainmeter 4.3 r3266
 
-<img src="https://img.shields.io/badge/-%E6%96%B0%E5%A2%9E-blue?style=plastic" alt="新增" align="top" height="24" />　　增加了点击“局域网IP”进入网关。
+<img src="https://img.shields.io/badge/-%E6%96%B0%E5%A2%9E-blue?style=plastic" alt="新增" align="top" height="24" />　　增加了点击“局域网 IP”进入网关。
 
-<img src="https://img.shields.io/badge/-%E4%BC%98%E5%8C%96-green?style=plastic" alt="优化" align="top" height="24" />　　“局域网IP”监测方式交由插件负责。
+<img src="https://img.shields.io/badge/-%E4%BC%98%E5%8C%96-green?style=plastic" alt="优化" align="top" height="24" />　　“局域网 IP”监测方式交由插件负责。
 
 <img src="https://img.shields.io/badge/-%E4%BC%98%E5%8C%96-green?style=plastic" alt="优化" align="top" height="24" />　　“系统名称”中，“专业工作站版”中文化。
 
-<img src="https://img.shields.io/badge/-%E4%BF%AE%E5%A4%8D-yello?style=plastic" alt="修复" align="top" height="24" />　　修复了“广域网IP”的“归属地”信息与“广域网IP”匹配不同步的问题。
+<img src="https://img.shields.io/badge/-%E4%BF%AE%E5%A4%8D-yello?style=plastic" alt="修复" align="top" height="24" />　　修复了“广域网 IP”的“归属地”信息与“广域网 IP”匹配不同步的问题。
 
 <img src="https://img.shields.io/badge/-%E5%88%A0%E9%99%A4-red?style=plastic" alt="删除" align="top" height="24" />　　不再显示显卡的“luid”信息。
 
 
 #### 2020年4月8日
 
-<img src="https://img.shields.io/badge/-%E6%96%B0%E5%A2%9E-blue?style=plastic" alt="新增" align="top" height="24" />　　增加了显示“广域网IP”的“归属地”。
+<img src="https://img.shields.io/badge/-%E6%96%B0%E5%A2%9E-blue?style=plastic" alt="新增" align="top" height="24" />　　增加了显示“广域网 IP”的“归属地”。
 
 <img src="https://img.shields.io/badge/-%E5%88%A0%E9%99%A4-red?style=plastic" alt="删除" align="top" height="24" />　　删除了“登陆时长”中的天数，将天数累加到小时。
 
@@ -327,17 +332,17 @@
 
 #### 2020年2月22日
 
-<img src="https://img.shields.io/badge/-%E4%BF%AE%E5%A4%8D-yello?style=plastic" alt="修复" align="top" height="24" />　　修复了“广域网IP”监测突然失效的问题。
+<img src="https://img.shields.io/badge/-%E4%BF%AE%E5%A4%8D-yello?style=plastic" alt="修复" align="top" height="24" />　　修复了“广域网 IP”监测突然失效的问题。
 
 
 #### 2020年2月11日
 
-<img src="https://img.shields.io/badge/-%E4%BC%98%E5%8C%96-green?style=plastic" alt="优化" align="top" height="24" />　　将“CPU频率”监测由“基频”更改为“实时频率”。
+<img src="https://img.shields.io/badge/-%E4%BC%98%E5%8C%96-green?style=plastic" alt="优化" align="top" height="24" />　　将“CPU 频率”监测由“基频”更改为“实时频率”。
 
 
 #### 2020年2月6日
 
-<img src="https://img.shields.io/badge/-%E6%96%B0%E5%A2%9E-blue?style=plastic" alt="新增" align="top" height="24" />　　增加了对“GPU专用显存”的监测。
+<img src="https://img.shields.io/badge/-%E6%96%B0%E5%A2%9E-blue?style=plastic" alt="新增" align="top" height="24" />　　增加了对“GPU 专用显存”的监测。
 
 <img src="https://img.shields.io/badge/-%E4%BC%98%E5%8C%96-green?style=plastic" alt="优化" align="top" height="24" />　　为了长期维护该皮肤，避免字体版权问题，将皮肤字体由“微软雅黑”改为“思源黑体”
 

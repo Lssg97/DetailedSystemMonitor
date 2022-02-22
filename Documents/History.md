@@ -2,6 +2,13 @@
 
 
 
+#### 2022年2月22日
+
+<img src="https://img.shields.io/badge/-%E6%96%B0%E5%A2%9E-blue?style=plastic" alt="新增" align="top" height="24" />　　右上角新增“设置”按钮。
+
+<img src="https://img.shields.io/badge/-%E4%BC%98%E5%8C%96-green?style=plastic" alt="优化" align="top" height="24" />　　恢复皮肤动态长度模式。
+
+
 #### 2022年2月20日
 
 <img src="https://img.shields.io/badge/-%E4%BC%98%E5%8C%96-green?style=plastic" alt="优化" align="top" height="24" />　　增加对 Microsoft Windows 11 的识别。

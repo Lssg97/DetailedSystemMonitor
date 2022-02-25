@@ -2,6 +2,11 @@
 
 
 
+#### 2022年2月24日
+
+<img src="https://img.shields.io/badge/-%E6%96%B0%E5%A2%9E-blue?style=plastic" alt="新增" align="top" height="24" />　　可隐藏更新提示。
+
+
 #### 2022年2月22日
 
 <img src="https://img.shields.io/badge/-%E6%96%B0%E5%A2%9E-blue?style=plastic" alt="新增" align="top" height="24" />　　右上角新增“设置”按钮。

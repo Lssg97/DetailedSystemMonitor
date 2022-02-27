@@ -8,7 +8,7 @@
   <br />
   <a href="../../issues"><img src="https://img.shields.io/github/issues/Lssg97/DetailedSystemMonitor?label=Issues&logo=data:image/svg+xml;base64,PHN2ZyByb2xlPSJpbWciIHZpZXdCb3g9IjAgMCAxNiAxNiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48dGl0bGU+R2l0SHViIElzc3VlcyBpY29uPC90aXRsZT48cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik04IDkuNWExLjUgMS41IDAgMTAwLTMgMS41IDEuNSAwIDAwMCAzek04IDBhOCA4IDAgMTAwIDE2QTggOCAwIDAwOCAwek0xLjUgOGE2LjUgNi41IDAgMTExMyAwIDYuNSA2LjUgMCAwMS0xMyAweiIgZmlsbD0iI2ZmZmZmZiIgLz48L3N2Zz4=" alt="Issues" /></a>
   <a href="https://github.com/Lssg97/DetailedSystemMonitor/compare/develop...develop"><img src="https://img.shields.io/github/issues-pr/Lssg97/DetailedSystemMonitor?label=Pull%20requests&logo=data:image/svg+xml;base64,PHN2ZyByb2xlPSJpbWciIHZpZXdCb3g9IjAgMCAxNiAxNiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48dGl0bGU+R2l0SHViIFB1bGwgaWNvbjwvdGl0bGU+PHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNNy4xNzcgMy4wNzNMOS41NzMuNjc3QS4yNS4yNSAwIDAxMTAgLjg1NHY0Ljc5MmEuMjUuMjUgMCAwMS0uNDI3LjE3N0w3LjE3NyAzLjQyN2EuMjUuMjUgMCAwMTAtLjM1NHpNMy43NSAyLjVhLjc1Ljc1IDAgMTAwIDEuNS43NS43NSAwIDAwMC0xLjV6bS0yLjI1Ljc1YTIuMjUgMi4yNSAwIDExMyAyLjEyMnY1LjI1NmEyLjI1MSAyLjI1MSAwIDExLTEuNSAwVjUuMzcyQTIuMjUgMi4yNSAwIDAxMS41IDMuMjV6TTExIDIuNWgtMVY0aDFhMSAxIDAgMDExIDF2NS42MjhhMi4yNTEgMi4yNTEgMCAxMDEuNSAwVjVBMi41IDIuNSAwIDAwMTEgMi41em0xIDEwLjI1YS43NS43NSAwIDExMS41IDAgLjc1Ljc1IDAgMDEtMS41IDB6TTMuNzUgMTJhLjc1Ljc1IDAgMTAwIDEuNS43NS43NSAwIDAwMC0xLjV6IiBmaWxsPSIjZmZmZmZmIiAvPjwvc3ZnPg==" alt="Pull requests" /></a>
-  <a href="../../releases/tag/v3.4"><img src="https://img.shields.io/github/downloads/Lssg97/DetailedSystemMonitor/total?label=Downloads&logo=data:image/svg+xml;base64,PHN2ZyByb2xlPSJpbWciIHZpZXdCb3g9IjAgMCAxNiAxNiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48dGl0bGU+R2l0SHViIERvd25sb2FkIGljb248L3RpdGxlPjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTcuNDcgMTAuNzhhLjc1Ljc1IDAgMDAxLjA2IDBsMy43NS0zLjc1YS43NS43NSAwIDAwLTEuMDYtMS4wNkw4Ljc1IDguNDRWMS43NWEuNzUuNzUgMCAwMC0xLjUgMHY2LjY5TDQuNzggNS45N2EuNzUuNzUgMCAwMC0xLjA2IDEuMDZsMy43NSAzLjc1ek0zLjc1IDEzYS43NS43NSAwIDAwMCAxLjVoOC41YS43NS43NSAwIDAwMC0xLjVoLTguNXoiIGZpbGw9IiNmZmZmZmYiIC8+PC9zdmc+" alt="Downloads" /></a>
+  <a href="../../releases/tag/v3.4.b"><img src="https://img.shields.io/github/downloads/Lssg97/DetailedSystemMonitor/total?label=Downloads&logo=data:image/svg+xml;base64,PHN2ZyByb2xlPSJpbWciIHZpZXdCb3g9IjAgMCAxNiAxNiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48dGl0bGU+R2l0SHViIERvd25sb2FkIGljb248L3RpdGxlPjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTcuNDcgMTAuNzhhLjc1Ljc1IDAgMDAxLjA2IDBsMy43NS0zLjc1YS43NS43NSAwIDAwLTEuMDYtMS4wNkw4Ljc1IDguNDRWMS43NWEuNzUuNzUgMCAwMC0xLjUgMHY2LjY5TDQuNzggNS45N2EuNzUuNzUgMCAwMC0xLjA2IDEuMDZsMy43NSAzLjc1ek0zLjc1IDEzYS43NS43NSAwIDAwMCAxLjVoOC41YS43NS43NSAwIDAwMC0xLjVoLTguNXoiIGZpbGw9IiNmZmZmZmYiIC8+PC9zdmc+" alt="Downloads" /></a>
 </p>
 <br />
 
@@ -27,7 +27,7 @@
   <img src="Images/0.png" alt="详细系统监控 v3.0 系列" title="详细系统监控 v3.0 系列" width="900"/>
 </p>
 
-该皮肤目前最新版本为 **3.4**。该版本使用新的 `AMDPlugin` 插件来替代原先的 `AMDTemperature` 插件，使用 **Windows 7** 操作系统和 **AMD 独立显卡**的计算机可以展示 **GPU 使用率**和**显存信息**；优化修复一些已知问题。详细内容请查看 [**更新笔记**](Documents/History.md)。
+该皮肤目前最新版本为 **3.4.b**。该版本使用新的 `AMDPlugin` 插件来替代原先的 `AMDTemperature` 插件，使用 **Windows 7** 操作系统和 **AMD 独立显卡**的计算机可以展示 **GPU 使用率**和**显存信息**；优化修复一些已知问题。详细内容请查看 [**更新笔记**](Documents/History.md)。
 
 
 ### 运行要求
@@ -43,9 +43,9 @@
 
 ### 安装方法
 
-　　本皮肤的官方发行版会使用 Rainmeter 自带皮肤打包器进行打包，安装包扩展名为 `.rmskin`。已经拥有 Rainmeter 软件的用户可在此仓库直接 [**下载**](../../releases/download/v3.4/DetailedSystemMonitor_v_3.4.rmskin) 最新的版本安装包到您的计算机，直接双击文件安装。
+　　本皮肤的官方发行版会使用 Rainmeter 自带皮肤打包器进行打包，安装包扩展名为 `.rmskin`。已经拥有 Rainmeter 软件的用户可在此仓库直接 [**下载**](../../releases/download/v3.4.b/DetailedSystemMonitor_v_3.4.b.rmskin) 最新的版本安装包到您的计算机，直接双击文件安装。
 
-*  **Windows 7** 操作系统用户安装皮肤后，还需要安装 [**字体修复补丁**](../../releases/download/v3.4/DetailedSystemMonitor_v_FixFont.rmskin)，下载完成直接安装即可。**Windows 10** 操作系统用户无需安装该补丁。
+*  **Windows 7** 操作系统用户安装皮肤后，还需要安装 [**字体修复补丁**](../../releases/download/v3.3/DetailedSystemMonitor_v_FixFont.rmskin)，下载完成直接安装即可。**Windows 10** 操作系统用户无需安装该补丁。
 
 *  安装皮肤时，请注意选择适合您计算机显卡设备的插件：若您的计算机存在 **NVIDIA** 显卡，请在插件栏中只勾选 `NvidiaGPU.dll`（如下图所示）；**AMD** 显卡同理。若您的计算机并非 **Intel** 平台，请取消勾选 `CPUTemp.dll`。
 
@@ -53,7 +53,7 @@
   <img src="Images/3.png" alt="安装界面" title="安装界面" />
 </p>
 
-*  使用上述方法在默认情况下，新版本将自动覆盖旧版本的皮肤。若您想保留旧版本皮肤，请手动修改旧版本皮肤的文件名或皮肤文件所在目录名称，亦或者使用第三方压缩软件来解压新版本皮肤安装包，手动提取新版本皮肤文件（不推荐）。
+*  使用上述方法在默认情况下，新版本将自动覆盖旧版本的皮肤。若您想保留旧版本皮肤，请手动修改旧版本皮肤的文件名或皮肤文件所在目录名称（不推荐）。
 
 
 ### 更新历史

@@ -2,6 +2,17 @@
 
 
 
+#### 2022年4月1日
+
+<img src="https://img.shields.io/badge/-%E4%BC%98%E5%8C%96-green?style=plastic" alt="优化" align="top" height="24" />　　优化了一下下“NVIDIA GPU 温度”的捕获方案（？）
+
+
+#### 2022年2月27日 - Version 3.4.b
+> 基于Rainmeter 4.5.1 r3540
+
+<img src="https://img.shields.io/badge/-%E4%BF%AE%E5%A4%8D-yello?style=plastic" alt="修复" align="top" height="24" />　　修复了 Windows&reg; 10 计算机识别系统失败的问题。
+
+
 #### 2022年2月24日
 
 <img src="https://img.shields.io/badge/-%E6%96%B0%E5%A2%9E-blue?style=plastic" alt="新增" align="top" height="24" />　　可隐藏更新提示。
@@ -16,7 +27,7 @@
 
 #### 2022年2月20日
 
-<img src="https://img.shields.io/badge/-%E4%BC%98%E5%8C%96-green?style=plastic" alt="优化" align="top" height="24" />　　增加对 Microsoft Windows 11 的识别。
+<img src="https://img.shields.io/badge/-%E4%BC%98%E5%8C%96-green?style=plastic" alt="优化" align="top" height="24" />　　增加对 Microsoft Windows&reg; 11 的识别。
 
 
 #### 2022年1月2日
@@ -107,7 +118,7 @@
 
 #### 2021年4月16日
 
-<img src="https://img.shields.io/badge/-%E6%96%B0%E5%A2%9E-blue?style=plastic" alt="新增" align="top" height="24" />　　针对使用 Windows 7 系统和 AMD 独立显卡的计算机增加了“GPU 使用率”及“显存”信息的监测。
+<img src="https://img.shields.io/badge/-%E6%96%B0%E5%A2%9E-blue?style=plastic" alt="新增" align="top" height="24" />　　针对使用 Windows&reg; 7 系统和 AMD 独立显卡的计算机增加了“GPU 使用率”及“显存”信息的监测。
 
 
 #### 2021年4月14日
@@ -192,7 +203,7 @@
 
 #### 2020年7月11日
 
-<img src="https://img.shields.io/badge/-%E4%BC%98%E5%8C%96-green?style=plastic" alt="优化" align="top" height="24" />　　优化了非 Windows 10 系统 NVIDIA 显卡计算机中“GPU 监控”的 UI 间距。
+<img src="https://img.shields.io/badge/-%E4%BC%98%E5%8C%96-green?style=plastic" alt="优化" align="top" height="24" />　　优化了非 Windows&reg; 10 系统 NVIDIA 显卡计算机中“GPU 监控”的 UI 间距。
 
 <img src="https://img.shields.io/badge/-%E4%BC%98%E5%8C%96-green?style=plastic" alt="优化" align="top" height="24" />　　当笔记本电脑外接电源且电池满电状态下，“电池监控”中显示“已充满”。
 

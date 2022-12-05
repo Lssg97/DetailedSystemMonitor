@@ -1,0 +1,1 @@
+* *来自 <a href="https://github.com/Gon-Emiya/HDBRainmeterPlugin"><img src="https://img.shields.io/badge/-Gon--Emiya%2FHDBRainmeterPlugin-rgba(240%2C246%2C252%2C40%25)?logo=github&logoColor=333333" alt="CPUTemp" align="top" height="24" /></a> .*

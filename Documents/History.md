@@ -2,6 +2,11 @@
 
 
 
+#### 2022年12月5日
+
+<img src="https://img.shields.io/badge/-%E6%96%B0%E5%A2%9E-blue?style=plastic" alt="新增" align="top" height="24" />　　新增最大网速占用进程显示（仅有 TCP 协议）。插件来自 <https://tieba.baidu.com/p/7750895623>。感谢插件作者奴家可是贤狼。
+
+
 #### 2022年4月1日
 
 <img src="https://img.shields.io/badge/-%E4%BC%98%E5%8C%96-green?style=plastic" alt="优化" align="top" height="24" />　　优化了一下下“NVIDIA GPU 温度”的捕获方案（？）

@@ -21,13 +21,13 @@
 
 <br />
 
-　　**详细系统监控**（DetailedSystemMonitor，以下均简称为“该皮肤”）是一款全面、直观、高信息密度的，用于监视所在计算机的网络、CPU、GPU、内存、硬盘等相关信息的 [Rainmeter](https://www.rainmeter.net/) 皮肤，旨在将这些系统信息清晰明了地展示在你的桌面上。能兼容市面上绝大多数使用Windows系统的计算机或工作站，并自动适配系统版本及硬件以只展示可以获取的信息。
+　　**详细系统监控**（DetailedSystemMonitor，以下均简称为“该皮肤”）是一款全面、直观、高信息密度的，用于监视所在计算机的网络、CPU、GPU、内存、硬盘等相关信息的 [Rainmeter](https://www.rainmeter.net/) 皮肤，旨在将这些系统信息清晰明了地展示在你的桌面上。能兼容市面上绝大多数使用 Windows 系统的计算机或工作站，并自动适配系统版本及硬件以只展示可以获取的信息。
 
 <p align="center">
   <img src="Images/0.png" alt="详细系统监控 v3.0 系列" title="详细系统监控 v3.0 系列" width="900"/>
 </p>
 
-该皮肤目前最新版本为 **3.4.b**。该版本使用新的 `AMDPlugin` 插件来替代原先的 `AMDTemperature` 插件，使用 **Windows 7** 操作系统和 **AMD 独立显卡**的计算机可以展示 **GPU 使用率**和**显存信息**；优化修复一些已知问题。详细内容请查看 [**更新笔记**](Documents/History.md)。
+该皮肤目前最新版本为 **3.5**。该版本新增了使用 `NetworkMonitor` 插件来监控最大网络占用进程，优化修复一些已知问题。详细内容请查看 [**更新笔记**](Documents/History.md)。
 
 
 ### 运行要求
@@ -116,4 +116,3 @@
   <br />
   <a href="mailto:lssg97@163.com"><img src="https://img.shields.io/badge/-%20-rgba(0%2C0%2C0%2C0)?style=flat-square&logo=data:image/svg+xml;base64,PHN2ZyByb2xlPSJpbWciIHZpZXdCb3g9IjAgMCAxNiAxNiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48dGl0bGU+RW1haWwgaWNvbjwvdGl0bGU+PHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNMS43NSAyQTEuNzUgMS43NSAwIDAwMCAzLjc1di43MzZhLjc1Ljc1IDAgMDAwIC4wMjd2Ny43MzdDMCAxMy4yMTYuNzg0IDE0IDEuNzUgMTRoMTIuNUExLjc1IDEuNzUgMCAwMDE2IDEyLjI1di04LjVBMS43NSAxLjc1IDAgMDAxNC4yNSAySDEuNzV6TTE0LjUgNC4wN3YtLjMyYS4yNS4yNSAwIDAwLS4yNS0uMjVIMS43NWEuMjUuMjUgMCAwMC0uMjUuMjV2LjMyTDggNy44OGw2LjUtMy44MXptLTEzIDEuNzR2Ni40NDFjMCAuMTM4LjExMi4yNS4yNS4yNWgxMi41YS4yNS4yNSAwIDAwLjI1LS4yNVY1LjgwOUw4LjM4IDkuMzk3YS43NS43NSAwIDAxLS43NiAwTDEuNSA1LjgwOXoiIGZpbGw9IiM2YTczN2QiIC8+PC9zdmc+" alt="Email" align="top" height="25" />lssg97@163.com</a>
 </p>
-

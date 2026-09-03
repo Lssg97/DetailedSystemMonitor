@@ -49,6 +49,14 @@ WINEDU=                         "Education"
 
 WINHOM=                         "Home"
 
+SERFOU=                         "Foundation"
+
+SERESS=                         "Essentials"
+
+SERSTA=                         "Standard"
+
+SERDAT=                         "Datacenter"
+
 OSBITS=                         "-bit"
 
 QUANTIFIER=                     ""

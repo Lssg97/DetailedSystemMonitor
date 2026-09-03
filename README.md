@@ -8,7 +8,7 @@
   <br />
   <a href="../../issues"><img src="https://img.shields.io/github/issues/Lssg97/DetailedSystemMonitor?label=Issues&logo=data:image/svg+xml;base64,PHN2ZyByb2xlPSJpbWciIHZpZXdCb3g9IjAgMCAxNiAxNiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48dGl0bGU+R2l0SHViIElzc3VlcyBpY29uPC90aXRsZT48cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik04IDkuNWExLjUgMS41IDAgMTAwLTMgMS41IDEuNSAwIDAwMCAzek04IDBhOCA4IDAgMTAwIDE2QTggOCAwIDAwOCAwek0xLjUgOGE2LjUgNi41IDAgMTExMyAwIDYuNSA2LjUgMCAwMS0xMyAweiIgZmlsbD0iI2ZmZmZmZiIgLz48L3N2Zz4=" alt="Issues" /></a>
   <a href="https://github.com/Lssg97/DetailedSystemMonitor/compare/develop...develop"><img src="https://img.shields.io/github/issues-pr/Lssg97/DetailedSystemMonitor?label=Pull%20requests&logo=data:image/svg+xml;base64,PHN2ZyByb2xlPSJpbWciIHZpZXdCb3g9IjAgMCAxNiAxNiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48dGl0bGU+R2l0SHViIFB1bGwgaWNvbjwvdGl0bGU+PHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNNy4xNzcgMy4wNzNMOS41NzMuNjc3QS4yNS4yNSAwIDAxMTAgLjg1NHY0Ljc5MmEuMjUuMjUgMCAwMS0uNDI3LjE3N0w3LjE3NyAzLjQyN2EuMjUuMjUgMCAwMTAtLjM1NHpNMy43NSAyLjVhLjc1Ljc1IDAgMTAwIDEuNS43NS43NSAwIDAwMC0xLjV6bS0yLjI1Ljc1YTIuMjUgMi4yNSAwIDExMyAyLjEyMnY1LjI1NmEyLjI1MSAyLjI1MSAwIDExLTEuNSAwVjUuMzcyQTIuMjUgMi4yNSAwIDAxMS41IDMuMjV6TTExIDIuNWgtMVY0aDFhMSAxIDAgMDExIDF2NS42MjhhMi4yNTEgMi4yNTEgMCAxMDEuNSAwVjVBMi41IDIuNSAwIDAwMTEgMi41em0xIDEwLjI1YS43NS43NSAwIDExMS41IDAgLjc1Ljc1IDAgMDEtMS41IDB6TTMuNzUgMTJhLjc1Ljc1IDAgMTAwIDEuNS43NS43NSAwIDAwMC0xLjV6IiBmaWxsPSIjZmZmZmZmIiAvPjwvc3ZnPg==" alt="Pull requests" /></a>
-  <a href="../../releases/tag/v3.4.b"><img src="https://img.shields.io/github/downloads/Lssg97/DetailedSystemMonitor/total?label=Downloads&logo=data:image/svg+xml;base64,PHN2ZyByb2xlPSJpbWciIHZpZXdCb3g9IjAgMCAxNiAxNiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48dGl0bGU+R2l0SHViIERvd25sb2FkIGljb248L3RpdGxlPjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTcuNDcgMTAuNzhhLjc1Ljc1IDAgMDAxLjA2IDBsMy43NS0zLjc1YS43NS43NSAwIDAwLTEuMDYtMS4wNkw4Ljc1IDguNDRWMS43NWEuNzUuNzUgMCAwMC0xLjUgMHY2LjY5TDQuNzggNS45N2EuNzUuNzUgMCAwMC0xLjA2IDEuMDZsMy43NSAzLjc1ek0zLjc1IDEzYS43NS43NSAwIDAwMCAxLjVoOC41YS43NS43NSAwIDAwMC0xLjVoLTguNXoiIGZpbGw9IiNmZmZmZmYiIC8+PC9zdmc+" alt="Downloads" /></a>
+  <a href="../../releases/tag/v3.5"><img src="https://img.shields.io/github/downloads/Lssg97/DetailedSystemMonitor/total?label=Downloads&logo=data:image/svg+xml;base64,PHN2ZyByb2xlPSJpbWciIHZpZXdCb3g9IjAgMCAxNiAxNiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48dGl0bGU+R2l0SHViIERvd25sb2FkIGljb248L3RpdGxlPjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTcuNDcgMTAuNzhhLjc1Ljc1IDAgMDAxLjA2IDBsMy43NS0zLjc1YS43NS43NSAwIDAwLTEuMDYtMS4wNkw4Ljc1IDguNDRWMS43NWEuNzUuNzUgMCAwMC0xLjUgMHY2LjY5TDQuNzggNS45N2EuNzUuNzUgMCAwMC0xLjA2IDEuMDZsMy43NSAzLjc1ek0zLjc1IDEzYS43NS43NSAwIDAwMCAxLjVoOC41YS43NS43NSAwIDAwMC0xLjVoLTguNXoiIGZpbGw9IiNmZmZmZmYiIC8+PC9zdmc+" alt="Downloads" /></a>
 </p>
 <br />
 
@@ -27,7 +27,7 @@
   <img src="Images/0.png" alt="详细系统监控 v3.0 系列" title="详细系统监控 v3.0 系列" width="900"/>
 </p>
 
-该皮肤目前最新版本为 **3.5**。该版本新增了使用 `NetworkMonitor` 插件来监控最大网络占用进程，优化修复一些已知问题。详细内容请查看 [**更新笔记**](Documents/History.md)。
+该皮肤目前最新版本为 **3.5**。该版本新增了使用 `NetworkMonitor` 插件来监控最大网络占用（TCP 连接）进程，优化修复一些已知问题。详细内容请查看 [**更新笔记**](Documents/History.md)。
 
 
 ### 运行要求
@@ -69,14 +69,14 @@
 | :-: | - |
 | 1 | [为什么在我的电脑上，皮肤看起来很小？](Documents/Q%26A.md#1-%E4%B8%BA%E4%BB%80%E4%B9%88%E5%9C%A8%E6%88%91%E7%9A%84%E7%94%B5%E8%84%91%E4%B8%8A%E7%9A%AE%E8%82%A4%E7%9C%8B%E8%B5%B7%E6%9D%A5%E5%BE%88%E5%B0%8F) |
 | 2 | [为什么我的皮肤和图片展示的不一样，感觉缺东西？](Documents/Q%26A.md#2-%E4%B8%BA%E4%BB%80%E4%B9%88%E6%88%91%E7%9A%84%E7%9A%AE%E8%82%A4%E5%92%8C%E5%9B%BE%E7%89%87%E5%B1%95%E7%A4%BA%E7%9A%84%E4%B8%8D%E4%B8%80%E6%A0%B7%E6%84%9F%E8%A7%89%E7%BC%BA%E4%B8%9C%E8%A5%BF) |
-| 3 | [为什么使用本皮肤后，我的电脑上其它Rainmeter皮肤的动画每秒钟都会卡顿一次？](Documents/Q%26A.md#3-%E4%B8%BA%E4%BB%80%E4%B9%88%E4%BD%BF%E7%94%A8%E6%9C%AC%E7%9A%AE%E8%82%A4%E5%90%8E%E6%88%91%E7%9A%84%E7%94%B5%E8%84%91%E4%B8%8A%E5%85%B6%E5%AE%83rainmeter%E7%9A%AE%E8%82%A4%E7%9A%84%E5%8A%A8%E7%94%BB%E6%AF%8F%E7%A7%92%E9%92%9F%E9%83%BD%E4%BC%9A%E5%8D%A1%E9%A1%BF%E4%B8%80%E6%AC%A1) |
+| 3 | [为什么使用本皮肤后，我的电脑上其它 Rainmeter 皮肤的动画每秒钟都会卡顿一次？](Documents/Q%26A.md#3-%E4%B8%BA%E4%BB%80%E4%B9%88%E4%BD%BF%E7%94%A8%E6%9C%AC%E7%9A%AE%E8%82%A4%E5%90%8E%E6%88%91%E7%9A%84%E7%94%B5%E8%84%91%E4%B8%8A%E5%85%B6%E5%AE%83rainmeter%E7%9A%AE%E8%82%A4%E7%9A%84%E5%8A%A8%E7%94%BB%E6%AF%8F%E7%A7%92%E9%92%9F%E9%83%BD%E4%BC%9A%E5%8D%A1%E9%A1%BF%E4%B8%80%E6%AC%A1) |
 | 4 | [为什么“显示器分辨率”监控和系统设置的不一样？](Documents/Q%26A.md#4-%E4%B8%BA%E4%BB%80%E4%B9%88%E6%98%BE%E7%A4%BA%E5%99%A8%E5%88%86%E8%BE%A8%E7%8E%87%E7%9B%91%E6%8E%A7%E5%92%8C%E7%B3%BB%E7%BB%9F%E8%AE%BE%E7%BD%AE%E7%9A%84%E4%B8%8D%E4%B8%80%E6%A0%B7) |
 | 5 | [为什么“显卡温度”显示为“Nun”或者“N/A”？](Documents/Q%26A.md#5-%E4%B8%BA%E4%BB%80%E4%B9%88%E6%98%BE%E5%8D%A1%E6%B8%A9%E5%BA%A6%E6%98%BE%E7%A4%BA%E4%B8%BAnun%E6%88%96%E8%80%85na) |
-| 6 | [为什么“CPU温度”显示为“N/A”？](Documents/Q%26A.md#6-%E4%B8%BA%E4%BB%80%E4%B9%88cpu%E6%B8%A9%E5%BA%A6%E6%98%BE%E7%A4%BA%E4%B8%BAna) |
-| 7 | [为什么任何“显卡使用率”都显示为“0”？](Documents/Q%26A.md#7-%E4%B8%BA%E4%BB%80%E4%B9%88%E4%BB%BB%E4%BD%95%E6%98%BE%E5%8D%A1%E4%BD%BF%E7%94%A8%E7%8E%87%E9%83%BD%E6%98%BE%E7%A4%BA%E4%B8%BA0) |
-| 8 | [为什么“DNS服务器”展示的地址是“网关（路由器）”的地址？](Documents/Q%26A.md#8-%E4%B8%BA%E4%BB%80%E4%B9%88dns%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%B1%95%E7%A4%BA%E7%9A%84%E5%9C%B0%E5%9D%80%E6%98%AF%E7%BD%91%E5%85%B3%E8%B7%AF%E7%94%B1%E5%99%A8%E7%9A%84%E5%9C%B0%E5%9D%80) |
+| 6 | [为什么“CPU 温度”显示为“N/A”？](Documents/Q%26A.md#6-%E4%B8%BA%E4%BB%80%E4%B9%88cpu%E6%B8%A9%E5%BA%A6%E6%98%BE%E7%A4%BA%E4%B8%BAna) |
+| 7 | [为什么任何显卡使用率都显示为“0”？](Documents/Q%26A.md#7-%E4%B8%BA%E4%BB%80%E4%B9%88%E4%BB%BB%E4%BD%95%E6%98%BE%E5%8D%A1%E4%BD%BF%E7%94%A8%E7%8E%87%E9%83%BD%E6%98%BE%E7%A4%BA%E4%B8%BA0) |
+| 8 | [为什么“DNS 服务器”展示的地址是“网关（路由器）”的地址？](Documents/Q%26A.md#8-%E4%B8%BA%E4%BB%80%E4%B9%88dns%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%B1%95%E7%A4%BA%E7%9A%84%E5%9C%B0%E5%9D%80%E6%98%AF%E7%BD%91%E5%85%B3%E8%B7%AF%E7%94%B1%E5%99%A8%E7%9A%84%E5%9C%B0%E5%9D%80) |
 | 9 | [为什么电脑刚开机，但是“开机时长”已经好几天了？](Documents/Q%26A.md#9-%E4%B8%BA%E4%BB%80%E4%B9%88%E7%94%B5%E8%84%91%E5%88%9A%E5%BC%80%E6%9C%BA%E4%BD%86%E6%98%AF%E5%BC%80%E6%9C%BA%E6%97%B6%E9%95%BF%E5%B7%B2%E7%BB%8F%E5%A5%BD%E5%87%A0%E5%A4%A9%E4%BA%86) |
-| 10 | [为什么网络正常但无法显示“广域网IP”或者“归属地”？](Documents/Q%26A.md#10-%E4%B8%BA%E4%BB%80%E4%B9%88%E7%BD%91%E7%BB%9C%E6%AD%A3%E5%B8%B8%E4%BD%86%E6%97%A0%E6%B3%95%E6%98%BE%E7%A4%BA%E5%B9%BF%E5%9F%9F%E7%BD%91ip%E6%88%96%E8%80%85%E5%BD%92%E5%B1%9E%E5%9C%B0) |
+| 10 | [为什么网络正常但无法显示“广域网 IP”或者“归属地”？](Documents/Q%26A.md#10-%E4%B8%BA%E4%BB%80%E4%B9%88%E7%BD%91%E7%BB%9C%E6%AD%A3%E5%B8%B8%E4%BD%86%E6%97%A0%E6%B3%95%E6%98%BE%E7%A4%BA%E5%B9%BF%E5%9F%9F%E7%BD%91ip%E6%88%96%E8%80%85%E5%BD%92%E5%B1%9E%E5%9C%B0) |
 
 如果您的问题不在上述列表，可以在 [**中国雨滴美化社区**](https://bbs.rainmeter.cn/thread-290033-1-1.html) 或 [**rainmeter 百度贴吧**](https://tieba.baidu.com/p/6868066630) 下该皮肤所在的帖子进行回复或直接在本仓库发出 <a href="../../issues/new"><img src="https://img.shields.io/badge/-Issue-rgba(240%2C246%2C252%2C50%25)?logo=data:image/svg+xml;base64,PHN2ZyByb2xlPSJpbWciIHZpZXdCb3g9IjAgMCAxNiAxNiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48dGl0bGU+R2l0SHViIElzc3VlcyBpY29uPC90aXRsZT48cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik04IDkuNWExLjUgMS41IDAgMTAwLTMgMS41IDEuNSAwIDAwMCAzek04IDBhOCA4IDAgMTAwIDE2QTggOCAwIDAwOCAwek0xLjUgOGE2LjUgNi41IDAgMTExMyAwIDYuNSA2LjUgMCAwMS0xMyAweiIgZmlsbD0iIzMzMzMzMyIgLz48L3N2Zz4=" alt="Issue" align="top" height="24" /></a> 进行提问。
 
@@ -112,7 +112,7 @@
 ### 联系作者
 
 <p>
-  <a href="https://wpa.qq.com/msgrd?uin=760265690"><img src="https://img.shields.io/badge/-%20-rgba(0%2C0%2C0%2C0)?style=flat-square&logo=tencent-qq&logoColor=6a737d" alt="QQ" align="top" height="25" />760265690</a>
+  <a href="mqqapi://card/show_pslcard?src_type=internal&version=1&uin=760265690&card_type=person&source=qrcode"><img src="https://img.shields.io/badge/-%20-rgba(0%2C0%2C0%2C0)?style=flat-square&logo=qq&logoColor=6a737d" alt="QQ" align="top" height="25" />760265690</a>
   <br />
   <a href="mailto:lssg97@163.com"><img src="https://img.shields.io/badge/-%20-rgba(0%2C0%2C0%2C0)?style=flat-square&logo=data:image/svg+xml;base64,PHN2ZyByb2xlPSJpbWciIHZpZXdCb3g9IjAgMCAxNiAxNiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48dGl0bGU+RW1haWwgaWNvbjwvdGl0bGU+PHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNMS43NSAyQTEuNzUgMS43NSAwIDAwMCAzLjc1di43MzZhLjc1Ljc1IDAgMDAwIC4wMjd2Ny43MzdDMCAxMy4yMTYuNzg0IDE0IDEuNzUgMTRoMTIuNUExLjc1IDEuNzUgMCAwMDE2IDEyLjI1di04LjVBMS43NSAxLjc1IDAgMDAxNC4yNSAySDEuNzV6TTE0LjUgNC4wN3YtLjMyYS4yNS4yNSAwIDAwLS4yNS0uMjVIMS43NWEuMjUuMjUgMCAwMC0uMjUuMjV2LjMyTDggNy44OGw2LjUtMy44MXptLTEzIDEuNzR2Ni40NDFjMCAuMTM4LjExMi4yNS4yNS4yNWgxMi41YS4yNS4yNSAwIDAwLjI1LS4yNVY1LjgwOUw4LjM4IDkuMzk3YS43NS43NSAwIDAxLS43NiAwTDEuNSA1LjgwOXoiIGZpbGw9IiM2YTczN2QiIC8+PC9zdmc+" alt="Email" align="top" height="25" />lssg97@163.com</a>
 </p>

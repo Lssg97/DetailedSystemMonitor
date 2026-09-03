@@ -10,6 +10,9 @@
 /Skin/@Resources/Fonts
 /Skin/@Resources/Images
 
+# 忽略 DeviceInfo 文件夹
+/Source/DeviceInfo
+
 # 忽略所有 VS 构建文件夹
 .vs/
 *[Dd]ebug*/

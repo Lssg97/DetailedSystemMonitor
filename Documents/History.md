@@ -2,6 +2,19 @@
 
 
 
+#### 2026年9月3日
+
+<img src="https://img.shields.io/badge/-%E4%BC%98%E5%8C%96-green?style=plastic" alt="优化" align="top" height="24" />　　增加对服务器版操作系统的识别。
+
+<img src="https://img.shields.io/badge/-%E4%BC%98%E5%8C%96-green?style=plastic" alt="优化" align="top" height="24" />　　优化了“广域网 IP”的获取稳定性。
+
+<img src="https://img.shields.io/badge/-%E4%BF%AE%E5%A4%8D-yello?style=plastic" alt="修复" align="top" height="24" />　　修复了部分计算机 CPU 频率识别不准的问题。
+
+<img src="https://img.shields.io/badge/-%E4%BF%AE%E5%A4%8D-yello?style=plastic" alt="修复" align="top" height="24" />　　修复了核显“GPU 型号”的一个翻译问题。
+
+<img src="https://img.shields.io/badge/-%E4%BF%AE%E5%A4%8D-yello?style=plastic" alt="修复" align="top" height="24" />　　修复了更新链接。
+
+
 #### 2023年12月21日
 
 <img src="https://img.shields.io/badge/-%E4%BC%98%E5%8C%96-green?style=plastic" alt="优化" align="top" height="24" />　　最大可以识别到 20 逻辑核心的 CPU。

@@ -2,7 +2,17 @@
 
 
 
-#### 2026年9月3日
+#### 2026年11月11日
+
+<img src="https://img.shields.io/badge/-%E6%96%B0%E5%A2%9E-blue?style=plastic" alt="新增" align="top" height="24" />　　新增对 12 代以后 Intel CPU 能效核的识别（仅测试，依赖 Sysinternals 工具集中的 Coreinfo.exe）。
+
+<img src="https://img.shields.io/badge/-%E4%BC%98%E5%8C%96-green?style=plastic" alt="优化" align="top" height="24" />　　引入 GPU 专项优化 Lua 脚本，大幅提升皮肤性能。
+
+
+> ### 以下为 Version 4.0 以前的公开版本更新笔记
+
+
+#### 2026年9月3日 - Version 3.5
 
 <img src="https://img.shields.io/badge/-%E4%BC%98%E5%8C%96-green?style=plastic" alt="优化" align="top" height="24" />　　增加对服务器版操作系统的识别。
 

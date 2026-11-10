@@ -11,6 +11,10 @@
   <a href="../../releases/tag/v3.5"><img src="https://img.shields.io/github/downloads/Lssg97/DetailedSystemMonitor/total?label=Downloads&logo=data:image/svg+xml;base64,PHN2ZyByb2xlPSJpbWciIHZpZXdCb3g9IjAgMCAxNiAxNiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48dGl0bGU+R2l0SHViIERvd25sb2FkIGljb248L3RpdGxlPjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTcuNDcgMTAuNzhhLjc1Ljc1IDAgMDAxLjA2IDBsMy43NS0zLjc1YS43NS43NSAwIDAwLTEuMDYtMS4wNkw4Ljc1IDguNDRWMS43NWEuNzUuNzUgMCAwMC0xLjUgMHY2LjY5TDQuNzggNS45N2EuNzUuNzUgMCAwMC0xLjA2IDEuMDZsMy43NSAzLjc1ek0zLjc1IDEzYS43NS43NSAwIDAwMCAxLjVoOC41YS43NS43NSAwIDAwMC0xLjVoLTguNXoiIGZpbGw9IiNmZmZmZmYiIC8+PC9zdmc+" alt="Downloads" /></a>
 </p>
 <br />
+<p align="center">
+  <a href="/README_en.md">English</a>・
+  <a href="/README.md">简体中文</a>
+</p>
 
 
 ### 导航

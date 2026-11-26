@@ -10,17 +10,71 @@
 /Skin/@Resources/Fonts
 /Skin/@Resources/Images
 
-# 忽略 DeviceInfo 文件夹
-/Source/DeviceInfo
-
 # 忽略所有 VS 构建文件夹
-.vs/
-*[Dd]ebug*/
-*[Rr]elease*/
 [Bb]in/
 [Oo]bj/
-[Ll]og/
+[Dd]ebug/
+[Rr]elease/
+x64/
+[Aa][Mm][Dd]64/
+[Ww][Ii][Nn]64/
+x86/
+x32/
+[Ww][Ii][Nn]32/
+[Aa][Rr][Mm]64/
+[Aa][Rr][Mm]/
+build/
+bld/
+out/
+
+# 忽略所有 VS 缓存与用户设置
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.VC.db
+*.VC.VC.opendb
+ipch/
+*.aps
+*.ncb
+*.opt
+*.plg
+*.sdf
+*.opensdf
+
+# 忽略所有 VS 中间/调试产物
+*.pdb
+*.ilk
+*.obj
+*.iobj
+*.ipdb
+*.exp
+*.exe
+*.dll
+*.tlog
+*.idb
+*.lastbuildstate
+*.cache
+*.tmp
+*.log
+
+# 忽略所有 VS 测试结果
+[Tt]est[Rr]esult*/
+TestResults/
+*.trx
+*.coverage
+*.coveragexml
 
 # 保留所有 .ini 和 .inc 文件
 !*.ini
 !*.inc
+
+# 保留 API 内文件
+!**/API/**/x86/
+!**/API/**/x32/
+!**/API/**/x64/
+!**/API/**/amd64/
+
+# 保留模块文件
+!/Plugins/BIN/

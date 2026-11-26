@@ -1,6 +1,22 @@
 # 更新笔记
 
 
+#### 2026年11月26日
+
+<img src="https://img.shields.io/badge/-%E6%96%B0%E5%A2%9E-blue?style=plastic" alt="新增" align="top" height="24" />　　CPU 温度监控插件替换为“PawnTemp”，支持对 AMD CPU 温度的监测（17h+ 已通过验证测试，0F-16h 未测试）。
+
+<img src="https://img.shields.io/badge/-%E4%BC%98%E5%8C%96-green?style=plastic" alt="优化" align="top" height="24" />　　通过 Build 号进行更精细的系统版本识别。
+
+<img src="https://img.shields.io/badge/-%E4%BC%98%E5%8C%96-green?style=plastic" alt="优化" align="top" height="24" />　　优化核心显卡和独立显卡的正则表达分类逻辑。
+
+<img src="https://img.shields.io/badge/-%E4%BC%98%E5%8C%96-green?style=plastic" alt="优化" align="top" height="24" />　　更新了“DeviceInfo”插件，令皮肤以更优雅的方式获取显卡 LUID。
+
+<img src="https://img.shields.io/badge/-%E4%BC%98%E5%8C%96-green?style=plastic" alt="优化" align="top" height="24" />　　更新“NvidiaGPU”插件的 nvapi 到 560 版本。
+
+<img src="https://img.shields.io/badge/-%E4%BF%AE%E5%A4%8D-yello?style=plastic" alt="修复" align="top" height="24" />　　修复了当电脑同时拥有 AMD 核心显卡和独立显卡时独立显卡被隐藏的问题。
+
+<img src="https://img.shields.io/badge/-%E5%88%A0%E9%99%A4-red?style=plastic" alt="删除" align="top" height="24" />　　因“CPUTemp”插件使用的“WinRing0x64”驱动频繁报高危漏洞，弃用该插件。新插件使用的“PawnIO”驱动有系统要求，因此停止对 Windows&reg 10 1809 以前版本的操作系统及所有 32 位操作系统提供 CPU 温度监测。
+
 
 #### 2026年11月11日
 
@@ -13,6 +29,7 @@
 
 
 #### 2026年9月3日 - Version 3.5
+> 基于Rainmeter 4.5.1 r3540
 
 <img src="https://img.shields.io/badge/-%E4%BC%98%E5%8C%96-green?style=plastic" alt="优化" align="top" height="24" />　　增加对服务器版操作系统的识别。
 

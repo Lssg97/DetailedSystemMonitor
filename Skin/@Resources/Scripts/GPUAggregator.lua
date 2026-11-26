@@ -84,7 +84,7 @@ end
 local function aggregate(items, luid, engines)
     local data = {}
     for _, e in ipairs(engines) do data[e] = 0 end
-    if not luid or luid == "" then return data end
+    if not luid or luid == "" or luid == "N/A" then return data end
     for _, item in ipairs(items) do
         if item.name:find(luid, 1, true) then
             local eng = extractEngine(item.name)
@@ -132,7 +132,7 @@ local function writeTopNamesByEngine(items, luid, engines, prefix, pidToName)
     -- 生成一份某显卡各引擎的最大占用进程 PID 和占用率的空字典
     local topByEngine = {}
     for _, e in ipairs(engines) do topByEngine[e] = { pid = "", val = 0 } end
-    if luid and luid ~= "" then
+    if luid and luid ~= "" and luid ~= "N/A" then
         for _, item in ipairs(items) do
             if item.name:find(luid, 1, true) then
                 local pid = item.name:match("pid_(%d+)")
@@ -194,7 +194,7 @@ function Update()
     -- 获取显卡 LUID
     local intLUID = SKIN:GetVariable("IntegratedGPUAdapter")
     local disLUID = SKIN:GetVariable("DiscreteGPUAdapter")
-    if (not intLUID or intLUID == "") and (not disLUID or disLUID == "") then return end
+    if (not intLUID or intLUID == "" or intLUID == "N/A") and (not disLUID or disLUID == "" or disLUID == "N/A") then return end
     -- 根据 MeasureCPUProcessN 和 MeasurePIDN 生成一份 PID 对应进程名的字典
     local pidToName = {}
     for i = 1, 20 do

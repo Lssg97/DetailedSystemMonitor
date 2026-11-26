@@ -28,41 +28,41 @@
 　　**详细系统监控**（DetailedSystemMonitor，以下均简称为“该皮肤”）是一款全面、直观、高信息密度的，用于监视所在计算机的网络、CPU、GPU、内存、硬盘等相关信息的 [Rainmeter](https://www.rainmeter.net/) 皮肤，旨在将这些系统信息清晰明了地展示在你的桌面上。能兼容市面上绝大多数使用 Windows 系统的计算机或工作站，并自动适配系统版本及硬件以只展示可以获取的信息。
 
 <p align="center">
-  <img src="Images/0.png" alt="详细系统监控 v3.0 系列" title="详细系统监控 v3.0 系列" width="900"/>
+  <img src="Images/0.webp" alt="详细系统监控 v4.0 系列" title="详细系统监控 v4.0 系列" width="900"/>
 </p>
 
-该皮肤目前最新版本为 **3.5**。该版本新增了使用 `NetworkMonitor` 插件来监控最大网络占用（TCP 连接）进程，优化修复一些已知问题。详细内容请查看 [**更新笔记**](Documents/History.md)。
+全新的 **4.0** 版本通过调用 Lua 脚本和更新插件的方式大幅优化了皮肤性能，同时还带来一些新特性，如增加了对 AMD CPU 的温度监控支持。详细内容请查看 [**更新笔记**](Documents/History.md)。
 
 
 ### 运行要求
 
-*  **系统要求：** 该皮肤至少需要 **Windows&reg; 7 SP1** 系统来满足最低程度的信息展示。若要使皮肤展示其全部功能，则需要 **Windows&reg; 10 Fall Creators Update (1709)** 或更高版本系统。
+*  **系统要求：** 该皮肤至少需要 **Windows&reg; 7 SP1** 系统来满足最低程度的信息展示。若要使皮肤展示其全部功能，则需要 **64** 位 **Windows&reg; 10 Redstone 5 (1809)** 或更高版本系统。
 
-*  **环境要求：** [**.NET Framework 4.5**](https://www.microsoft.com/zh-cn/download/details.aspx?id=30653) 或更高版本。
+*  **环境要求：** [**.NET Framework 4.5**](https://www.microsoft.com/zh-cn/download/details.aspx?id=30653) 或更高版本，且已安装 [**PawnIO**](https://pawnio.eu) 驱动。
 
 *  **软件要求：** [**Rainmeter 4.5.1 r3540**](https://www.rainmeter.net/) 或更高版本。
 
-*  **其它要求：** 用户须**以管理员身份运行** Rainmeter 来成功获取 CPU 温度。对于仅有 AMD 核心显卡的计算机，若无法正常显示出 GPU 温度，还需要后台运行 [**CoreTemp**](https://www.alcpu.com/CoreTemp/) 软件。关于如何设置**以管理员身份自启动 Rainmeter**，请查看 [**问题解答#6**](Documents/Q%26A.md#6-%E4%B8%BA%E4%BB%80%E4%B9%88cpu%E6%B8%A9%E5%BA%A6%E6%98%BE%E7%A4%BA%E4%B8%BAna)。
+*  **其它要求：** 用户须**以管理员身份运行** Rainmeter 来成功获取 CPU 温度。关于如何设置**以管理员身份自启动 Rainmeter**，请查看 [**问题解答#6**](Documents/Q%26A.md#6-%E4%B8%BA%E4%BB%80%E4%B9%88cpu%E6%B8%A9%E5%BA%A6%E6%98%BE%E7%A4%BA%E4%B8%BAna)。
 
 
 ### 安装方法
 
-　　本皮肤的官方发行版会使用 Rainmeter 自带皮肤打包器进行打包，安装包扩展名为 `.rmskin`。已经拥有 Rainmeter 软件的用户可在此仓库直接 [**下载**](../../releases/download/v3.4.b/DetailedSystemMonitor_v_3.4.b.rmskin) 最新的版本安装包到您的计算机，直接双击文件安装。
+　　本皮肤的官方发行版会使用 Rainmeter 自带皮肤打包器进行打包，安装包扩展名为 `.rmskin`。已经拥有 Rainmeter 软件的用户可在此仓库直接 [**下载**](../../releases/download/v4.0/DetailedSystemMonitor_v_4.0.rmskin) 最新的版本安装包到您的计算机，直接双击文件安装。
 
-*  **Windows 7** 操作系统用户安装皮肤后，还需要安装 [**字体修复补丁**](../../releases/download/v3.3/DetailedSystemMonitor_v_FixFont.rmskin)，下载完成直接安装即可。**Windows 10** 操作系统用户无需安装该补丁。
+*  **Windows&reg; 7** 操作系统用户安装皮肤后，还需要安装 [**字体修复补丁**](../../releases/download/v3.3/DetailedSystemMonitor_v_FixFont.rmskin)，否则皮肤会显示异常。下载完成直接安装即可。非 **Windows&reg; 7** 操作系统用户则无需安装该补丁。
 
-*  安装皮肤时，请注意选择适合您计算机显卡设备的插件：若您的计算机存在 **NVIDIA** 显卡，请在插件栏中只勾选 `NvidiaGPU.dll`（如下图所示）；**AMD** 显卡同理。若您的计算机并非 **Intel** 平台，请取消勾选 `CPUTemp.dll`。
+*  安装皮肤时，请尽可能仅选择适配您计算机的插件。如您的计算机仅有 **NVIDIA** 显卡，请在插件栏中只勾选 `NvidiaGPU.dll`（如下图所示）；仅有 **AMD** 显卡则只勾选 `AMDPlugin.dll`。
 
 <p align="center">
-  <img src="Images/3.png" alt="安装界面" title="安装界面" />
+  <img src="Images/3.webp" alt="安装界面" title="安装界面" />
 </p>
 
-*  使用上述方法在默认情况下，新版本将自动覆盖旧版本的皮肤。若您想保留旧版本皮肤，请手动修改旧版本皮肤的文件名或皮肤文件所在目录名称（不推荐）。
+*  使用上述方法在默认情况下，新版本将自动覆盖旧版本的皮肤，且保留个人配置文件。
 
 
 ### 更新历史
 
-　　您可以在 [**更新笔记**](Documents/History.md) 中查看历史更新记录。如果您想实时了解我最近的更新内容，可以查看本仓库的 <a href="../../tree/develop"><img src="https://img.shields.io/badge/-develop-rgba(240%2C246%2C252%2C50%25)?logo=data:image/svg+xml;base64,PHN2ZyByb2xlPSJpbWciIHZpZXdCb3g9IjAgMCAxNiAxNiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48dGl0bGU+R2l0SHViIEJyYW5jaGVzIGljb248L3RpdGxlPjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTExLjc1IDIuNWEuNzUuNzUgMCAxMDAgMS41Ljc1Ljc1IDAgMDAwLTEuNXptLTIuMjUuNzVhMi4yNSAyLjI1IDAgMTEzIDIuMTIyVjZBMi41IDIuNSAwIDAxMTAgOC41SDZhMSAxIDAgMDAtMSAxdjEuMTI4YTIuMjUxIDIuMjUxIDAgMTEtMS41IDBWNS4zNzJhMi4yNSAyLjI1IDAgMTExLjUgMHYxLjgzNkEyLjQ5MiAyLjQ5MiAwIDAxNiA3aDRhMSAxIDAgMDAxLTF2LS42MjhBMi4yNSAyLjI1IDAgMDE5LjUgMy4yNXpNNC4yNSAxMmEuNzUuNzUgMCAxMDAgMS41Ljc1Ljc1IDAgMDAwLTEuNXpNMy41IDMuMjVhLjc1Ljc1IDAgMTExLjUgMCAuNzUuNzUgMCAwMS0xLjUgMHoiIGZpbGw9IiMzMzMzMzMiIC8+PC9zdmc+" alt="develop" align="top" height="24" /></a> 分支。
+　　本皮肤的正式版本不会快速迭代，仅在累计更新到一定程度时才会发放新版皮肤安装包。您可以在 [**更新笔记**](Documents/History.md) 中查看历史更新记录。如果您想实时了解我最近的更新内容，可以关注本仓库的 <a href="../../tree/develop"><img src="https://img.shields.io/badge/-develop-rgba(240%2C246%2C252%2C50%25)?logo=data:image/svg+xml;base64,PHN2ZyByb2xlPSJpbWciIHZpZXdCb3g9IjAgMCAxNiAxNiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48dGl0bGU+R2l0SHViIEJyYW5jaGVzIGljb248L3RpdGxlPjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTExLjc1IDIuNWEuNzUuNzUgMCAxMDAgMS41Ljc1Ljc1IDAgMDAwLTEuNXptLTIuMjUuNzVhMi4yNSAyLjI1IDAgMTEzIDIuMTIyVjZBMi41IDIuNSAwIDAxMTAgOC41SDZhMSAxIDAgMDAtMSAxdjEuMTI4YTIuMjUxIDIuMjUxIDAgMTEtMS41IDBWNS4zNzJhMi4yNSAyLjI1IDAgMTExLjUgMHYxLjgzNkEyLjQ5MiAyLjQ5MiAwIDAxNiA3aDRhMSAxIDAgMDAxLTF2LS42MjhBMi4yNSAyLjI1IDAgMDE5LjUgMy4yNXpNNC4yNSAxMmEuNzUuNzUgMCAxMDAgMS41Ljc1Ljc1IDAgMDAwLTEuNXpNMy41IDMuMjVhLjc1Ljc1IDAgMTExLjUgMCAuNzUuNzUgMCAwMS0xLjUgMHoiIGZpbGw9IiMzMzMzMzMiIC8+PC9zdmc+" alt="develop" align="top" height="24" /></a> 分支。
 
 
 ### 遇到问题
@@ -99,18 +99,18 @@
 
 ### 相关协议
 
-　　该皮肤 **配置文件**（.ini）、**安装包**（.rmskin）以及该皮肤项目所在 [**GitHub仓库**](https://github.com/Lssg97/DetailedSystemMonitor)、[**Gitee仓库**](https://gitee.com/Lssg97/DetailedSystemMonitor) 中的所有文本内容，除另有声明外，均在 [**知识共享 (Creative Commons) 署名-非商业性使用-相同方式共享 3.0**](LICENSE.md) 协议下提供，附加条款亦可能应用。
+　　该皮肤项目所在的 [**GitHub**](https://github.com/Lssg97/DetailedSystemMonitor) 仓库和 [**Gitee**](https://gitee.com/Lssg97/DetailedSystemMonitor) 仓库中除 [Plugins](Plugins) 文件夹外的所有文本内容，均在 [**知识共享 (Creative Commons) 署名-非商业性使用-相同方式共享 3.0**](LICENSE.md) 协议下提供，附加条款亦可能应用。[Plugins](Plugins) 文件夹内包含该皮肤使用的插件源码，根据原插件开发者或上游依赖而适配不同共享协议。
 
 　　本仓库内容归 **全体编辑者** 共同所有，在本仓库里发布内容即表示您允许将您编辑的内容 **无偿且自由** 地分享给其他编辑者。
 
 
 ### 其他声明
 
-　　目前该皮肤及其后续更新仅在 [GitHub 仓库](https://github.com/Lssg97/DetailedSystemMonitor) 发布；官方下载渠道有 [GitHub 仓库](https://github.com/Lssg97/DetailedSystemMonitor)、[中国雨滴美化社区](https://bbs.rainmeter.cn/thread-290033-1-1.html) 和 [百度网盘](https://pan.baidu.com/s/1qs4fpEXaxHc3JcyXqNKOfQ)；更新信息的发布渠道包括：[中国雨滴美化社区](https://bbs.rainmeter.cn/thread-290033-1-1.html) 和 [rainmeter 百度贴吧](https://tieba.baidu.com/p/6868066630)。请各位用户认准以上链接。
+　　目前该皮肤及其后续更新仅在 [GitHub](https://github.com/Lssg97/DetailedSystemMonitor) 仓库和 [Gitee](https://gitee.com/Lssg97/DetailedSystemMonitor) 仓库发布。官方下载渠道有 [GitHub](https://github.com/Lssg97/DetailedSystemMonitor) 仓库、[中国雨滴美化社区](https://bbs.rainmeter.cn/thread-290033-1-1.html) 和 [百度网盘](https://pan.baidu.com/s/1qs4fpEXaxHc3JcyXqNKOfQ)；更新信息的发布渠道包括：[中国雨滴美化社区](https://bbs.rainmeter.cn/thread-290033-1-1.html) 和 [rainmeter 百度贴吧](https://tieba.baidu.com/p/6868066630)。请各位用户认准以上链接。
 
-　　该皮肤最初版本源自互联网，但原作者、创作时间等信息均已无从考证。本人于 2010 年得到该皮肤的原始版本副本，自 2015 年开始致力于维护该皮肤，并在 [中国雨滴美化社区](https://bbs.rainmeter.cn/) 发布过七次独立的版本更新（<https://bbs.rainmeter.cn/thread-141896-1-1.html>）。维护至今，该皮肤无论是结构上还是内容上都已和原始版本大相径庭，属于高度演绎作品。为铭记原始版本作者，该皮肤将继续作为原始版本的延续而发展。
+　　该皮肤最初版本源自互联网，但原作者、创作时间等信息均已无从考证。本人于 2010 年得到该皮肤的原始版本副本，自 2015 年开始致力于维护该皮肤，并在 [中国雨滴美化社区](https://bbs.rainmeter.cn/) 发布过多次独立的版本更新（<https://bbs.rainmeter.cn/thread-141896-1-1.html>）。维护至今，该皮肤无论是结构上还是内容上都已和原始版本大相径庭，属于高度演绎作品。为致敬原始版本作者，该皮肤将继续作为原始版本的延续而发展。
 
-　　该皮肤使用了五个其他开发者制作的 Rainmeter 第三方插件：[AMDPlugin.dll](https://forum.rainmeter.net/viewtopic.php?f=128&t=36120)（NaliLord）、[NvidiaGPU.dll](https://tieba.baidu.com/p/3242119308)（IZZZZZI）、[CPUTemp.dll](https://tieba.baidu.com/p/6855002141)（DeadUniverse）、[NetworkMonitor.dll](https://tieba.baidu.com/p/7750895623)（奴家可是贤狼）和 DeviceInfo.dll（[a1091817957](https://tieba.baidu.com/home/main/?un=a1091817957)）；旧版本皮肤还曾使用过 [AMDTemperature.dll](https://tieba.baidu.com/p/2221203992)（z100s）；GPU Bar 配色方案由 [mzflh](https://tieba.baidu.com/home/main/?un=mzflh) 提供。感谢各位的技术支持和帮助。
+　　该皮肤使用了四个其他开发者制作的 Rainmeter 第三方插件：[AMDPlugin.dll](https://forum.rainmeter.net/viewtopic.php?f=128&t=36120)（NaliLord）、[NvidiaGPU.dll](https://tieba.baidu.com/p/3242119308)（IZZZZZI）、[NetworkMonitor.dll](https://tieba.baidu.com/p/7750895623)（奴家可是贤狼）和 DeviceInfo.dll（[a1091817957](https://tieba.baidu.com/home/main/?un=a1091817957)）；旧版本皮肤还曾使用过 [AMDTemperature.dll](https://tieba.baidu.com/p/2221203992)（z100s）和 [CPUTemp.dll](https://tieba.baidu.com/p/6855002141)（DeadUniverse）；GPU Bar 配色方案由 [mzflh](https://tieba.baidu.com/home/main/?un=mzflh) 提供。感谢各位的技术支持和帮助。
 
 
 ### 联系作者

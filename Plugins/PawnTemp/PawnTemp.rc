@@ -1,0 +1,55 @@
+﻿#define APSTUDIO_READONLY_SYMBOLS
+#include <windows.h>
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ // Set the plugin version here and in the FileVersion string below.
+ FILEVERSION 0,4,0,0
+ PRODUCTVERSION 3,0,2,2161
+ FILEFLAGSMASK 0x17L
+#ifdef _DEBUG
+ FILEFLAGS VS_FF_DEBUG
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS	VOS_NT_WINDOWS32
+ FILETYPE VFT_DLL
+ FILESUBTYPE VFT_UNKNOWN
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904E4"
+        BEGIN
+            // Set your plugin version and copyright here.
+            VALUE "FileVersion", "0.4.0.0"
+            VALUE "LegalCopyright", "© 2026 - Lssg97"
+
+            // Don't change the entries below!
+            VALUE "ProductName", "Rainmeter"
+#ifdef _WIN64
+            VALUE "ProductVersion", "3.0.2.2161 (64-bit)"
+#else
+            VALUE "ProductVersion", "3.0.2.2161 (32-bit)"
+#endif //_WIN64
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Binary
+//
+
+101 RCDATA "../BIN/PawnIO.Modules/IntelMSR.bin"
+102 RCDATA "../BIN/PawnIO.Modules/AMDFamily17.bin"
+103 RCDATA "../BIN/PawnIO.Modules/AMDFamily10.bin"
+104 RCDATA "../BIN/PawnIO.Modules/AMDFamily0F.bin"

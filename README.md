@@ -43,7 +43,7 @@
 
 ### 安装方法
 
-　　本皮肤的官方发行版会使用 Rainmeter 自带皮肤打包器进行打包，安装包扩展名为 `.rmskin`。已经拥有 Rainmeter 软件的用户可在此仓库直接 [**下载**](../../releases/download/v3.4.b/DetailedSystemMonitor_v_3.4.b.rmskin) 最新的版本安装包到您的计算机，直接双击文件安装。
+　　本皮肤的官方发行版会使用 Rainmeter 自带皮肤打包器进行打包，安装包扩展名为 `.rmskin`。已经拥有 Rainmeter 软件的用户可在此仓库直接 [**下载**](../../releases/download/v3.5/DetailedSystemMonitor_v_3.5.rmskin) 最新的版本安装包到您的计算机，直接双击文件安装。
 
 *  **Windows 7** 操作系统用户安装皮肤后，还需要安装 [**字体修复补丁**](../../releases/download/v3.3/DetailedSystemMonitor_v_FixFont.rmskin)，下载完成直接安装即可。**Windows 10** 操作系统用户无需安装该补丁。
 

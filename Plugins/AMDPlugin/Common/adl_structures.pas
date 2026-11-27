@@ -2655,7 +2655,7 @@ type
 /// \nosubgrouping
 ////////////////////////////////////////////////////////////////////////////////////////////
 type
-  _ADLODNCapabilities = record
+  TADLODNCapabilities = record
     /// Number of levels which describe the minimum to maximum clock ranges.
     /// The 1st level indicates the minimum clocks, and the 2nd level
     /// indicates the maximum clocks.
@@ -2685,6 +2685,7 @@ type
     /// clocks cannot be set outside this range.
     minimumPerformanceClock: ADLODNParameterRange;
   end;
+  PADLODNCapabilities = ^TADLODNCapabilities;
 
 /////////////////////////////////////////////////////////////////////////////////////////////
 ///\brief Structure containing information about Overdrive N capabilities
@@ -2693,7 +2694,7 @@ type
 /// \nosubgrouping
 ////////////////////////////////////////////////////////////////////////////////////////////
 type
-  _ADLODNCapabilitiesX2 = record
+  TADLODNCapabilitiesX2 = record
     /// Number of levels which describe the minimum to maximum clock ranges.
     /// The 1st level indicates the minimum clocks, and the 2nd level
     /// indicates the maximum clocks.
@@ -2730,7 +2731,7 @@ type
     /// Contains the hard limits of the Auto Systemclock
     autoSystemClock: ADLODNParameterRange;
   end;
-  TADLODNCapabilitiesX2 = _ADLODNCapabilitiesX2;
+  PADLODNCapabilitiesX2 = ^TADLODNCapabilitiesX2;
 
 /////////////////////////////////////////////////////////////////////////////////////////////
 ///\brief Structure containing information about Overdrive level.
@@ -2848,7 +2849,7 @@ type
 /// \nosubgrouping
 ////////////////////////////////////////////////////////////////////////////////////////////
 type
-  ADLODNFanControl = record
+  TADLODNFanControl = record
     iMode: integer;
     iFanControlMode: integer;
     iCurrentFanSpeedMode: integer;
@@ -2858,7 +2859,7 @@ type
     iMinPerformanceClock: integer;
     iMinFanLimit: integer;
   end;
-  PADLODNFanControl = ^ADLODNFanControl;
+  PADLODNFanControl = ^TADLODNFanControl;
 
 /////////////////////////////////////////////////////////////////////////////////////////////
 ///\brief Structure containing information about Overdrive N power limit.
@@ -2868,14 +2869,14 @@ type
 /// \nosubgrouping
 ////////////////////////////////////////////////////////////////////////////////////////////
 type
-  ADLODNPowerLimitSetting = record
+  TADLODNPowerLimitSetting = record
     iMode: integer;
     iTDPLimit: integer;
     iMaxOperatingTemperature: integer;
   end;
 
 type
-  ADLODNPerformanceStatus = record
+  TADLODNPerformanceStatus = record
     iCoreClock: integer;
     iMemoryClock: integer;
     iDCEFClock: integer;
@@ -2990,6 +2991,60 @@ type
   end;
   PADLPMLogDataOutput = ADLPMLogDataOutput;
   TADLPMLogDataOutput = ADLPMLogDataOutput;
+
+type
+  ADLPMLogSupportInfo = record
+    usSensors: Array[0..ADL_PMLOG_MAX_SUPPORTED_SENSORS - 1] of Word;
+    ulReserved: Array[0..15] of Integer;
+  end;
+  PADLPMLogSupportInfo = ^ADLPMLogSupportInfo;
+  TADLPMLogSupportInfo = ADLPMLogSupportInfo;
+
+type
+  ADLPMLogStartInput = record
+    usSensors: Array[0..ADL_PMLOG_MAX_SUPPORTED_SENSORS - 1] of Word;
+    ulSampleRate: Cardinal;
+    ulReserved: Array[0..14] of Integer;
+  end;
+  PADLPMLogStartInput = ^ADLPMLogStartInput;
+  TADLPMLogStartInput = ADLPMLogStartInput;
+
+type
+  ADLPMLogData = record
+    ulVersion: Cardinal;
+    ulActiveSampleRate: Cardinal;
+    ulLastUpdated: UInt64;
+    ulValues: Array[0..ADL_PMLOG_MAX_SUPPORTED_SENSORS - 1, 0..1] of Cardinal;
+    ulReserved: Array[0..255] of Cardinal;
+  end;
+  PADLPMLogData = ^ADLPMLogData;
+  TADLPMLogData = ADLPMLogData;
+
+type
+  ADLPMLogStartOutput = record
+    pLoggingAddress: Pointer;
+    ulReserved: Array[0..13] of Integer;
+  end;
+  PADLPMLogStartOutput = ^ADLPMLogStartOutput;
+  TADLPMLogStartOutput = ADLPMLogStartOutput;
+
+type
+  ADLPMLogSensorLimits = record
+    SensorLimits: Array[0..ADL_PMLOG_MAX_SENSORS - 1, 0..1] of Integer;
+  end;
+  PADLPMLogSensorLimits = ^ADLPMLogSensorLimits;
+  TADLPMLogSensorLimits = ADLPMLogSensorLimits;
+
+type
+  TADLODNTemperatureType = (
+    CORE = 1,
+    MEMORY = 2,
+    VRM_CORE = 3,
+    VRM_MEMORY = 4,
+    LIQUID = 5,
+    PLX = 6,
+    HOTSPOT = 7
+  );
 
 implementation
 

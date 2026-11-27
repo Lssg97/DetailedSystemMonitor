@@ -5,6 +5,8 @@ VisualStudioVersion = 17.14.37906.3
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DeviceInfo", "DeviceInfo\DeviceInfo.vcxproj", "{DB3D09F5-DB38-4B3C-9573-77DE162C1660}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "NetworkMonitor", "NetworkMonitor\NetworkMonitor.vcxproj", "{B345B17C-92E2-4DEC-B697-A63DD57F60B6}"
+EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "NvidiaGPU", "NvidiaGPU\NvidiaGPU.vcxproj", "{015AA517-695B-4972-8828-69CEF7E607D0}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PawnTemp", "PawnTemp\PawnTemp.vcxproj", "{3446D29B-C5DA-4808-A625-58E3C21FD72C}"
@@ -39,6 +41,14 @@ Global
 		{015AA517-695B-4972-8828-69CEF7E607D0}.Release|x64.Build.0 = Release|x64
 		{015AA517-695B-4972-8828-69CEF7E607D0}.Release|x86.ActiveCfg = Release|Win32
 		{015AA517-695B-4972-8828-69CEF7E607D0}.Release|x86.Build.0 = Release|Win32
+		{B345B17C-92E2-4DEC-B697-A63DD57F60B6}.Debug|x64.ActiveCfg = Debug|x64
+		{B345B17C-92E2-4DEC-B697-A63DD57F60B6}.Debug|x64.Build.0 = Debug|x64
+		{B345B17C-92E2-4DEC-B697-A63DD57F60B6}.Debug|x86.ActiveCfg = Debug|Win32
+		{B345B17C-92E2-4DEC-B697-A63DD57F60B6}.Debug|x86.Build.0 = Debug|Win32
+		{B345B17C-92E2-4DEC-B697-A63DD57F60B6}.Release|x64.ActiveCfg = Release|x64
+		{B345B17C-92E2-4DEC-B697-A63DD57F60B6}.Release|x64.Build.0 = Release|x64
+		{B345B17C-92E2-4DEC-B697-A63DD57F60B6}.Release|x86.ActiveCfg = Release|Win32
+		{B345B17C-92E2-4DEC-B697-A63DD57F60B6}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

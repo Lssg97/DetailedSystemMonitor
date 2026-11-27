@@ -1,6 +1,12 @@
 # 更新笔记
 
 
+
+#### 2026年11月28日
+
+<img src="https://img.shields.io/badge/-%E5%88%A0%E9%99%A4-red?style=plastic" alt="删除" align="top" height="24" />　　不再通过“CoreTemp”插件监测 AMD 核显温度。
+
+
 #### 2026年11月26日
 
 <img src="https://img.shields.io/badge/-%E6%96%B0%E5%A2%9E-blue?style=plastic" alt="新增" align="top" height="24" />　　CPU 温度监控插件替换为“PawnTemp”，支持对 AMD CPU 温度的监测（17h+ 已通过验证测试，0F-16h 未测试）。

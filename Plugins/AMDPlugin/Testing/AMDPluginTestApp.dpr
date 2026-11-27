@@ -1,4 +1,4 @@
-program TestApp;
+program AMDPluginTestApp;
 
 uses
   Vcl.Forms,

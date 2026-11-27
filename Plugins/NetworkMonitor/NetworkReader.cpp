@@ -51,7 +51,7 @@ const std::vector<pair<std::wstring, ULONG64>>& NetworkReader::getPerformance()
 
 pair<std::wstring, ULONG64> NetworkReader::getPerformance(int i)
 {
-	// TODO: ÔÚ´Ë´¦²åÈë return Óï¾ä
+	// TODO: åœ¨æ­¤å¤„æ’å…¥ return è¯­å¥
 	shared_lock<shared_timed_mutex> lgd(mdataMutex);
 	if (i < 0)
 	{
@@ -105,7 +105,7 @@ void NetworkReader::updateData(const std::map<std::wstring, ULONG64 >& data)
 
 void NetworkReader::initThread()
 {
-	//TCPTableÏß³Ì
+	//TCPTableçº¿ç¨‹
 	mtcpthread.start();
 
 }
@@ -132,12 +132,12 @@ clock_t NetworkReader::getInterval() const
 //	DWORD dwPid = 0;
 //	MIB_TCPTABLE_OWNER_PID* stcTcpTable = NULL;
 //	DWORD szTcpTableSize = 0;
-//	//»ñÈ¡TCP±í´óĞ¡
+//	//è·å–TCPè¡¨å¤§å°
 //	GetExtendedTcpTable(stcTcpTable, &szTcpTableSize, FALSE, AF_INET, TCP_TABLE_OWNER_PID_ALL, 0);
-//	//·ÖÅäÄÚ´æ
+//	//åˆ†é…å†…å­˜
 //	stcTcpTable = (MIB_TCPTABLE_OWNER_PID*)malloc(szTcpTableSize);
 //	ZeroMemory(stcTcpTable, szTcpTableSize);
-//	//»ñÈ¡TCP±í
+//	//è·å–TCPè¡¨
 //	if (NO_ERROR != GetExtendedTcpTable(stcTcpTable, &szTcpTableSize, FALSE, AF_INET, TCP_TABLE_OWNER_PID_ALL, 0))
 //	{
 //		free(stcTcpTable);
@@ -156,15 +156,15 @@ clock_t NetworkReader::getInterval() const
 //	DWORD dwPid = 0;
 //	MIB_UDPTABLE_OWNER_PID* stcUdpTable = NULL;
 //	DWORD szUdpTableSize = 0;
-//	//»ñÈ¡UDP±í´óĞ¡
+//	//è·å–UDPè¡¨å¤§å°
 //	GetExtendedUdpTable(stcUdpTable, &szUdpTableSize, FALSE, AF_INET, UDP_TABLE_OWNER_PID, 0);
-//	//·ÖÅäÄÚ´æ
+//	//åˆ†é…å†…å­˜
 //	stcUdpTable = (MIB_UDPTABLE_OWNER_PID*)malloc(szUdpTableSize);
 //	ZeroMemory(stcUdpTable, szUdpTableSize);
-//	//»ñÈ¡UDP±í
+//	//è·å–UDPè¡¨
 //	if (NO_ERROR != GetExtendedUdpTable(stcUdpTable, &szUdpTableSize, FALSE, AF_INET, UDP_TABLE_OWNER_PID, 0))
 //	{
-//		//ÔÚÊµ¼Ê²âÊÔÖĞÕâ¸öµØ·½È·ÊµÅ¼¶ûÊÇ»áÊ§°ÜµÄ,²»¹ıÔÚÆµ·±µÄ¸üĞÂÖĞÒ»Á½´ÎÊ§°ÜÎŞ¹Ø½ôÒª
+//		//åœ¨å®é™…æµ‹è¯•ä¸­è¿™ä¸ªåœ°æ–¹ç¡®å®å¶å°”æ˜¯ä¼šå¤±è´¥çš„,ä¸è¿‡åœ¨é¢‘ç¹çš„æ›´æ–°ä¸­ä¸€ä¸¤æ¬¡å¤±è´¥æ— å…³ç´§è¦
 //		free(stcUdpTable);
 //		return;
 //	}
@@ -172,10 +172,10 @@ clock_t NetworkReader::getInterval() const
 //	{
 //		if (stcUdpTable->table[i].dwLocalPort == dwPort)
 //			dwPid = stcUdpTable->table[i].dwOwningPid;
-//		//´Ë´¦ÒÑ¾­ÕÒµ½½ø³Ì¶ÔÓ¦µÄpidÁË,Í¬Ê±°üµÄ´óĞ¡ºÍÊÇÉÏ´«»¹ÊÇÏÂÔØÒÑ¾­Í¨¹ı²ÎÊı´«½øÀ´ÁË¡£
+//		//æ­¤å¤„å·²ç»æ‰¾åˆ°è¿›ç¨‹å¯¹åº”çš„pidäº†,åŒæ—¶åŒ…çš„å¤§å°å’Œæ˜¯ä¸Šä¼ è¿˜æ˜¯ä¸‹è½½å·²ç»é€šè¿‡å‚æ•°ä¼ è¿›æ¥äº†ã€‚
 //	}
 //	free(stcUdpTable);
-//	//¶ÔÊı¾İµÄ´¦Àí
+//	//å¯¹æ•°æ®çš„å¤„ç†
 //	//...
 //}
 
@@ -229,7 +229,7 @@ clock_t NetworkReader::getInterval() const
 	//		NetworkPerformanceItem data;
 	//		data.Timestamp = now;
 
-	//		//»ñÈ¡½ø³ÌÃû
+	//		//è·å–è¿›ç¨‹å
 	//		if (mpidtable.find(pid) == mpidtable.end())
 	//		{
 	//			HANDLE hSnapshot = ::CreateToolhelp32Snapshot(TH32CS_SNAPPROCESS, pid);
@@ -251,7 +251,7 @@ clock_t NetworkReader::getInterval() const
 	//		}
 
 	//		data.ProcessName = mpidtable[pid];
-	//		//todo£º»ñÈ¡½ø³ÌÁ÷Á¿
+	//		//todoï¼šè·å–è¿›ç¨‹æµé‡
 	//		MIB_TCPROW row;
 	//		row.dwLocalAddr = ptTable->table[i].dwLocalAddr;
 	//		row.dwLocalPort = ptTable->table[i].dwLocalPort;

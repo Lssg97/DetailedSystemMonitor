@@ -61,7 +61,7 @@ void TCPPidThread::run()
 						continue;
 					}
 
-					//todo£º»ñÈ¡½ø³ÌÁ÷Á¿
+					//todoï¼šèŽ·å–è¿›ç¨‹æµé‡
 					MIB_TCPROW row;
 					row.dwLocalAddr = ptTable->table[i].dwLocalAddr;
 					row.dwLocalPort = ptTable->table[i].dwLocalPort;

@@ -4,19 +4,17 @@ object frmMain: TfrmMain
   BorderIcons = [biSystemMenu]
   BorderStyle = bsSingle
   Caption = 'AMD GPU Info'
-  ClientHeight = 217
-  ClientWidth = 457
+  ClientHeight = 520
+  ClientWidth = 860
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
   Font.Height = -11
   Font.Name = 'Tahoma'
   Font.Style = []
-  OldCreateOrder = False
   Position = poScreenCenter
   OnCreate = FormCreate
   OnDestroy = FormDestroy
-  PixelsPerInch = 96
   TextHeight = 13
   object lblTemp: TLabel
     Left = 8
@@ -114,8 +112,8 @@ object frmMain: TfrmMain
   end
   object TrackBar1: TTrackBar
     Left = 0
-    Top = 186
-    Width = 457
+    Top = 489
+    Width = 860
     Height = 31
     Align = alBottom
     Max = 1000
@@ -125,8 +123,6 @@ object frmMain: TfrmMain
     TickMarks = tmBoth
     TickStyle = tsNone
     OnChange = TrackBar1Change
-    ExplicitTop = 184
-    ExplicitWidth = 456
   end
   object edVRAM: TEdit
     Left = 56
@@ -232,11 +228,44 @@ object frmMain: TfrmMain
   object cbAdapter: TComboBox
     Left = 8
     Top = 8
-    Width = 440
+    Width = 840
     Height = 21
     Style = csDropDownList
     TabOrder = 8
     OnChange = cbAdapterChange
+  end
+  object lstNodes: TListBox
+    Left = 454
+    Top = 40
+    Width = 394
+    Height = 141
+    ItemHeight = 13
+    TabOrder = 9
+  end
+  object memDiagnostics: TMemo
+    Left = 8
+    Top = 216
+    Width = 840
+    Height = 265
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'Consolas'
+    Font.Style = []
+    ParentFont = False
+    ReadOnly = True
+    ScrollBars = ssBoth
+    TabOrder = 10
+    WordWrap = False
+  end
+  object lblDiagnostics: TLabel
+    Left = 8
+    Top = 192
+    Width = 91
+    Height = 21
+    AutoSize = False
+    Caption = 'Diagnostics:'
+    Layout = tlCenter
   end
   object tmrUpdate: TTimer
     OnTimer = tmrUpdateTimer

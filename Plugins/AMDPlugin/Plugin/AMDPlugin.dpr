@@ -2,8 +2,18 @@
 {                                                       }
 {       AMDPlugin - Rainmeter AMD GPU Plugin            }
 {                                                       }
-{       Version 0.5                                     }
+{       Version 0.9                                     }
 {                                                       }
+{       2026-07-09 - 0.9                                }
+{         Added ADL2 shared-memory PMLog telemetry      }
+{         Added APU-friendly adapter enumeration        }
+{         Added PMLog backend diagnostics               }
+{       2025-07-19 - 0.8                                }
+{         Added D3DKMT node/engine measures             }
+{       2025-07-11 - 0.7                                }
+{         Added edge temperature reading                }
+{       2022-06-10 - 0.6                                }
+{         Added support the OD7(N) API                  }
 {       2021-01-14 - 0.5                                }
 {         Added support the OD8 API and 6000 Series     }
 {       2020-11-08 - 0.4                                }
@@ -21,7 +31,7 @@
 {       2020-10-03 - 0.1                                }
 {         Initial Release                               }
 {                                                       }
-{       (c) 2021 by NaliLord                            }
+{       (c) 2026 by NaliLord                            }
 {                                                       }
 {*******************************************************}
 
@@ -47,35 +57,49 @@ const
   MIN_UPDATE_TIME = 250;
 
 type
-  TMeasureID = (Unknown, Temperature, Clock, MemoryClock, Voltage, Activity, PerformanceLevel,
+  TMeasureType = (mtUnknown, mtAMD, mtMixed, mtD3DKTMNodes);
+
+type
+  TMeasureID = (Unknown, APIVersion, Temperature, TemperatureEdge, Clock, MemoryClock, Voltage, Activity, Usage, PerformanceLevel,
     PCIECurrentBusSpeed, PCIECurrentBusLanes, PCIEMaxBusLanes, FanSpeedRPM, FanSpeedPercent, MemoryType,
     MemorySize, MemoryUsage, SharedLimit, DedicatedLimit, SharedUsage, DedicatedUsage, MemoryBandwidth, AdapterName,
     AdapterActive, FanSpeedPercentMin, FanSpeedPercentMax, FanSpeedRPMMin, FanSpeedRPMMax, BiosDate, BiosVersion,
-    BiosPartNumber, AdapterIdentifier, NumberOfAdapters, NumberOfDisplays, DriverDate, DriverVersion);
+    BiosPartNumber, AdapterIdentifier, NumberOfAdapters, NumberOfDisplays, DriverDate, DriverVersion,
+    PMLogSupported, PMLogSharedMemorySupported, PMLogBackend);
 
 const
-  MEASUREID_NAMES: Array[TMeasureID] of String = ('Unknown', 'Temperature', 'Clock', 'MemoryClock', 'Voltage', 'Activity', 'PerformanceLevel',
+  MEASUREID_NAMES: Array[TMeasureID] of String = ('Unknown', 'APIVersion', 'Temperature', 'TemperatureEdge', 'Clock', 'MemoryClock', 'Voltage', 'Activity', 'Usage', 'PerformanceLevel',
     'PCIECurrentBusSpeed', 'PCIECurrentBusLanes', 'PCIEMaxBusLanes', 'FanSpeedRPM', 'FanSpeedPercent', 'MemoryType',
     'MemorySize', 'MemoryUsage', 'SharedLimit', 'DedicatedLimit', 'SharedUsage', 'DedicatedUsage', 'MemoryBandwidth', 'AdapterName',
     'AdapterActive', 'FanSpeedPercentMin', 'FanSpeedPercentMax', 'FanSpeedRPMMin', 'FanSpeedRPMMax', 'BiosDate', 'BiosVersion',
-    'BiosPartNumber', 'AdapterIdentifier', 'NumberOfAdapters', 'NumberOfDisplays', 'DriverDate', 'DriverVersion');
+    'BiosPartNumber', 'AdapterIdentifier', 'NumberOfAdapters', 'NumberOfDisplays', 'DriverDate', 'DriverVersion',
+    'PMLogSupported', 'PMLogSharedMemorySupported', 'PMLogBackend');
 
 type
   TMeasure = class
   private
+    FTyp: TMeasureType;
     FID: TMeasureID;
-    FName: String;
     FAdapter: Integer;
-    FD3DKMT: TD3DKMTStatistics;
+    FName: String;
+    FD3DKMTNodeEngine: Integer;
+    FD3DKMTStatistics: TD3DKMTStatistics;
+  protected
+    function GetAdapterUsage(Index: Integer): Integer;
+    procedure SetAdapterUsage(Index: Integer; const Value: Integer);
   public
-    property Name: String read FName write FName;
+    property Typ: TMeasureType read FTyp write FTyp;
     property ID: TMeasureID read FID write FID;
     property Adapter: Integer read FAdapter write FAdapter;
-    property D3DKMT: TD3DKMTStatistics read FD3DKMT write FD3DKMT;
+    property AdapterUsage[Idx: Integer]: Integer read GetAdapterUsage write SetAdapterUsage;
+    property Name: String read FName write FName;
+    property D3DKMTNodeEngine: Integer read FD3DKMTNodeEngine write FD3DKMTNodeEngine;
+    property D3DKMTStatistics: TD3DKMTStatistics read FD3DKMTStatistics write FD3DKMTStatistics;
   end;
 
 var
   ADL: TADL = nil;
+  D3DKMT: TObjectDictionary<String,TD3DKMTStatistics>;
   List: TObjectList<TMeasure> = nil;
   LastADLUpdate: UInt64 = 0;
   LastD3DKMTUpdate: UInt64 = 0;
@@ -86,6 +110,19 @@ function RmReplaceVariables(rm: Pointer; str: PWideChar): PWideChar; stdcall; ex
 function RmPathToAbsolute(rm: Pointer; relativePath: PWideChar): PWideChar; stdcall; external 'Rainmeter.dll';
 procedure RmGet(rm: Pointer; typ: Integer); stdcall; external 'Rainmeter.dll';
 procedure RmExecute(skin: Pointer; command: PWideChar); stdcall; external 'Rainmeter.dll';
+
+{ TMeasure }
+
+function TMeasure.GetAdapterUsage(Index: Integer): Integer;
+begin
+  Result:=0;
+end;
+
+procedure TMeasure.SetAdapterUsage(Index: Integer; const Value: Integer);
+begin
+end;
+
+{ Global }
 
 procedure MeasureUpdate(AMeasure: TMeasure = nil);
 begin
@@ -99,11 +136,11 @@ begin
   if GetTickCount64 - LastD3DKMTUpdate >= MIN_UPDATE_TIME  then
   begin
     if Assigned(AMeasure) then
-      if Assigned(AMeasure.D3DKMT) then
+      if Assigned(AMeasure.D3DKMTStatistics) then
       begin
         LastD3DKMTUpdate:=GetTickCount64;
 
-        AMeasure.D3DKMT.Update;
+        AMeasure.D3DKMTStatistics.Update;
       end;
   end;
 end;
@@ -112,12 +149,10 @@ procedure Initialize(var AData: Pointer; ARm: Pointer); stdcall;
 var
   Measure: TMeasure;
 begin
-//  AllocConsole;
-
-//  WriteLn('Initialize ->');
-
   if NOT Assigned(ADL) then
     ADL:=TADL.Create;
+  if NOT Assigned(D3DKMT) then
+    D3DKMT:=TObjectDictionary<String,TD3DKMTStatistics>.Create([doOwnsValues]);
   if NOT Assigned(List) then
     List:=TObjectList<TMeasure>.Create;
 
@@ -125,22 +160,37 @@ begin
 
   Measure:=TMeasure.Create;
   try
+    Measure.Typ:=mtUnknown;
+    Measure.Adapter:=Trunc(RmReadFormula(ARm, 'AdapterID', -1));
     Measure.Name:=RmReadString(ARm, 'MeasureID', '', True);
-    Measure.ID:=TMeasureID(Max(0, IndexStr(Measure.Name, MEASUREID_NAMES)));
-    Measure.Adapter:=Trunc(RmReadFormula(ARm, 'AdapterID', 0));
+    Measure.D3DKMTNodeEngine:=Trunc(RmReadFormula(ARm, 'NodeEngine', -1));
 
-//    WriteLn('  Name=', Measure.Name);
-//    WriteLn('  Adapter=', Measure.Adapter);
+    if Measure.D3DKMTNodeEngine >= 0 then
+    begin
+      Measure.Typ:=mtD3DKTMNodes;
+    end else
+    if (Trim(Measure.Name) <> '') AND (Measure.Adapter >= 0) then
+    begin
+      Measure.Typ:=mtMixed;
+      Measure.ID:=TMeasureID(Max(0, IndexStr(Measure.Name, MEASUREID_NAMES)));
+    end;
 
-    if Measure.ID IN [MemoryUsage, SharedLimit, DedicatedLimit, SharedUsage, DedicatedUsage] then
-      if (Measure.Adapter >= 0) AND (Measure.Adapter < ADL.AdapterCount) then
-        Measure.D3DKMT:=TD3DKMTStatistics.Create(ADL.Adapters[Measure.Adapter].PNP);
+    if Measure.Typ IN [mtMixed, mtD3DKTMNodes] then
+      if (Measure.ID IN [MemoryUsage, SharedLimit, DedicatedLimit, SharedUsage, DedicatedUsage]) OR (Measure.D3DKMTNodeEngine >= 0) then
+        if (Measure.Adapter >= 0) AND (Measure.Adapter < ADL.AdapterCount) then
+          if D3DKMT.ContainsKey(ADL.Adapters[Measure.Adapter].PNP) then
+          begin
+            Measure.D3DKMTStatistics:=D3DKMT[ADL.Adapters[Measure.Adapter].PNP];
+          end else
+          begin
+            Measure.D3DKMTStatistics:=TD3DKMTStatistics.Create(ADL.Adapters[Measure.Adapter].PNP);
+            D3DKMT.Add(ADL.Adapters[Measure.Adapter].PNP, Measure.D3DKMTStatistics);
+          end;
   finally
     List.Add(Measure);
   end;
 
   AData:=Measure;
-//  WriteLn('<- Initialize');
 end;
 
 procedure Reload(AData: Pointer; ARm: Pointer; var AMaxValue: Double); stdcall;
@@ -152,7 +202,6 @@ function Update(AData: Pointer): Double; stdcall;
 var
   Measure: TMeasure;
 begin
-//  WriteLn('Update ->');
   Result:=0.0;
 
   if Assigned(AData) then
@@ -161,50 +210,56 @@ begin
 
     MeasureUpdate(Measure);
 
-//    WriteLn('  Measure: 0x', IntToHex(NativeInt(Measure), SizeOf(NativeInt) * 2));
-
-    if (Measure.Adapter >= 0) AND (Measure.Adapter < ADL.AdapterCount) then
+    if Measure.Typ IN [mtAMD, mtMixed] then
     begin
-//      WriteLn(Format('  Name=%s'#13#10'  Adapter=%d'#13#10'  Count=%d', [Measure.Name, Measure.Adapter, ADL.AdapterCount]));
-//      WriteLn(Format('  D3DKMT=%s', [BoolToStr(Assigned(Measure.D3DKMT), True)]));
-
-      case Measure.ID of
-        Temperature         : Result:=ADL.Adapters[Measure.Adapter].Temp;
-        Clock               : Result:=ADL.Adapters[Measure.Adapter].Clock;
-        MemoryClock         : Result:=ADL.Adapters[Measure.Adapter].Memory;
-        Voltage             : Result:=ADL.Adapters[Measure.Adapter].Vddc;
-        Activity            : Result:=ADL.Adapters[Measure.Adapter].Activity;
-        PerformanceLevel    : Result:=ADL.Adapters[Measure.Adapter].PerformanceLevel;
-        PCIECurrentBusSpeed : Result:=ADL.Adapters[Measure.Adapter].BusSpeed;
-        PCIECurrentBusLanes : Result:=ADL.Adapters[Measure.Adapter].BusLanes;
-        PCIEMaxBusLanes     : Result:=ADL.Adapters[Measure.Adapter].BusLanesMax;
-        FanSpeedRPM         : Result:=ADL.Adapters[Measure.Adapter].FanRPM;
-        FanSpeedPercent     : Result:=ADL.Adapters[Measure.Adapter].Fan;
-        MemorySize          : Result:=ADL.Adapters[Measure.Adapter].MemorySize;
-        MemoryUsage         : if Assigned(Measure.D3DKMT) then Result:=Measure.D3DKMT.MemoryUsage;
-        SharedLimit         : if Assigned(Measure.D3DKMT) then Result:=Measure.D3DKMT.SharedLimit;
-        DedicatedLimit      : if Assigned(Measure.D3DKMT) then Result:=Measure.D3DKMT.DedicatedLimit;
-        SharedUsage         : if Assigned(Measure.D3DKMT) then Result:=Measure.D3DKMT.SharedUsage;
-        DedicatedUsage      : if Assigned(Measure.D3DKMT) then Result:=Measure.D3DKMT.DedicatedUsage;
-        MemoryBandwidth     : Result:=ADL.Adapters[Measure.Adapter].MemoryBandwidth;
-        FanSpeedPercentMin  : Result:=0;
-        FanSpeedPercentMax  : Result:=100;
-        FanSpeedRPMMin      : Result:=0;
-        FanSpeedRPMMax      : Result:=ADL.Adapters[Measure.Adapter].FanMaxRPM;
-        NumberOfAdapters    : Result:=ADL.AdapterCount;
+      if (Measure.Adapter >= 0) AND (Measure.Adapter < ADL.AdapterCount) then
+      begin
+        case Measure.ID of
+          APIVersion          : Result:=ADL.Adapters[Measure.Adapter].APIVersion;
+          Temperature         : Result:=ADL.Adapters[Measure.Adapter].TempHotspot;
+          TemperatureEdge     : Result:=ADL.Adapters[Measure.Adapter].TempEdge;
+          Clock               : Result:=ADL.Adapters[Measure.Adapter].Clock;
+          MemoryClock         : Result:=ADL.Adapters[Measure.Adapter].Memory;
+          Voltage             : Result:=ADL.Adapters[Measure.Adapter].Vddc;
+          Activity            : Result:=ADL.Adapters[Measure.Adapter].Activity;
+          Usage               : ;
+          PerformanceLevel    : Result:=ADL.Adapters[Measure.Adapter].PerformanceLevel;
+          PCIECurrentBusSpeed : Result:=ADL.Adapters[Measure.Adapter].BusSpeed;
+          PCIECurrentBusLanes : Result:=ADL.Adapters[Measure.Adapter].BusLanes;
+          PCIEMaxBusLanes     : Result:=ADL.Adapters[Measure.Adapter].BusLanesMax;
+          FanSpeedRPM         : Result:=ADL.Adapters[Measure.Adapter].FanRPM;
+          FanSpeedPercent     : Result:=ADL.Adapters[Measure.Adapter].Fan;
+          MemorySize          : Result:=ADL.Adapters[Measure.Adapter].MemorySize;
+          MemoryUsage         : if Assigned(Measure.D3DKMTStatistics) then Result:=Measure.D3DKMTStatistics.MemoryUsage;
+          SharedLimit         : if Assigned(Measure.D3DKMTStatistics) then Result:=Measure.D3DKMTStatistics.SharedLimit;
+          DedicatedLimit      : if Assigned(Measure.D3DKMTStatistics) then Result:=Measure.D3DKMTStatistics.DedicatedLimit;
+          SharedUsage         : if Assigned(Measure.D3DKMTStatistics) then Result:=Measure.D3DKMTStatistics.SharedUsage;
+          DedicatedUsage      : if Assigned(Measure.D3DKMTStatistics) then Result:=Measure.D3DKMTStatistics.DedicatedUsage;
+          MemoryBandwidth     : Result:=ADL.Adapters[Measure.Adapter].MemoryBandwidth;
+          FanSpeedPercentMin  : Result:=0;
+          FanSpeedPercentMax  : Result:=100;
+          FanSpeedRPMMin      : Result:=0;
+          FanSpeedRPMMax      : Result:=ADL.Adapters[Measure.Adapter].FanMaxRPM;
+          NumberOfAdapters    : Result:=ADL.AdapterCount;
+          PMLogSupported      : Result:=Integer(ADL.Adapters[Measure.Adapter].PMLogSupported);
+          PMLogSharedMemorySupported: Result:=Integer(ADL.Adapters[Measure.Adapter].PMLogSharedMemorySupported);
+          PMLogBackend        : Result:=Integer(ADL.Adapters[Measure.Adapter].PMLogBackend);
+        end;
       end;
+    end else
+    if Measure.Typ IN [mtMixed, mtD3DKTMNodes] then
+    begin
+      if Assigned(Measure.D3DKMTStatistics) AND AnsiSameText(Measure.Name, 'NodeUsage') then
+        if Measure.D3DKMTStatistics.NodeEngines.ContainsKey(Measure.FD3DKMTNodeEngine) then
+          Result:=Measure.D3DKMTStatistics.NodeEngines[Measure.FD3DKMTNodeEngine].UsagePercent;
     end;
   end;
-
-//  WriteLn('  Value=', FormatFloat('0.00', Result));
-//  WriteLn('<- Update');
 end;
 
 function GetString(AData: Pointer): PWideChar; stdcall;
 var
   Measure: TMeasure;
 begin
-//  WriteLn('GetString ->');
   Result:=nil;
 
   if Assigned(AData) then
@@ -213,31 +268,28 @@ begin
 
     MeasureUpdate(Measure);
 
-//    WriteLn('  Measure: 0x', IntToHex(NativeInt(Measure), SizeOf(NativeInt) * 2));
-
-    if (Measure.Adapter >= 0) AND (Measure.Adapter < ADL.AdapterCount) then
+    if Measure.Typ IN [mtAMD, mtMixed] then
     begin
-//      WriteLn(Format('  Name=%s'#13#10'  Adapter=%d'#13#10'  Count=%d', [Measure.Name, Measure.Adapter, ADL.AdapterCount]));
-//      WriteLn(Format('  D3DKMT=%s', [BoolToStr(Assigned(Measure.D3DKMT), True)]));
-
-      case Measure.ID of
-        MemoryType     : Result:=PWideChar(ADL.Adapters[Measure.Adapter].MemoryType);
-        AdapterName    : Result:=PWideChar(ADL.Adapters[Measure.Adapter].Name);
-        BiosDate       : Result:=PWideChar(ADL.Adapters[Measure.Adapter].BiosDate);
-        BiosVersion    : Result:=PWideChar(ADL.Adapters[Measure.Adapter].BiosVersion);
-        BiosPartNumber : Result:=PWideChar(ADL.Adapters[Measure.Adapter].BiosPartNumber);
-        DriverDate     : Result:=PWideChar(ADL.Adapters[Measure.Adapter].DriverDate);
-        DriverVersion  : Result:=PWideChar(ADL.Adapters[Measure.Adapter].DriverVersion);
+      if (Measure.Adapter >= 0) AND (Measure.Adapter < ADL.AdapterCount) then
+      begin
+        case Measure.ID of
+          MemoryType     : Result:=PWideChar(ADL.Adapters[Measure.Adapter].MemoryType);
+          AdapterName    : Result:=PWideChar(ADL.Adapters[Measure.Adapter].Name);
+          BiosDate       : Result:=PWideChar(ADL.Adapters[Measure.Adapter].BiosDate);
+          BiosVersion    : Result:=PWideChar(ADL.Adapters[Measure.Adapter].BiosVersion);
+          BiosPartNumber : Result:=PWideChar(ADL.Adapters[Measure.Adapter].BiosPartNumber);
+          DriverDate     : Result:=PWideChar(ADL.Adapters[Measure.Adapter].DriverDate);
+          DriverVersion  : Result:=PWideChar(ADL.Adapters[Measure.Adapter].DriverVersion);
+        end;
       end;
+    end else
+    if Measure.Typ IN [mtMixed, mtD3DKTMNodes] then
+    begin
+      if Assigned(Measure.D3DKMTStatistics) AND AnsiSameText(Measure.Name, 'NodeName') then
+        if Measure.D3DKMTStatistics.NodeEngines.ContainsKey(Measure.FD3DKMTNodeEngine) then
+          Result:=PWideChar(Measure.D3DKMTStatistics.NodeEngines[Measure.FD3DKMTNodeEngine].Name);
     end;
   end;
-
-//  if Assigned(Result) then
-//    WriteLn('  Value=', Result)
-//  else
-//    WriteLn('  Value=<null>');
-
-//  WriteLn('<- GetString');
 end;
 
 procedure Finalize(AData: Pointer); stdcall
@@ -252,14 +304,18 @@ begin
   end;
 
   if Assigned(List) AND (List.Count = 0) then
+  begin
     FreeAndNil(List);
+    if Assigned(D3DKMT) then
+      FreeAndNil(D3DKMT);
+  end;
   if Assigned(ADL) AND NOT Assigned(List) then
     FreeAndNil(ADL);
 end;
 
 function GetPluginVersion: Cardinal; stdcall;
 begin
-  Result:=5;
+  Result:=9;
 end;
 
 function GetPluginAuthor: PWideChar; stdcall;

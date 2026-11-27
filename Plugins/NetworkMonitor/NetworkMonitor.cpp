@@ -1,5 +1,5 @@
 #include <Windows.h>
-#include "../API/RainmeterAPI.h"
+#include "../API/Rainmeter/RainmeterAPI.h"
 #include "NetworkReader.h"
 
 // Overview: This is a blank canvas on which to build your plugin.

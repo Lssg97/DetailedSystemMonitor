@@ -3,7 +3,7 @@ unit adl_sdk;
 interface
 
 uses
-  adl_structures;
+  adl_structures, adl_defines;
 
 ///
 ///  Copyright (c) 2008 - 2013 Advanced Micro Devices, Inc.
@@ -70,12 +70,13 @@ type
   ADL2_ADAPTER_ACTIVE_GET = function(hContext: Pointer; iNum: Integer; var iActive: Integer): Integer; stdcall;
 
   ADL2_OVERDRIVE_CAPS = function(hContext: Pointer; iAdapterIndex: Integer; var iSupported: Integer; var iEnabled: Integer; var iVersion: Integer): Integer; stdcall;
+  ADL2_OVERDRIVEN_CAPABILITIES_GET = function(hContext: Pointer; iAdapterIndex: Integer; var lpCapabilities: TADLODNCapabilities): Integer; stdcall;
   ADL2_OVERDRIVEN_CAPABILITIESX2_GET = function(hContext: Pointer; iAdapterIndex: Integer; var lpCapabilities: TADLODNCapabilitiesX2): Integer; stdcall;
-  ADL2_OVERDRIVEN_PERFORMANCESTATUS_GET = function(hContext: Pointer; iAdapterIndex: Integer; var lpStatus: ADLODNPerformanceStatus): Integer; stdcall;
-  ADL2_OVERDRIVEN_FANCONTROL_GET = function(hContext: Pointer; iAdapterIndex: Integer; var lpControl: ADLODNFanControl): Integer; stdcall;
-  ADL2_OVERDRIVEN_FANCONTROL_SET = function(hContext: Pointer; iAdapterIndex: Integer; var lpControl: ADLODNFanControl): Integer; stdcall;
-  ADL2_OVERDRIVEN_POWERLIMIT_GET = function(hContext: Pointer; iAdapterIndex: Integer; var lpLimit: ADLODNPowerLimitSetting): Integer; stdcall;
-  ADL2_OVERDRIVEN_POWERLIMIT_SET = function(hContext: Pointer; iAdapterIndex: Integer; var lpLimit: ADLODNPowerLimitSetting): Integer; stdcall;
+  ADL2_OVERDRIVEN_PERFORMANCESTATUS_GET = function(hContext: Pointer; iAdapterIndex: Integer; var lpStatus: TADLODNPerformanceStatus): Integer; stdcall;
+  ADL2_OVERDRIVEN_FANCONTROL_GET = function(hContext: Pointer; iAdapterIndex: Integer; var lpControl: TADLODNFanControl): Integer; stdcall;
+  ADL2_OVERDRIVEN_FANCONTROL_SET = function(hContext: Pointer; iAdapterIndex: Integer; var lpControl: TADLODNFanControl): Integer; stdcall;
+  ADL2_OVERDRIVEN_POWERLIMIT_GET = function(hContext: Pointer; iAdapterIndex: Integer; var lpLimit: TADLODNPowerLimitSetting): Integer; stdcall;
+  ADL2_OVERDRIVEN_POWERLIMIT_SET = function(hContext: Pointer; iAdapterIndex: Integer; var lpLimit: TADLODNPowerLimitSetting): Integer; stdcall;
   ADL2_OVERDRIVEN_TEMPERATURE_GET = function(hContext: Pointer; iAdapterIndex: Integer; iTemperatureType: Integer; var lpTemperature: Integer): Integer; stdcall;
   ADL2_OVERDRIVEN_SYSTEMCLOCKSX2_GET = function(hContext: Pointer; iAdapterIndex: Integer; var lpLevels: TADLODNPerformanceLevelsX2): Integer; stdcall;
   ADL2_OVERDRIVEN_SYSTEMCLOCKSX2_SET = function(hContext: Pointer; iAdapterIndex: Integer; var lpLevels: TADLODNPerformanceLevelsX2): Integer; stdcall;
@@ -94,6 +95,14 @@ type
   ADL2_OVERDRIVE8_CURRENT_SETTING_GET = function(hContext: Pointer; iAdapterIndex: Integer; var lpSetting: TADLOD8CurrentSetting): Integer; stdcall;
   ADL2_OVERDRIVE8_SETTING_SET = function(hContext: Pointer; iAdapterIndex: Integer; var lpSetting: TADLOD8SetSetting; var lpSettingCurrent: TADLOD8CurrentSetting): Integer; stdcall;
   ADL2_NEW_QUERYPMLOGDATA_GET = function(hContext: Pointer; iAdapterIndex: Integer; var lpLog: TADLPMLogDataOutput): Integer; stdcall;
+
+  ADL2_OVERDRIVE8_PMLOGSENORTYPE_SUPPORT_GET = function(hContext: Pointer; iAdapterIndex: Integer; var lpNumOfSupportedSensorType: Integer; var lppSenroTypesList: PInteger): Integer; stdcall;
+  ADL2_OVERDRIVE8_PMLOG_SHAREMEMORY_SUPPORT = function(hContext: Pointer; iAdapterIndex: Integer; var lpSupported: Integer; iOption: Integer): Integer; stdcall;
+  ADL2_OVERDRIVE8_PMLOG_SHAREMEMORY_START = function(hContext: Pointer; iAdapterIndex: Integer; iSampleRate: Integer; iNumofPMLogSendorList: Integer; lpPMLogSendorList: PInteger; var lpHDevice: ADL_D3DKMT_HANDLE; var lppSharedMemory: Pointer; iOption: Integer): Integer; stdcall;
+  ADL2_OVERDRIVE8_PMLOG_SHAREMEMORY_READ = function(hContext: Pointer; iAdapterIndex: Integer; iNumSensor: Integer; lpSensorList: PInteger; var lppSharedMemory: Pointer; var lpDataOutput: TADLPMLogDataOutput): Integer; stdcall;
+  ADL2_OVERDRIVE8_PMLOG_SHAREMEMORY_STOP = function(hContext: Pointer; iAdapterIndex: Integer; var lpHDevice: ADL_D3DKMT_HANDLE): Integer; stdcall;
+  ADL2_DEVICE_PMLOG_DEVICE_CREATE = function(hContext: Pointer; iAdapterIndex: Integer; var pDevice: ADL_D3DKMT_HANDLE): Integer; stdcall;
+  ADL2_DEVICE_PMLOG_DEVICE_DESTROY = function(hContext: Pointer; hDevice: ADL_D3DKMT_HANDLE): Integer; stdcall;
 
   ADL2_OVERDRIVE8_INIT_SETTINGX2_GET = function(hContext: Pointer; iAdapterIndex: Integer; var lpOverdrive8Capabilities: Integer; var lpNumberOfFeatures: Integer; var lppInitSettingList: PADLOD8SingleInitSetting): Integer; stdcall;
   ADL2_OVERDRIVE8_CURRENT_SETTINGX2_GET = function(hContext: Pointer; iAdapterIndex: Integer; var lpNumberOfFeatures: Integer; var lppCurrentSettingList: PInteger): Integer; stdcall;
